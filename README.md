@@ -29,7 +29,7 @@ This image includes:
 
 ## 4) Run the container
 
-### Headless (recommended for servers / CI)
+### Headless
 
 ```bash
 docker run --rm -it \
@@ -41,7 +41,7 @@ docker run --rm -it \
   fire-drone:humble-fortress
 ```
 
-### With GUI (local desktop X11)
+### With GUI
 
 ```bash
 xhost +local:root
@@ -70,8 +70,15 @@ cd /repo/ws
 rm -rf build install log
 colcon build --symlink-install --merge-install --packages-select drone_sim
 source install/setup.bash
+```
+```bash
 ros2 launch drone_sim spawn_drone.launch.py
 ```
+or
+```bash
+ros2 launch drone_sim spawn_drone.launch.py headless:=false
+```
+For headless or GUI runs respectively. Headless mode launches with GUI too, known issue
 
 * Starts **Gazebo Fortress**
 * Spawns `simple_drone` at (0, 0, 0.5).
