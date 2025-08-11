@@ -16,7 +16,7 @@
 ## 3) Build the Docker image
 
 ```bash
-docker build -t fire-drone:humble-fortress .
+sudo docker build -t fire-drone:humble-fortress .
 ```
 
 This image includes:
@@ -45,15 +45,15 @@ docker run --rm -it \
 
 ```bash
 xhost +local:root
-docker run --rm -it \
+
+sudo docker run --rm -it \
   --gpus all \
   --network host --ipc host \
   -e DISPLAY=$DISPLAY \
   -e QT_X11_NO_MITSHM=1 \
+  -e NVIDIA_DRIVER_CAPABILITIES=graphics,compute,utility,display \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-  -e GZ_GUI=1 \
-  -e RMW_IMPLEMENTATION=rmw_fastrtps_cpp \
-  -v $PWD:/repo \
+  -v /home/user/fire-drone/ws:/repo/ws \
   --name fire-drone-sim \
   fire-drone:humble-fortress
 ```
@@ -65,10 +65,10 @@ docker run --rm -it \
 Once inside the container shell:
 
 ```bash
-# inside container shell
+source /opt/ros/humble/setup.bash
 cd /repo/ws
 rm -rf build install log
-colcon build --symlink-install --merge-install --packages-select drone_sim
+colcon build --symlink-install --merge-install
 source install/setup.bash
 ```
 ```bash
@@ -126,8 +126,8 @@ Now:
 * Check Gazebo entities:
 
   ```bash
-  gz topic -l
-  gz service -l
+  ign topic -l
+  ign service -l
   ```
 
 * Open another shell in running container:
@@ -146,6 +146,8 @@ Now:
 
 ## 10) Next steps
 
+* Fix IMU to actaully broadcast
+* Fix launch to be able to run headless
 * Add more sensors (LiDAR, altimeter, GPS, thermal/RGB).
 * Publish observations on ROS topics tailored for your RL loop.
 * Add training scripts that subscribe to obs topics and publish velocity/attitude commands back to Gazebo.
