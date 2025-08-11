@@ -1,8 +1,4 @@
 # Fire Drone RL Sim — README
-
-* You have a ROS 2 workspace at `~/ros2_ws` containing the `drone_sim` package (models, worlds, launch).
-* You’ll run everything **inside a Docker container** we provide.
-
 ---
 
 ## 1) Prerequisites (host)
@@ -29,7 +25,7 @@ This image includes:
 
 ## 4) Run the container
 
-### Headless
+### Headless //Not working
 
 ```bash
 docker run --rm -it \
@@ -53,7 +49,7 @@ sudo docker run --rm -it \
   -e QT_X11_NO_MITSHM=1 \
   -e NVIDIA_DRIVER_CAPABILITIES=graphics,compute,utility,display \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-  -v /home/user/fire-drone/ws:/repo/ws \
+  -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
   fire-drone:humble-fortress
 ```
