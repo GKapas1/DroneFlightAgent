@@ -140,9 +140,8 @@ Now:
 
 ---
 
-## 10) Next steps
+## 8) Next steps
 
-* Fix IMU to actaully broadcast
 * Fix launch to be able to run headless
 * Add more sensors (LiDAR, altimeter, GPS, thermal/RGB).
 * Publish observations on ROS topics tailored for your RL loop.
