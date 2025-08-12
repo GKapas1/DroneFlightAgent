@@ -1,0 +1,75 @@
+[0.021s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /repo/ws/src/drone_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install
+[0.235s] -- The C compiler identification is GNU 11.4.0
+[0.367s] -- The CXX compiler identification is GNU 11.4.0
+[0.380s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.474s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.475s] -- Detecting C compile features
+[0.476s] -- Detecting C compile features - done
+[0.481s] -- Detecting CXX compiler ABI info
+[0.571s] -- Detecting CXX compiler ABI info - done
+[0.580s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.580s] -- Detecting CXX compile features
+[0.581s] -- Detecting CXX compile features - done
+[0.587s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.764s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.843s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.898s] -- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)
+[0.977s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.985s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.998s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.019s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.046s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.115s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.120s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.246s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.281s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.337s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.353s] -- Looking for pthread.h
+[1.441s] -- Looking for pthread.h - found
+[1.442s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.524s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.525s] -- Found Threads: TRUE  
+[1.683s] -- Configuring done
+[1.689s] -- Generating done
+[1.691s] -- Build files have been written to: /repo/ws/build/drone_sim
+[1.699s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /repo/ws/src/drone_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install
+[1.702s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /repo/ws/build/drone_sim -- -j4 -l4
+[1.747s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /repo/ws/build/drone_sim -- -j4 -l4
+[1.758s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /repo/ws/build/drone_sim
+[1.765s] -- Install configuration: ""
+[1.766s] -- Execute custom install script
+[1.767s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_2.sdf
+[1.776s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_3.sdf
+[1.785s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_4.sdf
+[1.794s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model.config
+[1.803s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model.sdf
+[1.812s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/1.png
+[1.822s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/2.png
+[1.832s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/3.png
+[1.842s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/4.png
+[1.851s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/5.png
+[1.860s] -- Symlinking: /repo/ws/install/share/drone_sim/models/simple_drone/model.sdf
+[1.869s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_2.sdf
+[1.878s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_3.sdf
+[1.887s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_4.sdf
+[1.896s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model.config
+[1.905s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model.sdf
+[1.915s] -- Symlinking: /repo/ws/install/share/drone_sim/worlds/empty.world
+[1.924s] -- Symlinking: /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py
+[1.934s] -- Symlinking: /repo/ws/install/share/ament_index/resource_index/package_run_dependencies/drone_sim
+[1.944s] -- Symlinking: /repo/ws/install/share/ament_index/resource_index/parent_prefix_path/drone_sim
+[1.953s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.sh
+[1.962s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.dsv
+[1.971s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/path.sh
+[1.980s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/path.dsv
+[1.989s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.bash
+[1.998s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.sh
+[2.008s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.zsh
+[2.017s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.dsv
+[2.026s] -- Symlinking: /repo/ws/install/share/drone_sim/package.dsv
+[2.036s] -- Symlinking: /repo/ws/install/share/ament_index/resource_index/packages/drone_sim
+[2.046s] -- Symlinking: /repo/ws/install/share/drone_sim/cmake/drone_simConfig.cmake
+[2.055s] -- Symlinking: /repo/ws/install/share/drone_sim/cmake/drone_simConfig-version.cmake
+[2.065s] -- Symlinking: /repo/ws/install/share/drone_sim/package.xml
+[2.077s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /repo/ws/build/drone_sim

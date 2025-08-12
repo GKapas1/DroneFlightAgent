@@ -65,7 +65,7 @@ def generate_launch_description():
     imu_bridge = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
-        arguments=['/drone/imu_data@sensor_msgs/msg/Imu[gz.msgs.IMU]'],
+        arguments=['/drone/imu_data@sensor_msgs/msg/Imu@gz.msgs.IMU'],
         output='screen'
     )
     delayed_bridge = TimerAction(period=3.0, actions=[imu_bridge])
