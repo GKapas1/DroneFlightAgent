@@ -25,14 +25,15 @@ This image includes:
 
 ## 4) Run the container
 
-### Headless //Not working
+### Headless
 
 ```bash
-docker run --rm -it \
+sudo docker run --rm -it \
+  --gpus all \
   --network host --ipc host \
   -e GZ_GUI=0 \
-  -e RMW_IMPLEMENTATION=rmw_fastrtps_cpp \
-  -v $PWD:/repo \
+  -e NVIDIA_DRIVER_CAPABILITIES=compute,utility \
+  -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
   fire-drone:humble-fortress
 ```

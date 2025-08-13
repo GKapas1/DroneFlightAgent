@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.000499] (drone_sim) JobQueued: {'identifier': 'drone_sim', 'dependencies': OrderedDict()}
+[0.000563] (drone_sim) JobStarted: {'identifier': 'drone_sim'}
+[0.012059] (drone_sim) JobProgress: {'identifier': 'drone_sim', 'progress': 'cmake'}
+[0.013125] (drone_sim) Command: {'cmd': ['/usr/bin/cmake', '/repo/ws/src/drone_sim', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/repo/ws/install'], 'cwd': '/repo/ws/build/drone_sim', 'env': OrderedDict([('HOSTNAME', 'dell'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/repo/ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/repo/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility,display'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('GZ_GUI', '0'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/repo/ws/install:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/repo/ws/build/drone_sim'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/repo/ws/install:/opt/ros/humble')]), 'shell': False}
+[0.083454] (drone_sim) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099046] (-) TimerEvent: {}
+[0.155242] (drone_sim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.164075] (drone_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199173] (-) TimerEvent: {}
+[0.259870] (drone_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.270692] (drone_sim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.270930] (drone_sim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.271353] (drone_sim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.275708] (drone_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299304] (-) TimerEvent: {}
+[0.380595] (drone_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.391869] (drone_sim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.393476] (drone_sim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.394084] (drone_sim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.398565] (drone_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399402] (-) TimerEvent: {}
+[0.499631] (-) TimerEvent: {}
+[0.593090] (drone_sim) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.599760] (-) TimerEvent: {}
+[0.676193] (drone_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.699852] (-) TimerEvent: {}
+[0.714849] (drone_sim) StdoutLine: {'line': b'-- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)\n'}
+[0.775142] (drone_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.782228] (drone_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.794332] (drone_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.799980] (-) TimerEvent: {}
+[0.810577] (drone_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.833167] (drone_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.893124] (drone_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.896755] (drone_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.900074] (-) TimerEvent: {}
+[1.000396] (-) TimerEvent: {}
+[1.010805] (drone_sim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.047780] (drone_sim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.100533] (-) TimerEvent: {}
+[1.107164] (drone_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.119928] (drone_sim) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.200733] (-) TimerEvent: {}
+[1.211288] (drone_sim) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.211687] (drone_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.299742] (drone_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.300822] (-) TimerEvent: {}
+[1.301152] (drone_sim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.400925] (-) TimerEvent: {}
+[1.446669] (drone_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.452609] (drone_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[1.454985] (drone_sim) StdoutLine: {'line': b'-- Build files have been written to: /repo/ws/build/drone_sim\n'}
+[1.463574] (drone_sim) CommandEnded: {'returncode': 0}
+[1.464285] (drone_sim) JobProgress: {'identifier': 'drone_sim', 'progress': 'build'}
+[1.465598] (drone_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/repo/ws/build/drone_sim', '--', '-j4', '-l4'], 'cwd': '/repo/ws/build/drone_sim', 'env': OrderedDict([('HOSTNAME', 'dell'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/repo/ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/repo/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility,display'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('GZ_GUI', '0'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/repo/ws/install:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/repo/ws/build/drone_sim'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/repo/ws/install:/opt/ros/humble')]), 'shell': False}
+[1.501078] (-) TimerEvent: {}
+[1.514346] (drone_sim) CommandEnded: {'returncode': 0}
+[1.515067] (drone_sim) JobProgress: {'identifier': 'drone_sim', 'progress': 'install'}
+[1.525263] (drone_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/repo/ws/build/drone_sim'], 'cwd': '/repo/ws/build/drone_sim', 'env': OrderedDict([('HOSTNAME', 'dell'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/repo/ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/repo/ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compute,utility,display'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('GZ_GUI', '0'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/repo/ws/install:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/repo/ws/build/drone_sim'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/repo/ws/install:/opt/ros/humble')]), 'shell': False}
+[1.534836] (drone_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.535356] (drone_sim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.536367] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_2.sdf\n'}
+[1.547191] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_3.sdf\n'}
+[1.557572] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_4.sdf\n'}
+[1.568431] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model.config\n'}
+[1.578394] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model.sdf\n'}
+[1.588685] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/1.png\n'}
+[1.598423] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/2.png\n'}
+[1.601173] (-) TimerEvent: {}
+[1.608281] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/3.png\n'}
+[1.618192] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/4.png\n'}
+[1.628289] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/5.png\n'}
+[1.639406] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/simple_drone/model.sdf\n'}
+[1.649605] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_2.sdf\n'}
+[1.659428] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_3.sdf\n'}
+[1.669293] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_4.sdf\n'}
+[1.679701] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model.config\n'}
+[1.689451] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model.sdf\n'}
+[1.699382] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/worlds/empty.world\n'}
+[1.701283] (-) TimerEvent: {}
+[1.709832] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py\n'}
+[1.719463] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/ament_index/resource_index/package_run_dependencies/drone_sim\n'}
+[1.729947] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/ament_index/resource_index/parent_prefix_path/drone_sim\n'}
+[1.740790] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.sh\n'}
+[1.751399] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.dsv\n'}
+[1.761838] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/environment/path.sh\n'}
+[1.772257] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/environment/path.dsv\n'}
+[1.785754] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/local_setup.bash\n'}
+[1.798328] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/local_setup.sh\n'}
+[1.801391] (-) TimerEvent: {}
+[1.811848] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/local_setup.zsh\n'}
+[1.826093] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/local_setup.dsv\n'}
+[1.838208] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/package.dsv\n'}
+[1.851634] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/ament_index/resource_index/packages/drone_sim\n'}
+[1.864230] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/cmake/drone_simConfig.cmake\n'}
+[1.877970] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/cmake/drone_simConfig-version.cmake\n'}
+[1.890585] (drone_sim) StdoutLine: {'line': b'-- Symlinking: /repo/ws/install/share/drone_sim/package.xml\n'}
+[1.901512] (-) TimerEvent: {}
+[1.904907] (drone_sim) CommandEnded: {'returncode': 0}
+[1.926982] (drone_sim) JobEnded: {'identifier': 'drone_sim', 'rc': 0}
+[1.927814] (-) EventReactorShutdown: {}
