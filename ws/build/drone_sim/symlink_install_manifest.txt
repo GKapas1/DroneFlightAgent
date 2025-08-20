@@ -15,6 +15,7 @@
 /repo/ws/install/share/drone_sim/models/sun/model.config
 /repo/ws/install/share/drone_sim/models/sun/model.sdf
 /repo/ws/install/share/drone_sim/worlds/empty.world
+/repo/ws/install/share/drone_sim/launch/px4_gz_bringup.launch.py
 /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py
 /repo/ws/install/share/ament_index/resource_index/package_run_dependencies/drone_sim
 /repo/ws/install/share/ament_index/resource_index/parent_prefix_path/drone_sim

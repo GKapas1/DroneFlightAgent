@@ -1,0 +1,2 @@
+Invoking command in '/repo/ws/build/px4': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /repo/ws/src/px4 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install
+Invoked command in '/repo/ws/build/px4' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /repo/ws/src/px4 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install

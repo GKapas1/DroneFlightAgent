@@ -1,0 +1,96 @@
+[0.014s] Invoking command in '/repo/ws/build/px4': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /repo/ws/src/px4 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install
+[0.024s] fatal: detected dubious ownership in repository at '/repo/ws/src/px4'
+[0.024s] To add an exception for this directory, call:
+[0.024s] 
+[0.025s] 	git config --global --add safe.directory /repo/ws/src/px4
+[0.025s] -- PX4 version:  (NOTFOUND.NOTFOUND.NOTFOUND)
+[0.025s] [31mCMake Error at CMakeLists.txt:123 (string):
+[0.025s]   string sub-command REPLACE requires at least four arguments.
+[0.025s] 
+[0.025s] [0m
+[0.048s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3") 
+[0.077s] -- PX4 config file: /repo/ws/src/px4/boards/px4/ros2/default.px4board
+[0.279s] -- PLATFORM ros2
+[0.279s] -- ROMFSROOT px4fmu_common
+[0.292s] -- PX4 config: px4_ros2_default
+[0.292s] -- PX4 platform: ros2
+[0.362s] -- The CXX compiler identification is GNU 11.4.0
+[0.371s] -- Detecting CXX compiler ABI info
+[0.465s] -- Detecting CXX compiler ABI info - done
+[0.475s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.475s] -- Detecting CXX compile features
+[0.476s] -- Detecting CXX compile features - done
+[0.481s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.657s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.738s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.788s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.859s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.867s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.880s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.901s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.929s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.005s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.010s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.137s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.177s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.241s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.256s] -- Looking for C++ include pthread.h
+[1.370s] -- Looking for C++ include pthread.h - found
+[1.370s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.477s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.478s] -- Found Threads: TRUE  
+[1.561s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.623s] -- The C compiler identification is GNU 11.4.0
+[1.636s] -- The ASM compiler identification is GNU
+[1.638s] -- Found assembler: /usr/bin/cc
+[1.643s] -- Detecting C compiler ABI info
+[1.723s] -- Detecting C compiler ABI info - done
+[1.732s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.732s] -- Detecting C compile features
+[1.733s] -- Detecting C compile features - done
+[1.735s] -- cmake build type: RelWithDebInfo
+[1.735s] -- ccache enabled (export CCACHE_DISABLE=1 to disable)
+[1.797s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[1.797s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[1.797s]   CMake.
+[1.797s] 
+[1.797s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[1.797s]   CMake that the project does not need compatibility with older versions.
+[1.797s] 
+[1.797s] 
+[1.826s] -- Configuring done
+[1.828s] -- Generating done
+[1.829s] -- Build files have been written to: /repo/ws/build/px4/googletest-download
+[1.885s] [ 11%] Creating directories for 'googletest'
+[1.965s] [ 22%] Performing download step (download, verify and extract) for 'googletest'
+[2.727s] -- googletest download command succeeded.  See also /repo/ws/build/px4/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download-*.log
+[2.748s] [ 33%] No update step for 'googletest'
+[2.774s] [ 44%] No patch step for 'googletest'
+[2.803s] [ 55%] No configure step for 'googletest'
+[2.833s] [ 66%] No build step for 'googletest'
+[2.863s] [ 77%] No install step for 'googletest'
+[2.893s] [ 88%] No test step for 'googletest'
+[2.922s] [100%] Completed 'googletest'
+[2.960s] [100%] Built target googletest
+[3.182s] -- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[3.310s] fatal: detected dubious ownership in repository at '/repo/ws/src/px4'
+[3.310s] To add an exception for this directory, call:
+[3.310s] 
+[3.310s] 	git config --global --add safe.directory /repo/ws/src/px4
+[3.442s] -- ROS_VERSION: 2
+[3.443s] -- AMENT_PREFIX_PATH: /opt/ros/humble
+[5.430s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.933s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.125s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.159s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[6.162s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.197s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[6.197s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.197s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.197s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[6.224s] -- Found PythonExtra: .so  
+[6.422s] [0mArchitecture:  amd64[0m
+[6.422s] [0m==> CPACK_INSTALL_PREFIX = @DEB_INSTALL_PREFIX@[0m
+[6.537s] -- Configuring incomplete, errors occurred!
+[6.537s] See also "/repo/ws/build/px4/CMakeFiles/CMakeOutput.log".
+[6.580s] Invoked command in '/repo/ws/build/px4' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /repo/ws/src/px4 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install

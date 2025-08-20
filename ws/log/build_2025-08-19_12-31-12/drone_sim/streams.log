@@ -1,0 +1,40 @@
+[0.016s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /repo/ws/build/drone_sim -- -j4 -l4
+[0.070s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /repo/ws/build/drone_sim -- -j4 -l4
+[0.082s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /repo/ws/build/drone_sim
+[0.090s] -- Install configuration: ""
+[0.091s] -- Execute custom install script
+[0.092s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_2.sdf
+[0.092s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_3.sdf
+[0.092s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_4.sdf
+[0.092s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/model.config
+[0.093s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/model.sdf
+[0.093s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/1.png
+[0.093s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/2.png
+[0.093s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/3.png
+[0.093s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/4.png
+[0.093s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/5.png
+[0.093s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/simple_drone/model.sdf
+[0.094s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/sun/model-1_2.sdf
+[0.094s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/sun/model-1_3.sdf
+[0.094s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/sun/model-1_4.sdf
+[0.094s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/sun/model.config
+[0.094s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/models/sun/model.sdf
+[0.095s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/worlds/empty.world
+[0.095s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/launch/px4_gz_bringup.launch.py
+[0.095s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py
+[0.095s] -- Up-to-date symlink: /repo/ws/install/share/ament_index/resource_index/package_run_dependencies/drone_sim
+[0.096s] -- Up-to-date symlink: /repo/ws/install/share/ament_index/resource_index/parent_prefix_path/drone_sim
+[0.096s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.sh
+[0.096s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.dsv
+[0.096s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/environment/path.sh
+[0.097s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/environment/path.dsv
+[0.097s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/local_setup.bash
+[0.097s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/local_setup.sh
+[0.097s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/local_setup.zsh
+[0.098s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/local_setup.dsv
+[0.098s] -- Symlinking: /repo/ws/install/share/drone_sim/package.dsv
+[0.108s] -- Up-to-date symlink: /repo/ws/install/share/ament_index/resource_index/packages/drone_sim
+[0.108s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/cmake/drone_simConfig.cmake
+[0.109s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/cmake/drone_simConfig-version.cmake
+[0.109s] -- Up-to-date symlink: /repo/ws/install/share/drone_sim/package.xml
+[0.111s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /repo/ws/build/drone_sim

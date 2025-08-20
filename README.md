@@ -12,7 +12,7 @@
 ## 3) Build the Docker image
 
 ```bash
-sudo docker build -t fire-drone:humble-fortress .
+sudo docker build -t fire-drone:humble-px4 .
 ```
 
 This image includes:
@@ -35,14 +35,13 @@ sudo docker run --rm -it \
   -e NVIDIA_DRIVER_CAPABILITIES=compute,utility \
   -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
-  fire-drone:humble-fortress
+  fire-drone:humble-px4
 ```
 
 ### With GUI
 
 ```bash
 xhost +local:root
-
 sudo docker run --rm -it \
   --gpus all \
   --network host --ipc host \
@@ -52,7 +51,7 @@ sudo docker run --rm -it \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
   -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
-  fire-drone:humble-fortress
+  fire-drone:humble-px4
 ```
 
 ---
