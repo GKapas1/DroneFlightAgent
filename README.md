@@ -148,20 +148,14 @@ Notes:
 
 You pre-spawn/include your model in the world/SDF and PX4 attaches to it.
 
-**Headless:**
 
 ```bash
-ros2 launch drone_sim px4_gz_bringup.launch.py \
-  headless:=true px4:=true \
-  px4_gz_model_name:=fire_drone
-```
-
-**GUI:**
-
-```bash
+# GUI run
 ros2 launch drone_sim px4_gz_bringup.launch.py \
   headless:=false px4:=true \
-  px4_gz_model_name:=fire_drone
+  px4_sim_model:=x500_custom \
+  px4_sys_autostart:=4001
+
 ```
 
 Notes:
