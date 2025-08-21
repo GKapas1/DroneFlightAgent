@@ -1,64 +1,85 @@
 # Fire Drone RL Sim — README
+
+This repo brings up **ROS 2 Humble + PX4 SITL + Gazebo (gz) Harmonic** with a clean path for **headless** or **GUI** runs. It supports both PX4 **spawn** and **bind** workflows for your drone model.
+
 ---
 
 ## 1) Prerequisites (host)
 
-* **Ubuntu 22.04** (recommended)
-* **Docker Engine** (not just Docker Desktop)
-* **NVIDIA GPU (optional, for HW accel)**
-  
+- **Ubuntu 22.04** (recommended)  
+- **Docker Engine** (not just Docker Desktop)  
+- **NVIDIA GPU (optional, for HW accel)**  
+
 ---
 
-## 3) Build the Docker image
+## 2) Build the Docker image
 
 ```bash
 sudo docker build -t fire-drone:humble-px4 .
-```
+````
 
-This image includes:
+The image includes:
 
 * ROS 2 Humble base
-* ros\_gz (Fortress) + `ros_gz_sim`, `ros_gz_bridge`, `ros_gz_interfaces`
-* X11/Qt libs needed for GUI (optional)
+* Gazebo (gz) Harmonic
+* `ros_gz` bridge packages (`ros_gz_sim`, `ros_gz_bridge`, `ros_gz_image`)
+* X11/Qt libs (for GUI runs)
+* Headless-safe defaults (`LIBGL_ALWAYS_SOFTWARE=1`, `GZ_GUI=0`)
 
 ---
 
-## 4) Run the container
+## 3) Run the container
 
-### Headless
+### Headless (default)
 
 ```bash
 sudo docker run --rm -it \
-  --gpus all \
-  --network host --ipc host \
+  --network host \
+  --shm-size=2g \
   -e GZ_GUI=0 \
-  -e NVIDIA_DRIVER_CAPABILITIES=compute,utility \
   -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
   fire-drone:humble-px4
 ```
 
-### With GUI
+### With GUI (software rendering)
 
 ```bash
 xhost +local:root
 sudo docker run --rm -it \
-  --gpus all \
-  --network host --ipc host \
+  --network host \
+  --shm-size=2g \
   -e DISPLAY=$DISPLAY \
   -e QT_X11_NO_MITSHM=1 \
-  -e NVIDIA_DRIVER_CAPABILITIES=graphics,compute,utility,display \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
   -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
   fire-drone:humble-px4
 ```
 
+### With GUI (NVIDIA accelerated)
+
+Prereqs: NVIDIA drivers + `nvidia-container-toolkit` installed.
+
+```bash
+xhost +local:root
+sudo docker run --rm -it \
+  --network host \
+  --gpus all \
+  --env NVIDIA_DRIVER_CAPABILITIES=all \
+  --shm-size=2g \
+  -e DISPLAY=$DISPLAY \
+  -e QT_X11_NO_MITSHM=1 \
+  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+  -v /dev/dri:/dev/dri \
+  -v $HOME/DroneFlightAgent/ws:/repo/ws \
+  --name fire-drone-sim \
+  fire-drone:humble-px4
+```
+
 ---
 
-## 5) Build inside the container
-
-Once inside the container shell:
+## 4) Build inside the container
 
 ```bash
 source /opt/ros/humble/setup.bash
@@ -67,84 +88,144 @@ rm -rf build install log
 colcon build --symlink-install --merge-install
 source install/setup.bash
 ```
-```bash
-ros2 launch drone_sim spawn_drone.launch.py
-```
-or
-```bash
-ros2 launch drone_sim spawn_drone.launch.py headless:=false
-```
-For headless or GUI runs respectively. Headless mode launches with GUI too, known issue
-
-* Starts **Gazebo Fortress**
-* Spawns `simple_drone` at (0, 0, 0.5).
-* Starts a **ros\_gz\_bridge** for the IMU topic.
 
 ---
 
-## 6) Inspect topics (IMU, clock, etc.)
+## 5) Launch the sim
 
-Open another terminal **to the same container**:
+> The launch file supports **headless & GUI** and **spawn vs bind** model selection.
+
+### Headless (default)
+
+```bash
+ros2 launch drone_sim px4_gz_bringup.launch.py headless:=true px4:=true
+```
+
+### With GUI
+
+```bash
+ros2 launch drone_sim px4_gz_bringup.launch.py headless:=false px4:=true
+```
+
+This will:
+
+* Start **Gazebo Harmonic (gz)**
+* Start **PX4 SITL** with the gz bridge
+* **Spawn** the stock `x500` by default (see below to switch modes)
+
+---
+
+## 6) Choosing how PX4 finds your drone
+
+PX4 supports two patterns when connecting to a model in Gazebo:
+
+### Option A — Spawn a model automatically (default)
+
+PX4 asks Gazebo to create a fresh model instance at runtime.
+
+**Headless:**
+
+```bash
+ros2 launch drone_sim px4_gz_bringup.launch.py \
+  headless:=true px4:=true \
+  px4_sim_model:=x500
+```
+
+**GUI:**
+
+```bash
+ros2 launch drone_sim px4_gz_bringup.launch.py \
+  headless:=false px4:=true \
+  px4_sim_model:=x500
+```
+
+Notes:
+
+* The spawned entity will appear as `x500_0` in Gazebo.
+* Use this for quick tests or when using PX4’s stock models.
+
+### Option B — Bind to an existing model in the world
+
+You pre-spawn/include your model in the world/SDF and PX4 attaches to it.
+
+**Headless:**
+
+```bash
+ros2 launch drone_sim px4_gz_bringup.launch.py \
+  headless:=true px4:=true \
+  px4_gz_model_name:=fire_drone
+```
+
+**GUI:**
+
+```bash
+ros2 launch drone_sim px4_gz_bringup.launch.py \
+  headless:=false px4:=true \
+  px4_gz_model_name:=fire_drone
+```
+
+Notes:
+
+* Ensure your world/SDF contains `<model name="fire_drone">…</model>`.
+* When `px4_gz_model_name` is set, PX4 **will not** spawn a model — it binds to the one you named.
+* If you set **both** `px4_gz_model_name` and `px4_sim_model`, PX4 prefers **bind** and ignores spawn.
+
+---
+
+## 7) Sanity checks & debugging
+
+Inside the container after launching:
+
+```bash
+# Confirm Gazebo (gz) is available
+gz --version
+
+# Check world services; should include /world/<name>/create
+gz service -l | grep /world
+
+# List models in the world (after PX4 starts)
+gz model --list
+
+# ROS topics
+ros2 topic list
+ros2 topic echo /clock
+# Example IMU topic (adjust to your model):
+ros2 topic echo /x500_0/imu  # or /fire_drone/imu when binding to fire_drone
+```
+
+If PX4 logs show `Service call timed out`, it usually means:
+
+* Gazebo wasn’t fully running yet (relaunch; the launch file already delays PX4 by \~6s), or
+* The model path is missing — verify `GZ_SIM_RESOURCE_PATH` contains your package `models/` and PX4’s `Tools/simulation/gz/models/`.
+
+---
+
+## 8) Useful dev commands
+
+Rebuild a single package:
+
+```bash
+colcon build --symlink-install --merge-install --packages-select drone_sim
+source install/setup.bash
+```
+
+Open another shell in the running container:
 
 ```bash
 docker exec -it fire-drone-sim bash
-source /opt/ros/humble/setup.bash
-source /repo/ws/install/setup.bash
 ```
 
-Now:
+Stop the container (from host):
 
-* List ROS topics:
-
-  ```bash
-  ros2 topic list
-  ```
-* IMU (if your SDF advertises `/drone/imu_data`):
-
-  ```bash
-  ros2 topic echo /drone/imu_data
-  ```
-* Sim time:
-
-  ```bash
-  ros2 topic echo /clock
-  ```
-
-## 7) Useful commands
-
-* Rebuild quickly:
-
-  ```bash
-  colcon build --symlink-install --merge-install --packages-select drone_sim
-  source install/setup.bash
-  ```
-
-* Check Gazebo entities:
-
-  ```bash
-  ign topic -l
-  ign service -l
-  ```
-
-* Open another shell in running container:
-
-  ```bash
-  docker exec -it fire-drone-sim bash
-  ```
-
-* Stop the container (from host):
-
-  ```bash
-  docker stop fire-drone-sim
-  ```
+```bash
+docker stop fire-drone-sim
+```
 
 ---
 
-## 8) Next steps
+## 9) Next steps
 
-* Fix launch to be able to run headless
-* Add more sensors (LiDAR, altimeter, GPS, thermal/RGB).
-* Publish observations on ROS topics tailored for your RL loop.
-* Add training scripts that subscribe to obs topics and publish velocity/attitude commands back to Gazebo.
+* Add sensors (LiDAR, radar, barometer, IMU, RGB/thermal cameras) to your model.
+* Publish RL observation topics and wire up your **MAVSDK** controller node.
+* Add curriculum & domain randomization toggles for training.
 
-That’s it—spin it up, confirm `/clock` and `/drone/imu_data` stream, and you’re ready to iterate.

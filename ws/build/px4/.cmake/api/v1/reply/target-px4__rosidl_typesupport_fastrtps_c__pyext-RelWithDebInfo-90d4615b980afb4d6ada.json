@@ -1,0 +1,611 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "platforms/ros2/rosidl_generator_py/px4/px4_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"ament_execute_extensions",
+			"rosidl_generate_interfaces",
+			"link_directories",
+			"target_link_libraries",
+			"ament_target_dependencies",
+			"add_dependencies",
+			"set_target_properties",
+			"set_properties",
+			"add_definitions",
+			"px4_add_common_flags",
+			"find_package",
+			"px4_os_add_flags",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"platforms/ros2/CMakeLists.txt",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake",
+			"cmake/px4_add_common_flags.cmake",
+			"/opt/ros/humble/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake",
+			"platforms/ros2/cmake/px4_impl_os.cmake",
+			"cmake/px4_config.cmake",
+			"cmake/kconfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 286,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 226,
+				"parent" : 4
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 360,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 246,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 260,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 262,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 145,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 276,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 151,
+				"parent" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 273,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 229,
+				"parent" : 4
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 239,
+				"parent" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 146,
+				"parent" : 16
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 330,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 6,
+				"line" : 194,
+				"parent" : 18
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 9,
+				"parent" : 20
+			},
+			{
+				"command" : 12,
+				"file" : 9,
+				"line" : 21,
+				"parent" : 21
+			},
+			{
+				"file" : 8,
+				"parent" : 22
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 41,
+				"parent" : 23
+			},
+			{
+				"file" : 7,
+				"parent" : 24
+			},
+			{
+				"command" : 10,
+				"file" : 7,
+				"line" : 25,
+				"parent" : 25
+			},
+			{
+				"command" : 13,
+				"file" : 4,
+				"line" : 331,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 10,
+				"line" : 91,
+				"parent" : 27
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 179,
+				"parent" : 6
+			},
+			{
+				"file" : 11,
+				"parent" : 29
+			},
+			{
+				"command" : 14,
+				"file" : 11,
+				"line" : 98,
+				"parent" : 30
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 180,
+				"parent" : 6
+			},
+			{
+				"file" : 12,
+				"parent" : 32
+			},
+			{
+				"command" : 14,
+				"file" : 12,
+				"line" : 235,
+				"parent" : 33
+			},
+			{
+				"command" : 14,
+				"file" : 6,
+				"line" : 175,
+				"parent" : 18
+			},
+			{
+				"command" : 14,
+				"file" : 10,
+				"line" : 97,
+				"parent" : 27
+			},
+			{
+				"command" : 14,
+				"file" : 4,
+				"line" : 362,
+				"parent" : 6
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 253,
+				"parent" : 4
+			},
+			{
+				"command" : 15,
+				"file" : 5,
+				"line" : 141,
+				"parent" : 10
+			},
+			{
+				"command" : 15,
+				"file" : 5,
+				"line" : 147,
+				"parent" : 12
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O2 -g -DNDEBUG -fPIC"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-Wextra"
+				},
+				{
+					"fragment" : "-std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 19,
+					"define" : "CONFIG_ARCH_BOARD_PX4_ROS2"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "RCUTILS_ENABLE_FAULT_INJECTION"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "ROS_PACKAGE_NAME=\"px4\""
+				},
+				{
+					"backtrace" : 19,
+					"define" : "__CUSTOM_FILE_IO__"
+				},
+				{
+					"backtrace" : 28,
+					"define" : "__PX4_POSIX"
+				},
+				{
+					"backtrace" : 28,
+					"define" : "__PX4_ROS2"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 28,
+					"define" : "noreturn_function=__attribute__((noreturn))"
+				},
+				{
+					"define" : "px4__rosidl_typesupport_fastrtps_c__pyext_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 31,
+					"path" : "/repo/ws/src/px4/boards/px4/ros2/src"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "/repo/ws/src/px4/platforms/ros2/src/px4/common/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/build/px4"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/build/px4/src/lib"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/platforms/ros2/src/px4/generic/generic/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/platforms/common"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/platforms/common/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/src"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/src/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/src/lib"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/src/lib/matrix"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/repo/ws/src/px4/src/modules"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "/repo/ws/src/px4/platforms/ros2/include"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "/repo/ws/build/px4/external/Install/include"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_generator_c"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_generator_py"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "/usr/include/python3.10"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_typesupport_fastrtps_c"
+				},
+				{
+					"backtrace" : 39,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 39,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_c"
+				},
+				{
+					"backtrace" : 39,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 40,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rmw"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rcutils"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/fastcdr"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_runtime_cpp"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_fastrtps_c"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "px4__rosidl_generator_c::@52f3d00f917c5026f070"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "px4__rosidl_typesupport_fastrtps_c::@52f3d00f917c5026f070"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "px4__rosidl_typesupport_c::@52f3d00f917c5026f070"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "px4__rosidl_generator_py::@52f3d00f917c5026f070"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "px4__py::@58b6b8240b98e6965555"
+		}
+	],
+	"id" : "px4__rosidl_typesupport_fastrtps_c__pyext::@52f3d00f917c5026f070",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-L/repo/ws/build/px4/external/Install/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/repo/ws/build/px4/external/Install/lib:/repo/ws/build/px4/platforms/ros2/rosidl_generator_py/px4:/repo/ws/build/px4/platforms/ros2:/opt/ros/humble/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "rosidl_generator_py/px4/libpx4__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpython3.10.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "libpx4__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "libpx4__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/opt/ros/humble/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "libpx4__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/humble/lib/libfastcdr.so.1.0.24",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/humble/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/humble/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/opt/ros/humble/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-rpath-link,/opt/ros/humble/lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "px4__rosidl_typesupport_fastrtps_c__pyext",
+	"nameOnDisk" : "px4_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so",
+	"paths" : 
+	{
+		"build" : "platforms/ros2",
+		"source" : "platforms/ros2"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_generator_py/px4/_px4_s.ep.rosidl_typesupport_fastrtps_c.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

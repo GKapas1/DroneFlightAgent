@@ -1,0 +1,1 @@
+/repo/ws/build/px4/platforms/ros2/rosidl_typesupport_fastrtps_cpp/px4/msg/detail/vehicle_local_position_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
