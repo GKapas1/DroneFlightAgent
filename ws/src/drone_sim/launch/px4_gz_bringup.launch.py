@@ -13,6 +13,7 @@ from launch.actions import (
 )
 from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 
 
 def generate_launch_description():
@@ -79,7 +80,7 @@ def generate_launch_description():
     # Start Gazebo (gz) directly (no Ignition)
     # -------------------------
     gazebo_headless = ExecuteProcess(
-        cmd=['gz', 'sim', '-r', '--headless-rendering', world_file],
+        cmd=['gz', 'sim', '-r', '-s', '--headless-rendering', world_file],
         output='screen',
         condition=IfCondition(headless)
     )
@@ -111,6 +112,36 @@ def generate_launch_description():
 
     # Give gz a moment to fully start so /world/*/create is ready
     delayed_px4 = TimerAction(period=6.0, actions=[px4_proc])
+    
+    # --- Bridges (Gazebo -> ROS 2) ---
+    bridges = Node(
+        package='ros_gz_bridge',
+        executable='parameter_bridge',
+        # map GZ transport types to ROS 2 messages
+        arguments=[
+            # IMU
+            '/x500/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
+            # Barometer (FluidPressure)
+            '/x500/baro@sensor_msgs/msg/FluidPressure@gz.msgs.FluidPressure',
+            # Front lidar as LaserScan
+            '/x500/lidar/front@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
+            # Side lidar as LaserScan
+            '/x500/lidar/side@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
+        ],
+        output='screen'
+    )
+
+    # Camera: use ros_gz_image (recommended) for robust image transport
+    img_bridge = Node(
+        package='ros_gz_image',
+        executable='image_bridge',
+        arguments=['/x500/camera/image'],
+        output='screen'
+    )
+
+    delayed_bridges = TimerAction(period=5.0, actions=[bridges, img_bridge])
+    
+    
 
     return LaunchDescription([
         headless_arg,
@@ -124,5 +155,6 @@ def generate_launch_description():
         gazebo_headless,
         gazebo_gui,
         delayed_px4,
+        delayed_bridges,
     ])
 
