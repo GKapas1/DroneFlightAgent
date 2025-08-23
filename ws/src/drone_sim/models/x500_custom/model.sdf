@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sdf version='1.9'>
-  <model name='x500'>
+  <model name='x500_custom'>
     <pose>0 0 .24 0 0 0</pose>
     <self_collide>false</self_collide>
     <static>false</static>
@@ -215,84 +215,94 @@
           </friction>
         </surface>
       </collision>
-	<!-- IMU: high-rate for stabilization / VIO -->
-	<sensor name="imu" type="imu">
-	  <always_on>true</always_on>
-	  <update_rate>200</update_rate>
-	  <topic>~/imu</topic>
-	  <imu>
-	    <!-- optional: add noise blocks per SDFormat if you want realism -->
-	  </imu>
-	</sensor>
+      <!-- IMU -->
+      <sensor name="imu" type="imu">
+        <always_on>true</always_on>
+        <update_rate>200</update_rate>
+        <topic>/x500_custom_0/imu</topic>
+        <imu/>
+      </sensor>
 
-	<!-- Barometer (air pressure) -->
-	<sensor name="baro" type="air_pressure">
-	  <always_on>true</always_on>
-	  <update_rate>50</update_rate>
-	  <topic>~/baro</topic>
-	  <air_pressure/>
-	</sensor>
+      <!-- Barometer (air pressure) -->
+      <sensor name="baro" type="air_pressure">
+        <always_on>true</always_on>
+        <topic>/x500_custom_0/baro</topic>
+        <update_rate>50</update_rate>
+        <air_pressure/>
+      </sensor>
 
-	<!-- Forward RGB camera for VIO (offscreen ok) -->
-	<sensor name="cam_front" type="camera">
-	  <always_on>true</always_on>
-	  <update_rate>30</update_rate>
-	  <topic>~/camera/image</topic>
-	  <camera>
-	    <image>
-	      <width>640</width><height>480</height>
-	      <format>R8G8B8</format>
-	    </image>
-	    <horizontal_fov>1.047</horizontal_fov> <!-- ~60 deg -->
-	    <clip><near>0.05</near><far>100</far></clip>
-	  </camera>
-	  <!-- Pose: +X forward; mount slightly ahead of CoM -->
-	  <pose>0.15 0.0 0.05 0 0 0</pose>
-	  <visualize>false</visualize>
-	</sensor>
+      <!-- Forward RGB camera -->
+      <sensor name="cam_front" type="camera">
+        <always_on>true</always_on>
+        <topic>/x500_custom_0/camera/image</topic>
+        <update_rate>30</update_rate>
+        <camera>
+          <image>
+            <width>640</width><height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <horizontal_fov>1.047</horizontal_fov>
+          <clip><near>0.05</near><far>100</far></clip>
+        </camera>
+        <pose>0.15 0.0 0.05 0 0 0</pose>
+        <visualize>false</visualize>
+      </sensor>
 
-	<!-- Forward LiDAR: 2D arc for obstacle avoidance -->
-	<sensor name="lidar_front" type="lidar">
-	  <always_on>true</always_on>
-	  <update_rate>15</update_rate>
-	  <topic>~/lidar/front</topic>
-	  <lidar>
-	    <scan>
-	      <horizontal>
-		<samples>720</samples>
-		<resolution>1</resolution>
-		<min_angle>-1.05</min_angle>  <!-- ~-60 deg -->
-		<max_angle> 1.05</max_angle>  <!--  +60 deg -->
-	      </horizontal>
-	    </scan>
-	    <range>
-	      <min>0.1</min><max>60.0</max><resolution>0.01</resolution>
-	    </range>
-	  </lidar>
-	  <pose>0.10 0.0 0.0 0 0 0</pose>
-	</sensor>
+      <!-- Forward GPU LiDAR (2D arc) -->
+      <sensor name="lidar_front" type="gpu_lidar">
+        <always_on>true</always_on>
+        <topic>/x500_custom_0/lidar/front</topic>
+        <update_rate>20</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>720</samples>
+              <resolution>1</resolution>
+              <min_angle>-1.05</min_angle>
+              <max_angle> 1.05</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.1</min><max>60.0</max><resolution>0.01</resolution>
+          </range>
+        </ray>
+        <pose>0.10 0.0 0.0 0 0 0</pose>
+        <visualize>false</visualize>
+      </sensor>
 
-	<!-- “Inward” side LiDAR: yaw -90° so +X faces right side (toward the building as you orbit) -->
-	<sensor name="lidar_side" type="lidar">
-	  <always_on>true</always_on>
-	  <update_rate>15</update_rate>
-	  <topic>~/lidar/side</topic>
-	  <lidar>
-	    <scan>
-	      <horizontal>
-		<samples>360</samples>
-		<resolution>1</resolution>
-		<min_angle>-0.79</min_angle>  <!-- narrow 90 deg -->
-		<max_angle> 0.79</max_angle>
-	      </horizontal>
-	    </scan>
-	    <range>
-	      <min>0.1</min><max>60.0</max><resolution>0.01</resolution>
-	    </range>
-	  </lidar>
-	  <!-- rotate about Z to face right (+Y is left in ENU), so -90 deg yaw -->
-	  <pose>0 0 0 0 0 -1.57079632679</pose>
-	</sensor>
+      <!-- Side (“inward”) GPU LiDAR, yaw -90° -->
+      <sensor name="lidar_side" type="gpu_lidar">
+        <always_on>true</always_on>
+        <topic>/x500_custom_0/lidar/side</topic>
+        <update_rate>20</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.79</min_angle>
+              <max_angle> 0.79</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.1</min><max>60.0</max><resolution>0.01</resolution>
+          </range>
+        </ray>
+        <pose>0 0 0 0 0 -1.57079632679</pose>
+        <visualize>false</visualize>
+      </sensor>
 
     </link>
     <link name="rotor_0">

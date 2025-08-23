@@ -73,7 +73,7 @@ src/lib/hysteresis/CMakeFiles/hysteresis.dir/hysteresis.cpp.o: src/lib/hysteresi
 src/lib/hysteresis/CMakeFiles/hysteresis.dir/hysteresis.cpp.o: /repo/ws/src/px4/src/lib/hysteresis/hysteresis.cpp
 src/lib/hysteresis/CMakeFiles/hysteresis.dir/hysteresis.cpp.o: src/lib/hysteresis/CMakeFiles/hysteresis.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/hysteresis/CMakeFiles/hysteresis.dir/hysteresis.cpp.o"
-	cd /repo/ws/build/px4/src/lib/hysteresis && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/hysteresis/CMakeFiles/hysteresis.dir/hysteresis.cpp.o -MF CMakeFiles/hysteresis.dir/hysteresis.cpp.o.d -o CMakeFiles/hysteresis.dir/hysteresis.cpp.o -c /repo/ws/src/px4/src/lib/hysteresis/hysteresis.cpp
+	cd /repo/ws/build/px4/src/lib/hysteresis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/hysteresis/CMakeFiles/hysteresis.dir/hysteresis.cpp.o -MF CMakeFiles/hysteresis.dir/hysteresis.cpp.o.d -o CMakeFiles/hysteresis.dir/hysteresis.cpp.o -c /repo/ws/src/px4/src/lib/hysteresis/hysteresis.cpp
 
 src/lib/hysteresis/CMakeFiles/hysteresis.dir/hysteresis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hysteresis.dir/hysteresis.cpp.i"

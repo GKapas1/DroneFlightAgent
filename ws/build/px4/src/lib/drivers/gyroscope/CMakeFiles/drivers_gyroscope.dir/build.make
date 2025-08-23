@@ -73,7 +73,7 @@ src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o: s
 src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o: /repo/ws/src/px4/src/lib/drivers/gyroscope/PX4Gyroscope.cpp
 src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o: src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o"
-	cd /repo/ws/build/px4/src/lib/drivers/gyroscope && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o -MF CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o.d -o CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o -c /repo/ws/src/px4/src/lib/drivers/gyroscope/PX4Gyroscope.cpp
+	cd /repo/ws/build/px4/src/lib/drivers/gyroscope && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o -MF CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o.d -o CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.o -c /repo/ws/src/px4/src/lib/drivers/gyroscope/PX4Gyroscope.cpp
 
 src/lib/drivers/gyroscope/CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers_gyroscope.dir/PX4Gyroscope.cpp.i"

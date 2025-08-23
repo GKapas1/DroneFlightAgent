@@ -73,7 +73,7 @@ src/lib/timesync/CMakeFiles/timesync.dir/Timesync.cpp.o: src/lib/timesync/CMakeF
 src/lib/timesync/CMakeFiles/timesync.dir/Timesync.cpp.o: /repo/ws/src/px4/src/lib/timesync/Timesync.cpp
 src/lib/timesync/CMakeFiles/timesync.dir/Timesync.cpp.o: src/lib/timesync/CMakeFiles/timesync.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/timesync/CMakeFiles/timesync.dir/Timesync.cpp.o"
-	cd /repo/ws/build/px4/src/lib/timesync && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/timesync/CMakeFiles/timesync.dir/Timesync.cpp.o -MF CMakeFiles/timesync.dir/Timesync.cpp.o.d -o CMakeFiles/timesync.dir/Timesync.cpp.o -c /repo/ws/src/px4/src/lib/timesync/Timesync.cpp
+	cd /repo/ws/build/px4/src/lib/timesync && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/timesync/CMakeFiles/timesync.dir/Timesync.cpp.o -MF CMakeFiles/timesync.dir/Timesync.cpp.o.d -o CMakeFiles/timesync.dir/Timesync.cpp.o -c /repo/ws/src/px4/src/lib/timesync/Timesync.cpp
 
 src/lib/timesync/CMakeFiles/timesync.dir/Timesync.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/timesync.dir/Timesync.cpp.i"

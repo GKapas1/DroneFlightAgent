@@ -73,7 +73,7 @@ src/lib/mixer_module/CMakeFiles/mixer_module.dir/actuator_test.cpp.o: src/lib/mi
 src/lib/mixer_module/CMakeFiles/mixer_module.dir/actuator_test.cpp.o: /repo/ws/src/px4/src/lib/mixer_module/actuator_test.cpp
 src/lib/mixer_module/CMakeFiles/mixer_module.dir/actuator_test.cpp.o: src/lib/mixer_module/CMakeFiles/mixer_module.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/mixer_module/CMakeFiles/mixer_module.dir/actuator_test.cpp.o"
-	cd /repo/ws/build/px4/src/lib/mixer_module && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/mixer_module/CMakeFiles/mixer_module.dir/actuator_test.cpp.o -MF CMakeFiles/mixer_module.dir/actuator_test.cpp.o.d -o CMakeFiles/mixer_module.dir/actuator_test.cpp.o -c /repo/ws/src/px4/src/lib/mixer_module/actuator_test.cpp
+	cd /repo/ws/build/px4/src/lib/mixer_module && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/mixer_module/CMakeFiles/mixer_module.dir/actuator_test.cpp.o -MF CMakeFiles/mixer_module.dir/actuator_test.cpp.o.d -o CMakeFiles/mixer_module.dir/actuator_test.cpp.o -c /repo/ws/src/px4/src/lib/mixer_module/actuator_test.cpp
 
 src/lib/mixer_module/CMakeFiles/mixer_module.dir/actuator_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mixer_module.dir/actuator_test.cpp.i"
@@ -87,7 +87,7 @@ src/lib/mixer_module/CMakeFiles/mixer_module.dir/mixer_module.cpp.o: src/lib/mix
 src/lib/mixer_module/CMakeFiles/mixer_module.dir/mixer_module.cpp.o: /repo/ws/src/px4/src/lib/mixer_module/mixer_module.cpp
 src/lib/mixer_module/CMakeFiles/mixer_module.dir/mixer_module.cpp.o: src/lib/mixer_module/CMakeFiles/mixer_module.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/lib/mixer_module/CMakeFiles/mixer_module.dir/mixer_module.cpp.o"
-	cd /repo/ws/build/px4/src/lib/mixer_module && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/mixer_module/CMakeFiles/mixer_module.dir/mixer_module.cpp.o -MF CMakeFiles/mixer_module.dir/mixer_module.cpp.o.d -o CMakeFiles/mixer_module.dir/mixer_module.cpp.o -c /repo/ws/src/px4/src/lib/mixer_module/mixer_module.cpp
+	cd /repo/ws/build/px4/src/lib/mixer_module && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/mixer_module/CMakeFiles/mixer_module.dir/mixer_module.cpp.o -MF CMakeFiles/mixer_module.dir/mixer_module.cpp.o.d -o CMakeFiles/mixer_module.dir/mixer_module.cpp.o -c /repo/ws/src/px4/src/lib/mixer_module/mixer_module.cpp
 
 src/lib/mixer_module/CMakeFiles/mixer_module.dir/mixer_module.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mixer_module.dir/mixer_module.cpp.i"

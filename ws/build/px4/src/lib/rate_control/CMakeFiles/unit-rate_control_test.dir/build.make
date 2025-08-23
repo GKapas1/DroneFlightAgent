@@ -73,7 +73,7 @@ src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp
 src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o: /repo/ws/src/px4/src/lib/rate_control/rate_control_test.cpp
 src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o: src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o"
-	cd /repo/ws/build/px4/src/lib/rate_control && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o -MF CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o.d -o CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o -c /repo/ws/src/px4/src/lib/rate_control/rate_control_test.cpp
+	cd /repo/ws/build/px4/src/lib/rate_control && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o -MF CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o.d -o CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.o -c /repo/ws/src/px4/src/lib/rate_control/rate_control_test.cpp
 
 src/lib/rate_control/CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-rate_control_test.dir/rate_control_test.cpp.i"

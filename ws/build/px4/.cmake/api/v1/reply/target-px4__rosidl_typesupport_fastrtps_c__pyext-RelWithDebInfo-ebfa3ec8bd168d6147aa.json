@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "platforms/ros2/rosidl_generator_py/px4/px4_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
+			"path" : "platforms/ros2/rosidl_generator_py/px4/px4_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
 		}
 	],
 	"backtrace" : 5,
@@ -264,14 +264,14 @@
 			{
 				"command" : 15,
 				"file" : 5,
-				"line" : 147,
-				"parent" : 12
+				"line" : 141,
+				"parent" : 10
 			},
 			{
 				"command" : 15,
 				"file" : 5,
-				"line" : 141,
-				"parent" : 10
+				"line" : 147,
+				"parent" : 12
 			}
 		]
 	},
@@ -330,7 +330,7 @@
 					"define" : "noreturn_function=__attribute__((noreturn))"
 				},
 				{
-					"define" : "px4__rosidl_typesupport_introspection_c__pyext_EXPORTS"
+					"define" : "px4__rosidl_typesupport_fastrtps_c__pyext_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -404,27 +404,32 @@
 					"path" : "/usr/include/python3.10"
 				},
 				{
-					"backtrace" : 39,
-					"path" : "/opt/ros/humble/include/rmw"
+					"backtrace" : 8,
+					"path" : "/usr/local/lib/python3.10/dist-packages/numpy/_core/include"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_typesupport_introspection_c"
+					"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_typesupport_fastrtps_c"
 				},
 				{
-					"backtrace" : 40,
+					"backtrace" : 39,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/rosidl_runtime_c"
 				},
 				{
-					"backtrace" : 40,
+					"backtrace" : 39,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/rosidl_typesupport_c"
 				},
 				{
-					"backtrace" : 40,
+					"backtrace" : 39,
 					"isSystem" : true,
 					"path" : "/opt/ros/humble/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 40,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rmw"
 				},
 				{
 					"backtrace" : 8,
@@ -434,7 +439,22 @@
 				{
 					"backtrace" : 8,
 					"isSystem" : true,
-					"path" : "/opt/ros/humble/include/rosidl_typesupport_introspection_c"
+					"path" : "/opt/ros/humble/include/fastcdr"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_runtime_cpp"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_fastrtps_c"
 				}
 			],
 			"language" : "C",
@@ -460,7 +480,7 @@
 		},
 		{
 			"backtrace" : 14,
-			"id" : "px4__rosidl_typesupport_introspection_c::@52f3d00f917c5026f070"
+			"id" : "px4__rosidl_typesupport_fastrtps_c::@52f3d00f917c5026f070"
 		},
 		{
 			"backtrace" : 15,
@@ -475,7 +495,7 @@
 			"id" : "px4__py::@58b6b8240b98e6965555"
 		}
 	],
-	"id" : "px4__rosidl_typesupport_introspection_c__pyext::@52f3d00f917c5026f070",
+	"id" : "px4__rosidl_typesupport_fastrtps_c__pyext::@52f3d00f917c5026f070",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -505,7 +525,7 @@
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "libpx4__rosidl_typesupport_introspection_c.so",
+				"fragment" : "libpx4__rosidl_typesupport_fastrtps_c.so",
 				"role" : "libraries"
 			},
 			{
@@ -528,6 +548,22 @@
 				"role" : "libraries"
 			},
 			{
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/humble/lib/libfastcdr.so.1.0.24",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/humble/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 11,
 				"fragment" : "/opt/ros/humble/lib/librosidl_runtime_c.so",
 				"role" : "libraries"
@@ -542,18 +578,14 @@
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_introspection_c.so",
-				"role" : "libraries"
-			},
-			{
 				"fragment" : "-Wl,-rpath-link,/opt/ros/humble/lib",
 				"role" : "libraries"
 			}
 		],
 		"language" : "C"
 	},
-	"name" : "px4__rosidl_typesupport_introspection_c__pyext",
-	"nameOnDisk" : "px4_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so",
+	"name" : "px4__rosidl_typesupport_fastrtps_c__pyext",
+	"nameOnDisk" : "px4_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so",
 	"paths" : 
 	{
 		"build" : "platforms/ros2",
@@ -575,7 +607,7 @@
 			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_generator_py/px4/_px4_s.ep.rosidl_typesupport_introspection_c.c",
+			"path" : "/repo/ws/build/px4/platforms/ros2/rosidl_generator_py/px4/_px4_s.ep.rosidl_typesupport_fastrtps_c.c",
 			"sourceGroupIndex" : 0
 		}
 	],

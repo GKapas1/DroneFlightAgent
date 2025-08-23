@@ -73,7 +73,7 @@ src/lib/bezier/CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o: src/lib/bezier/CMa
 src/lib/bezier/CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o: /repo/ws/src/px4/src/lib/bezier/BezierNTest.cpp
 src/lib/bezier/CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o: src/lib/bezier/CMakeFiles/unit-BezierN.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/bezier/CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o"
-	cd /repo/ws/build/px4/src/lib/bezier && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/bezier/CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o -MF CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o.d -o CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o -c /repo/ws/src/px4/src/lib/bezier/BezierNTest.cpp
+	cd /repo/ws/build/px4/src/lib/bezier && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/bezier/CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o -MF CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o.d -o CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.o -c /repo/ws/src/px4/src/lib/bezier/BezierNTest.cpp
 
 src/lib/bezier/CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-BezierN.dir/BezierNTest.cpp.i"

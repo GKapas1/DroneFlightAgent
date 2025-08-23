@@ -73,7 +73,7 @@ src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.
 src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o: /repo/ws/src/px4/src/lib/mathlib/math/test/MedianFilterTest.cpp
 src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o: src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o"
-	cd /repo/ws/build/px4/src/lib/mathlib && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o -MF CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o.d -o CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o -c /repo/ws/src/px4/src/lib/mathlib/math/test/MedianFilterTest.cpp
+	cd /repo/ws/build/px4/src/lib/mathlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o -MF CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o.d -o CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.o -c /repo/ws/src/px4/src/lib/mathlib/math/test/MedianFilterTest.cpp
 
 src/lib/mathlib/CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-MedianFilter.dir/math/test/MedianFilterTest.cpp.i"

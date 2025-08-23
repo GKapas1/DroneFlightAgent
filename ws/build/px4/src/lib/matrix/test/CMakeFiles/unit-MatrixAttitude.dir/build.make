@@ -73,7 +73,7 @@ src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o:
 src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o: /repo/ws/src/px4/src/lib/matrix/test/MatrixAttitudeTest.cpp
 src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o: src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o"
-	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o -MF CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o.d -o CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixAttitudeTest.cpp
+	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o -MF CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o.d -o CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixAttitudeTest.cpp
 
 src/lib/matrix/test/CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-MatrixAttitude.dir/MatrixAttitudeTest.cpp.i"

@@ -73,7 +73,7 @@ src/lib/tunes/CMakeFiles/tunes.dir/default_tunes.cpp.o: src/lib/tunes/CMakeFiles
 src/lib/tunes/CMakeFiles/tunes.dir/default_tunes.cpp.o: /repo/ws/src/px4/src/lib/tunes/default_tunes.cpp
 src/lib/tunes/CMakeFiles/tunes.dir/default_tunes.cpp.o: src/lib/tunes/CMakeFiles/tunes.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/tunes/CMakeFiles/tunes.dir/default_tunes.cpp.o"
-	cd /repo/ws/build/px4/src/lib/tunes && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/tunes/CMakeFiles/tunes.dir/default_tunes.cpp.o -MF CMakeFiles/tunes.dir/default_tunes.cpp.o.d -o CMakeFiles/tunes.dir/default_tunes.cpp.o -c /repo/ws/src/px4/src/lib/tunes/default_tunes.cpp
+	cd /repo/ws/build/px4/src/lib/tunes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/tunes/CMakeFiles/tunes.dir/default_tunes.cpp.o -MF CMakeFiles/tunes.dir/default_tunes.cpp.o.d -o CMakeFiles/tunes.dir/default_tunes.cpp.o -c /repo/ws/src/px4/src/lib/tunes/default_tunes.cpp
 
 src/lib/tunes/CMakeFiles/tunes.dir/default_tunes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tunes.dir/default_tunes.cpp.i"
@@ -87,7 +87,7 @@ src/lib/tunes/CMakeFiles/tunes.dir/tunes.cpp.o: src/lib/tunes/CMakeFiles/tunes.d
 src/lib/tunes/CMakeFiles/tunes.dir/tunes.cpp.o: /repo/ws/src/px4/src/lib/tunes/tunes.cpp
 src/lib/tunes/CMakeFiles/tunes.dir/tunes.cpp.o: src/lib/tunes/CMakeFiles/tunes.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/lib/tunes/CMakeFiles/tunes.dir/tunes.cpp.o"
-	cd /repo/ws/build/px4/src/lib/tunes && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/tunes/CMakeFiles/tunes.dir/tunes.cpp.o -MF CMakeFiles/tunes.dir/tunes.cpp.o.d -o CMakeFiles/tunes.dir/tunes.cpp.o -c /repo/ws/src/px4/src/lib/tunes/tunes.cpp
+	cd /repo/ws/build/px4/src/lib/tunes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/tunes/CMakeFiles/tunes.dir/tunes.cpp.o -MF CMakeFiles/tunes.dir/tunes.cpp.o.d -o CMakeFiles/tunes.dir/tunes.cpp.o -c /repo/ws/src/px4/src/lib/tunes/tunes.cpp
 
 src/lib/tunes/CMakeFiles/tunes.dir/tunes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tunes.dir/tunes.cpp.i"

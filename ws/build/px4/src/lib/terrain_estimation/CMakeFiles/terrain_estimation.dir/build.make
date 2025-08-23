@@ -73,7 +73,7 @@ src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/terrain_estimator.c
 src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o: /repo/ws/src/px4/src/lib/terrain_estimation/terrain_estimator.cpp
 src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o: src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o"
-	cd /repo/ws/build/px4/src/lib/terrain_estimation && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o -MF CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o.d -o CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o -c /repo/ws/src/px4/src/lib/terrain_estimation/terrain_estimator.cpp
+	cd /repo/ws/build/px4/src/lib/terrain_estimation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o -MF CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o.d -o CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.o -c /repo/ws/src/px4/src/lib/terrain_estimation/terrain_estimator.cpp
 
 src/lib/terrain_estimation/CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/terrain_estimation.dir/terrain_estimator.cpp.i"

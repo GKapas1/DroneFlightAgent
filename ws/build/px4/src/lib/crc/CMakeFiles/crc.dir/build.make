@@ -73,7 +73,7 @@ src/lib/crc/CMakeFiles/crc.dir/crc.c.o: src/lib/crc/CMakeFiles/crc.dir/flags.mak
 src/lib/crc/CMakeFiles/crc.dir/crc.c.o: /repo/ws/src/px4/src/lib/crc/crc.c
 src/lib/crc/CMakeFiles/crc.dir/crc.c.o: src/lib/crc/CMakeFiles/crc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/lib/crc/CMakeFiles/crc.dir/crc.c.o"
-	cd /repo/ws/build/px4/src/lib/crc && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/lib/crc/CMakeFiles/crc.dir/crc.c.o -MF CMakeFiles/crc.dir/crc.c.o.d -o CMakeFiles/crc.dir/crc.c.o -c /repo/ws/src/px4/src/lib/crc/crc.c
+	cd /repo/ws/build/px4/src/lib/crc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/lib/crc/CMakeFiles/crc.dir/crc.c.o -MF CMakeFiles/crc.dir/crc.c.o.d -o CMakeFiles/crc.dir/crc.c.o -c /repo/ws/src/px4/src/lib/crc/crc.c
 
 src/lib/crc/CMakeFiles/crc.dir/crc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/crc.dir/crc.c.i"

@@ -73,7 +73,7 @@ src/lib/battery/CMakeFiles/battery.dir/battery.cpp.o: src/lib/battery/CMakeFiles
 src/lib/battery/CMakeFiles/battery.dir/battery.cpp.o: /repo/ws/src/px4/src/lib/battery/battery.cpp
 src/lib/battery/CMakeFiles/battery.dir/battery.cpp.o: src/lib/battery/CMakeFiles/battery.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/battery/CMakeFiles/battery.dir/battery.cpp.o"
-	cd /repo/ws/build/px4/src/lib/battery && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/battery/CMakeFiles/battery.dir/battery.cpp.o -MF CMakeFiles/battery.dir/battery.cpp.o.d -o CMakeFiles/battery.dir/battery.cpp.o -c /repo/ws/src/px4/src/lib/battery/battery.cpp
+	cd /repo/ws/build/px4/src/lib/battery && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/battery/CMakeFiles/battery.dir/battery.cpp.o -MF CMakeFiles/battery.dir/battery.cpp.o.d -o CMakeFiles/battery.dir/battery.cpp.o -c /repo/ws/src/px4/src/lib/battery/battery.cpp
 
 src/lib/battery/CMakeFiles/battery.dir/battery.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/battery.dir/battery.cpp.i"

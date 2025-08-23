@@ -73,7 +73,7 @@ src/lib/weather_vane/CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o: src/lib/weath
 src/lib/weather_vane/CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o: /repo/ws/src/px4/src/lib/weather_vane/WeatherVane.cpp
 src/lib/weather_vane/CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o: src/lib/weather_vane/CMakeFiles/WeatherVane.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/weather_vane/CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o"
-	cd /repo/ws/build/px4/src/lib/weather_vane && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/weather_vane/CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o -MF CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o.d -o CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o -c /repo/ws/src/px4/src/lib/weather_vane/WeatherVane.cpp
+	cd /repo/ws/build/px4/src/lib/weather_vane && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/weather_vane/CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o -MF CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o.d -o CMakeFiles/WeatherVane.dir/WeatherVane.cpp.o -c /repo/ws/src/px4/src/lib/weather_vane/WeatherVane.cpp
 
 src/lib/weather_vane/CMakeFiles/WeatherVane.dir/WeatherVane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WeatherVane.dir/WeatherVane.cpp.i"

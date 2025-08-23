@@ -73,7 +73,7 @@ src/lib/drivers/device/CMakeFiles/drivers__device.dir/CDev.cpp.o: src/lib/driver
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/CDev.cpp.o: /repo/ws/src/px4/src/lib/drivers/device/CDev.cpp
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/CDev.cpp.o: src/lib/drivers/device/CMakeFiles/drivers__device.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/drivers/device/CMakeFiles/drivers__device.dir/CDev.cpp.o"
-	cd /repo/ws/build/px4/src/lib/drivers/device && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/device/CMakeFiles/drivers__device.dir/CDev.cpp.o -MF CMakeFiles/drivers__device.dir/CDev.cpp.o.d -o CMakeFiles/drivers__device.dir/CDev.cpp.o -c /repo/ws/src/px4/src/lib/drivers/device/CDev.cpp
+	cd /repo/ws/build/px4/src/lib/drivers/device && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/device/CMakeFiles/drivers__device.dir/CDev.cpp.o -MF CMakeFiles/drivers__device.dir/CDev.cpp.o.d -o CMakeFiles/drivers__device.dir/CDev.cpp.o -c /repo/ws/src/px4/src/lib/drivers/device/CDev.cpp
 
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/CDev.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__device.dir/CDev.cpp.i"
@@ -87,7 +87,7 @@ src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/I2C.cpp.o: src/lib/d
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/I2C.cpp.o: /repo/ws/src/px4/src/lib/drivers/device/posix/I2C.cpp
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/I2C.cpp.o: src/lib/drivers/device/CMakeFiles/drivers__device.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/I2C.cpp.o"
-	cd /repo/ws/build/px4/src/lib/drivers/device && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/I2C.cpp.o -MF CMakeFiles/drivers__device.dir/posix/I2C.cpp.o.d -o CMakeFiles/drivers__device.dir/posix/I2C.cpp.o -c /repo/ws/src/px4/src/lib/drivers/device/posix/I2C.cpp
+	cd /repo/ws/build/px4/src/lib/drivers/device && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/I2C.cpp.o -MF CMakeFiles/drivers__device.dir/posix/I2C.cpp.o.d -o CMakeFiles/drivers__device.dir/posix/I2C.cpp.o -c /repo/ws/src/px4/src/lib/drivers/device/posix/I2C.cpp
 
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/I2C.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__device.dir/posix/I2C.cpp.i"
@@ -101,7 +101,7 @@ src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/SPI.cpp.o: src/lib/d
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/SPI.cpp.o: /repo/ws/src/px4/src/lib/drivers/device/posix/SPI.cpp
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/SPI.cpp.o: src/lib/drivers/device/CMakeFiles/drivers__device.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/SPI.cpp.o"
-	cd /repo/ws/build/px4/src/lib/drivers/device && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/SPI.cpp.o -MF CMakeFiles/drivers__device.dir/posix/SPI.cpp.o.d -o CMakeFiles/drivers__device.dir/posix/SPI.cpp.o -c /repo/ws/src/px4/src/lib/drivers/device/posix/SPI.cpp
+	cd /repo/ws/build/px4/src/lib/drivers/device && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/SPI.cpp.o -MF CMakeFiles/drivers__device.dir/posix/SPI.cpp.o.d -o CMakeFiles/drivers__device.dir/posix/SPI.cpp.o -c /repo/ws/src/px4/src/lib/drivers/device/posix/SPI.cpp
 
 src/lib/drivers/device/CMakeFiles/drivers__device.dir/posix/SPI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__device.dir/posix/SPI.cpp.i"

@@ -73,7 +73,7 @@ src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o: src/lib
 src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o: /repo/ws/src/px4/src/lib/matrix/test/MatrixDcm2Test.cpp
 src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o: src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o"
-	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o -MF CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o.d -o CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixDcm2Test.cpp
+	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o -MF CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o.d -o CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixDcm2Test.cpp
 
 src/lib/matrix/test/CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-MatrixDcm2.dir/MatrixDcm2Test.cpp.i"

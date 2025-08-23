@@ -73,7 +73,7 @@ boards/px4/ros2/src/CMakeFiles/drivers_board.dir/init.cpp.o: boards/px4/ros2/src
 boards/px4/ros2/src/CMakeFiles/drivers_board.dir/init.cpp.o: /repo/ws/src/px4/boards/px4/ros2/src/init.cpp
 boards/px4/ros2/src/CMakeFiles/drivers_board.dir/init.cpp.o: boards/px4/ros2/src/CMakeFiles/drivers_board.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object boards/px4/ros2/src/CMakeFiles/drivers_board.dir/init.cpp.o"
-	cd /repo/ws/build/px4/boards/px4/ros2/src && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT boards/px4/ros2/src/CMakeFiles/drivers_board.dir/init.cpp.o -MF CMakeFiles/drivers_board.dir/init.cpp.o.d -o CMakeFiles/drivers_board.dir/init.cpp.o -c /repo/ws/src/px4/boards/px4/ros2/src/init.cpp
+	cd /repo/ws/build/px4/boards/px4/ros2/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT boards/px4/ros2/src/CMakeFiles/drivers_board.dir/init.cpp.o -MF CMakeFiles/drivers_board.dir/init.cpp.o.d -o CMakeFiles/drivers_board.dir/init.cpp.o -c /repo/ws/src/px4/boards/px4/ros2/src/init.cpp
 
 boards/px4/ros2/src/CMakeFiles/drivers_board.dir/init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers_board.dir/init.cpp.i"

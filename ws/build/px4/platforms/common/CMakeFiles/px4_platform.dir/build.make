@@ -73,7 +73,7 @@ platforms/common/CMakeFiles/px4_platform.dir/board_common.c.o: platforms/common/
 platforms/common/CMakeFiles/px4_platform.dir/board_common.c.o: /repo/ws/src/px4/platforms/common/board_common.c
 platforms/common/CMakeFiles/px4_platform.dir/board_common.c.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object platforms/common/CMakeFiles/px4_platform.dir/board_common.c.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/board_common.c.o -MF CMakeFiles/px4_platform.dir/board_common.c.o.d -o CMakeFiles/px4_platform.dir/board_common.c.o -c /repo/ws/src/px4/platforms/common/board_common.c
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/board_common.c.o -MF CMakeFiles/px4_platform.dir/board_common.c.o.d -o CMakeFiles/px4_platform.dir/board_common.c.o -c /repo/ws/src/px4/platforms/common/board_common.c
 
 platforms/common/CMakeFiles/px4_platform.dir/board_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_platform.dir/board_common.c.i"
@@ -87,7 +87,7 @@ platforms/common/CMakeFiles/px4_platform.dir/board_identity.c.o: platforms/commo
 platforms/common/CMakeFiles/px4_platform.dir/board_identity.c.o: /repo/ws/src/px4/platforms/common/board_identity.c
 platforms/common/CMakeFiles/px4_platform.dir/board_identity.c.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object platforms/common/CMakeFiles/px4_platform.dir/board_identity.c.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/board_identity.c.o -MF CMakeFiles/px4_platform.dir/board_identity.c.o.d -o CMakeFiles/px4_platform.dir/board_identity.c.o -c /repo/ws/src/px4/platforms/common/board_identity.c
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/board_identity.c.o -MF CMakeFiles/px4_platform.dir/board_identity.c.o.d -o CMakeFiles/px4_platform.dir/board_identity.c.o -c /repo/ws/src/px4/platforms/common/board_identity.c
 
 platforms/common/CMakeFiles/px4_platform.dir/board_identity.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_platform.dir/board_identity.c.i"
@@ -101,7 +101,7 @@ platforms/common/CMakeFiles/px4_platform.dir/events.cpp.o: platforms/common/CMak
 platforms/common/CMakeFiles/px4_platform.dir/events.cpp.o: /repo/ws/src/px4/platforms/common/events.cpp
 platforms/common/CMakeFiles/px4_platform.dir/events.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/events.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/events.cpp.o -MF CMakeFiles/px4_platform.dir/events.cpp.o.d -o CMakeFiles/px4_platform.dir/events.cpp.o -c /repo/ws/src/px4/platforms/common/events.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/events.cpp.o -MF CMakeFiles/px4_platform.dir/events.cpp.o.d -o CMakeFiles/px4_platform.dir/events.cpp.o -c /repo/ws/src/px4/platforms/common/events.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/events.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/events.cpp.i"
@@ -115,7 +115,7 @@ platforms/common/CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o: platf
 platforms/common/CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o: /repo/ws/src/px4/platforms/common/external_reset_lockout.cpp
 platforms/common/CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o -MF CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o.d -o CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o -c /repo/ws/src/px4/platforms/common/external_reset_lockout.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o -MF CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o.d -o CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.o -c /repo/ws/src/px4/platforms/common/external_reset_lockout.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/external_reset_lockout.cpp.i"
@@ -129,7 +129,7 @@ platforms/common/CMakeFiles/px4_platform.dir/i2c.cpp.o: platforms/common/CMakeFi
 platforms/common/CMakeFiles/px4_platform.dir/i2c.cpp.o: /repo/ws/src/px4/platforms/common/i2c.cpp
 platforms/common/CMakeFiles/px4_platform.dir/i2c.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/i2c.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/i2c.cpp.o -MF CMakeFiles/px4_platform.dir/i2c.cpp.o.d -o CMakeFiles/px4_platform.dir/i2c.cpp.o -c /repo/ws/src/px4/platforms/common/i2c.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/i2c.cpp.o -MF CMakeFiles/px4_platform.dir/i2c.cpp.o.d -o CMakeFiles/px4_platform.dir/i2c.cpp.o -c /repo/ws/src/px4/platforms/common/i2c.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/i2c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/i2c.cpp.i"
@@ -143,7 +143,7 @@ platforms/common/CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o: platforms/comm
 platforms/common/CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o: /repo/ws/src/px4/platforms/common/i2c_spi_buses.cpp
 platforms/common/CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o -MF CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o.d -o CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o -c /repo/ws/src/px4/platforms/common/i2c_spi_buses.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o -MF CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o.d -o CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.o -c /repo/ws/src/px4/platforms/common/i2c_spi_buses.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/i2c_spi_buses.cpp.i"
@@ -157,7 +157,7 @@ platforms/common/CMakeFiles/px4_platform.dir/module.cpp.o: platforms/common/CMak
 platforms/common/CMakeFiles/px4_platform.dir/module.cpp.o: /repo/ws/src/px4/platforms/common/module.cpp
 platforms/common/CMakeFiles/px4_platform.dir/module.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/module.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/module.cpp.o -MF CMakeFiles/px4_platform.dir/module.cpp.o.d -o CMakeFiles/px4_platform.dir/module.cpp.o -c /repo/ws/src/px4/platforms/common/module.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/module.cpp.o -MF CMakeFiles/px4_platform.dir/module.cpp.o.d -o CMakeFiles/px4_platform.dir/module.cpp.o -c /repo/ws/src/px4/platforms/common/module.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/module.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/module.cpp.i"
@@ -171,7 +171,7 @@ platforms/common/CMakeFiles/px4_platform.dir/px4_getopt.c.o: platforms/common/CM
 platforms/common/CMakeFiles/px4_platform.dir/px4_getopt.c.o: /repo/ws/src/px4/platforms/common/px4_getopt.c
 platforms/common/CMakeFiles/px4_platform.dir/px4_getopt.c.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object platforms/common/CMakeFiles/px4_platform.dir/px4_getopt.c.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_getopt.c.o -MF CMakeFiles/px4_platform.dir/px4_getopt.c.o.d -o CMakeFiles/px4_platform.dir/px4_getopt.c.o -c /repo/ws/src/px4/platforms/common/px4_getopt.c
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_getopt.c.o -MF CMakeFiles/px4_platform.dir/px4_getopt.c.o.d -o CMakeFiles/px4_platform.dir/px4_getopt.c.o -c /repo/ws/src/px4/platforms/common/px4_getopt.c
 
 platforms/common/CMakeFiles/px4_platform.dir/px4_getopt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/px4_platform.dir/px4_getopt.c.i"
@@ -185,7 +185,7 @@ platforms/common/CMakeFiles/px4_platform.dir/px4_cli.cpp.o: platforms/common/CMa
 platforms/common/CMakeFiles/px4_platform.dir/px4_cli.cpp.o: /repo/ws/src/px4/platforms/common/px4_cli.cpp
 platforms/common/CMakeFiles/px4_platform.dir/px4_cli.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/px4_cli.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_cli.cpp.o -MF CMakeFiles/px4_platform.dir/px4_cli.cpp.o.d -o CMakeFiles/px4_platform.dir/px4_cli.cpp.o -c /repo/ws/src/px4/platforms/common/px4_cli.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_cli.cpp.o -MF CMakeFiles/px4_platform.dir/px4_cli.cpp.o.d -o CMakeFiles/px4_platform.dir/px4_cli.cpp.o -c /repo/ws/src/px4/platforms/common/px4_cli.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/px4_cli.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/px4_cli.cpp.i"
@@ -199,7 +199,7 @@ platforms/common/CMakeFiles/px4_platform.dir/shutdown.cpp.o: platforms/common/CM
 platforms/common/CMakeFiles/px4_platform.dir/shutdown.cpp.o: /repo/ws/src/px4/platforms/common/shutdown.cpp
 platforms/common/CMakeFiles/px4_platform.dir/shutdown.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/shutdown.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/shutdown.cpp.o -MF CMakeFiles/px4_platform.dir/shutdown.cpp.o.d -o CMakeFiles/px4_platform.dir/shutdown.cpp.o -c /repo/ws/src/px4/platforms/common/shutdown.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/shutdown.cpp.o -MF CMakeFiles/px4_platform.dir/shutdown.cpp.o.d -o CMakeFiles/px4_platform.dir/shutdown.cpp.o -c /repo/ws/src/px4/platforms/common/shutdown.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/shutdown.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/shutdown.cpp.i"
@@ -213,7 +213,7 @@ platforms/common/CMakeFiles/px4_platform.dir/spi.cpp.o: platforms/common/CMakeFi
 platforms/common/CMakeFiles/px4_platform.dir/spi.cpp.o: /repo/ws/src/px4/platforms/common/spi.cpp
 platforms/common/CMakeFiles/px4_platform.dir/spi.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/spi.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/spi.cpp.o -MF CMakeFiles/px4_platform.dir/spi.cpp.o.d -o CMakeFiles/px4_platform.dir/spi.cpp.o -c /repo/ws/src/px4/platforms/common/spi.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/spi.cpp.o -MF CMakeFiles/px4_platform.dir/spi.cpp.o.d -o CMakeFiles/px4_platform.dir/spi.cpp.o -c /repo/ws/src/px4/platforms/common/spi.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/spi.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/spi.cpp.i"
@@ -227,7 +227,7 @@ platforms/common/CMakeFiles/px4_platform.dir/px4_log.cpp.o: platforms/common/CMa
 platforms/common/CMakeFiles/px4_platform.dir/px4_log.cpp.o: /repo/ws/src/px4/platforms/common/px4_log.cpp
 platforms/common/CMakeFiles/px4_platform.dir/px4_log.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/px4_log.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_log.cpp.o -MF CMakeFiles/px4_platform.dir/px4_log.cpp.o.d -o CMakeFiles/px4_platform.dir/px4_log.cpp.o -c /repo/ws/src/px4/platforms/common/px4_log.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_log.cpp.o -MF CMakeFiles/px4_platform.dir/px4_log.cpp.o.d -o CMakeFiles/px4_platform.dir/px4_log.cpp.o -c /repo/ws/src/px4/platforms/common/px4_log.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/px4_log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/px4_log.cpp.i"
@@ -241,7 +241,7 @@ platforms/common/CMakeFiles/px4_platform.dir/px4_log_history.cpp.o: platforms/co
 platforms/common/CMakeFiles/px4_platform.dir/px4_log_history.cpp.o: /repo/ws/src/px4/platforms/common/px4_log_history.cpp
 platforms/common/CMakeFiles/px4_platform.dir/px4_log_history.cpp.o: platforms/common/CMakeFiles/px4_platform.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object platforms/common/CMakeFiles/px4_platform.dir/px4_log_history.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_log_history.cpp.o -MF CMakeFiles/px4_platform.dir/px4_log_history.cpp.o.d -o CMakeFiles/px4_platform.dir/px4_log_history.cpp.o -c /repo/ws/src/px4/platforms/common/px4_log_history.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/px4_platform.dir/px4_log_history.cpp.o -MF CMakeFiles/px4_platform.dir/px4_log_history.cpp.o.d -o CMakeFiles/px4_platform.dir/px4_log_history.cpp.o -c /repo/ws/src/px4/platforms/common/px4_log_history.cpp
 
 platforms/common/CMakeFiles/px4_platform.dir/px4_log_history.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/px4_platform.dir/px4_log_history.cpp.i"

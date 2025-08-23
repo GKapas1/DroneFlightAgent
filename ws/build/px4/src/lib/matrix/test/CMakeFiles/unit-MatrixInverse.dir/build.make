@@ -73,7 +73,7 @@ src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o: s
 src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o: /repo/ws/src/px4/src/lib/matrix/test/MatrixInverseTest.cpp
 src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o: src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o"
-	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o -MF CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o.d -o CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixInverseTest.cpp
+	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o -MF CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o.d -o CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixInverseTest.cpp
 
 src/lib/matrix/test/CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-MatrixInverse.dir/MatrixInverseTest.cpp.i"

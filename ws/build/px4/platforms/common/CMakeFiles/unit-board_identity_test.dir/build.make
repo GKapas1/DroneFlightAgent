@@ -73,7 +73,7 @@ platforms/common/CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp
 platforms/common/CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o: /repo/ws/src/px4/platforms/common/board_identity_test.cpp
 platforms/common/CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o: platforms/common/CMakeFiles/unit-board_identity_test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object platforms/common/CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o"
-	cd /repo/ws/build/px4/platforms/common && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o -MF CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o.d -o CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o -c /repo/ws/src/px4/platforms/common/board_identity_test.cpp
+	cd /repo/ws/build/px4/platforms/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT platforms/common/CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o -MF CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o.d -o CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.o -c /repo/ws/src/px4/platforms/common/board_identity_test.cpp
 
 platforms/common/CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-board_identity_test.dir/board_identity_test.cpp.i"

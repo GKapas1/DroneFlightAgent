@@ -73,7 +73,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_addlast.c.o: platforms/
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_addlast.c.o: /repo/ws/src/px4/platforms/common/work_queue/dq_addlast.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_addlast.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_addlast.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_addlast.c.o -MF CMakeFiles/work_queue.dir/dq_addlast.c.o.d -o CMakeFiles/work_queue.dir/dq_addlast.c.o -c /repo/ws/src/px4/platforms/common/work_queue/dq_addlast.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_addlast.c.o -MF CMakeFiles/work_queue.dir/dq_addlast.c.o.d -o CMakeFiles/work_queue.dir/dq_addlast.c.o -c /repo/ws/src/px4/platforms/common/work_queue/dq_addlast.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_addlast.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/dq_addlast.c.i"
@@ -87,7 +87,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_rem.c.o: platforms/comm
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_rem.c.o: /repo/ws/src/px4/platforms/common/work_queue/dq_rem.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_rem.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_rem.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_rem.c.o -MF CMakeFiles/work_queue.dir/dq_rem.c.o.d -o CMakeFiles/work_queue.dir/dq_rem.c.o -c /repo/ws/src/px4/platforms/common/work_queue/dq_rem.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_rem.c.o -MF CMakeFiles/work_queue.dir/dq_rem.c.o.d -o CMakeFiles/work_queue.dir/dq_rem.c.o -c /repo/ws/src/px4/platforms/common/work_queue/dq_rem.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_rem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/dq_rem.c.i"
@@ -101,7 +101,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_remfirst.c.o: platforms
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_remfirst.c.o: /repo/ws/src/px4/platforms/common/work_queue/dq_remfirst.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_remfirst.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_remfirst.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_remfirst.c.o -MF CMakeFiles/work_queue.dir/dq_remfirst.c.o.d -o CMakeFiles/work_queue.dir/dq_remfirst.c.o -c /repo/ws/src/px4/platforms/common/work_queue/dq_remfirst.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_remfirst.c.o -MF CMakeFiles/work_queue.dir/dq_remfirst.c.o.d -o CMakeFiles/work_queue.dir/dq_remfirst.c.o -c /repo/ws/src/px4/platforms/common/work_queue/dq_remfirst.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/dq_remfirst.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/dq_remfirst.c.i"
@@ -115,7 +115,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_queue.c.o: platforms/c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_queue.c.o: /repo/ws/src/px4/platforms/common/work_queue/hrt_queue.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_queue.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_queue.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_queue.c.o -MF CMakeFiles/work_queue.dir/hrt_queue.c.o.d -o CMakeFiles/work_queue.dir/hrt_queue.c.o -c /repo/ws/src/px4/platforms/common/work_queue/hrt_queue.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_queue.c.o -MF CMakeFiles/work_queue.dir/hrt_queue.c.o.d -o CMakeFiles/work_queue.dir/hrt_queue.c.o -c /repo/ws/src/px4/platforms/common/work_queue/hrt_queue.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/hrt_queue.c.i"
@@ -129,7 +129,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_thread.c.o: platforms/
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_thread.c.o: /repo/ws/src/px4/platforms/common/work_queue/hrt_thread.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_thread.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_thread.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_thread.c.o -MF CMakeFiles/work_queue.dir/hrt_thread.c.o.d -o CMakeFiles/work_queue.dir/hrt_thread.c.o -c /repo/ws/src/px4/platforms/common/work_queue/hrt_thread.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_thread.c.o -MF CMakeFiles/work_queue.dir/hrt_thread.c.o.d -o CMakeFiles/work_queue.dir/hrt_thread.c.o -c /repo/ws/src/px4/platforms/common/work_queue/hrt_thread.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/hrt_thread.c.i"
@@ -143,7 +143,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_work_cancel.c.o: platf
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_work_cancel.c.o: /repo/ws/src/px4/platforms/common/work_queue/hrt_work_cancel.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_work_cancel.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_work_cancel.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_work_cancel.c.o -MF CMakeFiles/work_queue.dir/hrt_work_cancel.c.o.d -o CMakeFiles/work_queue.dir/hrt_work_cancel.c.o -c /repo/ws/src/px4/platforms/common/work_queue/hrt_work_cancel.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_work_cancel.c.o -MF CMakeFiles/work_queue.dir/hrt_work_cancel.c.o.d -o CMakeFiles/work_queue.dir/hrt_work_cancel.c.o -c /repo/ws/src/px4/platforms/common/work_queue/hrt_work_cancel.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/hrt_work_cancel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/hrt_work_cancel.c.i"
@@ -157,7 +157,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/queue.c.o: platforms/commo
 platforms/common/work_queue/CMakeFiles/work_queue.dir/queue.c.o: /repo/ws/src/px4/platforms/common/work_queue/queue.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/queue.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/queue.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/queue.c.o -MF CMakeFiles/work_queue.dir/queue.c.o.d -o CMakeFiles/work_queue.dir/queue.c.o -c /repo/ws/src/px4/platforms/common/work_queue/queue.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/queue.c.o -MF CMakeFiles/work_queue.dir/queue.c.o.d -o CMakeFiles/work_queue.dir/queue.c.o -c /repo/ws/src/px4/platforms/common/work_queue/queue.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/queue.c.i"
@@ -171,7 +171,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addafter.c.o: platforms
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addafter.c.o: /repo/ws/src/px4/platforms/common/work_queue/sq_addafter.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addafter.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addafter.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addafter.c.o -MF CMakeFiles/work_queue.dir/sq_addafter.c.o.d -o CMakeFiles/work_queue.dir/sq_addafter.c.o -c /repo/ws/src/px4/platforms/common/work_queue/sq_addafter.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addafter.c.o -MF CMakeFiles/work_queue.dir/sq_addafter.c.o.d -o CMakeFiles/work_queue.dir/sq_addafter.c.o -c /repo/ws/src/px4/platforms/common/work_queue/sq_addafter.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addafter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/sq_addafter.c.i"
@@ -185,7 +185,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addlast.c.o: platforms/
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addlast.c.o: /repo/ws/src/px4/platforms/common/work_queue/sq_addlast.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addlast.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addlast.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addlast.c.o -MF CMakeFiles/work_queue.dir/sq_addlast.c.o.d -o CMakeFiles/work_queue.dir/sq_addlast.c.o -c /repo/ws/src/px4/platforms/common/work_queue/sq_addlast.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addlast.c.o -MF CMakeFiles/work_queue.dir/sq_addlast.c.o.d -o CMakeFiles/work_queue.dir/sq_addlast.c.o -c /repo/ws/src/px4/platforms/common/work_queue/sq_addlast.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_addlast.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/sq_addlast.c.i"
@@ -199,7 +199,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_remfirst.c.o: platforms
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_remfirst.c.o: /repo/ws/src/px4/platforms/common/work_queue/sq_remfirst.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_remfirst.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_remfirst.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_remfirst.c.o -MF CMakeFiles/work_queue.dir/sq_remfirst.c.o.d -o CMakeFiles/work_queue.dir/sq_remfirst.c.o -c /repo/ws/src/px4/platforms/common/work_queue/sq_remfirst.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_remfirst.c.o -MF CMakeFiles/work_queue.dir/sq_remfirst.c.o.d -o CMakeFiles/work_queue.dir/sq_remfirst.c.o -c /repo/ws/src/px4/platforms/common/work_queue/sq_remfirst.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/sq_remfirst.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/sq_remfirst.c.i"
@@ -213,7 +213,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/work_cancel.c.o: platforms
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_cancel.c.o: /repo/ws/src/px4/platforms/common/work_queue/work_cancel.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_cancel.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/work_cancel.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_cancel.c.o -MF CMakeFiles/work_queue.dir/work_cancel.c.o.d -o CMakeFiles/work_queue.dir/work_cancel.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_cancel.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_cancel.c.o -MF CMakeFiles/work_queue.dir/work_cancel.c.o.d -o CMakeFiles/work_queue.dir/work_cancel.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_cancel.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_cancel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/work_cancel.c.i"
@@ -227,7 +227,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/work_lock.c.o: platforms/c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_lock.c.o: /repo/ws/src/px4/platforms/common/work_queue/work_lock.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_lock.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/work_lock.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_lock.c.o -MF CMakeFiles/work_queue.dir/work_lock.c.o.d -o CMakeFiles/work_queue.dir/work_lock.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_lock.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_lock.c.o -MF CMakeFiles/work_queue.dir/work_lock.c.o.d -o CMakeFiles/work_queue.dir/work_lock.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_lock.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_lock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/work_lock.c.i"
@@ -241,7 +241,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/work_queue.c.o: platforms/
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_queue.c.o: /repo/ws/src/px4/platforms/common/work_queue/work_queue.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_queue.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/work_queue.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_queue.c.o -MF CMakeFiles/work_queue.dir/work_queue.c.o.d -o CMakeFiles/work_queue.dir/work_queue.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_queue.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_queue.c.o -MF CMakeFiles/work_queue.dir/work_queue.c.o.d -o CMakeFiles/work_queue.dir/work_queue.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_queue.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/work_queue.c.i"
@@ -255,7 +255,7 @@ platforms/common/work_queue/CMakeFiles/work_queue.dir/work_thread.c.o: platforms
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_thread.c.o: /repo/ws/src/px4/platforms/common/work_queue/work_thread.c
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_thread.c.o: platforms/common/work_queue/CMakeFiles/work_queue.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object platforms/common/work_queue/CMakeFiles/work_queue.dir/work_thread.c.o"
-	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_thread.c.o -MF CMakeFiles/work_queue.dir/work_thread.c.o.d -o CMakeFiles/work_queue.dir/work_thread.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_thread.c
+	cd /repo/ws/build/px4/platforms/common/work_queue && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT platforms/common/work_queue/CMakeFiles/work_queue.dir/work_thread.c.o -MF CMakeFiles/work_queue.dir/work_thread.c.o.d -o CMakeFiles/work_queue.dir/work_thread.c.o -c /repo/ws/src/px4/platforms/common/work_queue/work_thread.c
 
 platforms/common/work_queue/CMakeFiles/work_queue.dir/work_thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/work_queue.dir/work_thread.c.i"

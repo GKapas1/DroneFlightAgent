@@ -73,7 +73,7 @@ src/lib/version/CMakeFiles/version.dir/version.c.o: src/lib/version/CMakeFiles/v
 src/lib/version/CMakeFiles/version.dir/version.c.o: /repo/ws/src/px4/src/lib/version/version.c
 src/lib/version/CMakeFiles/version.dir/version.c.o: src/lib/version/CMakeFiles/version.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/lib/version/CMakeFiles/version.dir/version.c.o"
-	cd /repo/ws/build/px4/src/lib/version && /usr/bin/ccache /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/lib/version/CMakeFiles/version.dir/version.c.o -MF CMakeFiles/version.dir/version.c.o.d -o CMakeFiles/version.dir/version.c.o -c /repo/ws/src/px4/src/lib/version/version.c
+	cd /repo/ws/build/px4/src/lib/version && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/lib/version/CMakeFiles/version.dir/version.c.o -MF CMakeFiles/version.dir/version.c.o.d -o CMakeFiles/version.dir/version.c.o -c /repo/ws/src/px4/src/lib/version/version.c
 
 src/lib/version/CMakeFiles/version.dir/version.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/version.dir/version.c.i"

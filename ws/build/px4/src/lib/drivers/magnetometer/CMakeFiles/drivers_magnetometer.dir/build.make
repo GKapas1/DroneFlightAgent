@@ -73,7 +73,7 @@ src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer
 src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o: /repo/ws/src/px4/src/lib/drivers/magnetometer/PX4Magnetometer.cpp
 src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o: src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o"
-	cd /repo/ws/build/px4/src/lib/drivers/magnetometer && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o -MF CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o.d -o CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o -c /repo/ws/src/px4/src/lib/drivers/magnetometer/PX4Magnetometer.cpp
+	cd /repo/ws/build/px4/src/lib/drivers/magnetometer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o -MF CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o.d -o CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.o -c /repo/ws/src/px4/src/lib/drivers/magnetometer/PX4Magnetometer.cpp
 
 src/lib/drivers/magnetometer/CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers_magnetometer.dir/PX4Magnetometer.cpp.i"

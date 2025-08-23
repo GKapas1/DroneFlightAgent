@@ -1,8 +1,9 @@
-# px4_gz_bringup.launch.py — Gazebo (gz) Garden + PX4 SITL bringup
-# Supports headless & GUI. Lets you choose PX4 spawn (PX4_SIM_MODEL)
-# or bind to an existing model (PX4_GZ_MODEL_NAME).
+# px4_gz_bringup.launch.py — Gazebo (gz) Garden/Harmonic + PX4 SITL bringup
+# Launches Gazebo via 'gz sim' (not ign), supports headless & GUI, then starts PX4 + bridges.
 
 import os
+from shutil import which
+
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import (
@@ -18,6 +19,13 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     # -------------------------
+    # Paths
+    # -------------------------
+    pkg_path = get_package_share_directory('drone_sim')
+    px4_root = os.environ.get('PX4_ROOT', '/repo/ws/src/px4')
+    px4_gz_root = os.path.join(px4_root, 'Tools', 'simulation', 'gz')
+
+    # -------------------------
     # Launch arguments
     # -------------------------
     headless = LaunchConfiguration('headless')
@@ -25,7 +33,15 @@ def generate_launch_description():
     px4_sim_model = LaunchConfiguration('px4_sim_model')
     px4_gz_model_name = LaunchConfiguration('px4_gz_model_name')
     px4_sys_autostart = LaunchConfiguration('px4_sys_autostart')
+    world_file = LaunchConfiguration('world_file')
 
+
+    world_arg = DeclareLaunchArgument(
+    'world_file',
+    default_value=os.path.join(pkg_path, 'worlds', 'empty.world'),
+
+    description='Path to world SDF'
+)
     headless_arg = DeclareLaunchArgument(
         'headless', default_value='true',
         description='Run without GUI ("true") or with GUI ("false")'
@@ -36,60 +52,70 @@ def generate_launch_description():
     )
     px4_sim_model_arg = DeclareLaunchArgument(
         'px4_sim_model', default_value='x500',
-        description='PX4 will spawn this model (e.g., x500). Leave empty to skip spawning.'
+        description='PX4 will spawn this model folder (e.g., x500, x500_custom).'
     )
     px4_gz_model_name_arg = DeclareLaunchArgument(
         'px4_gz_model_name', default_value='',
-        description='Existing model name in Gazebo to bind to (overrides spawn if set).'
+        description='Bind PX4 to an existing Gazebo model name (overrides spawn if set).'
     )
-    
     px4_sys_autostart_arg = DeclareLaunchArgument(
-    'px4_sys_autostart', default_value='4001',
-    description='PX4 airframe autostart ID (e.g., 4001 for x500).'
+        'px4_sys_autostart', default_value='4001',
+        description='PX4 airframe autostart ID (e.g., 4001 for X500).'
     )
 
     # -------------------------
-    # Paths
-    # -------------------------
-    pkg_path = get_package_share_directory('drone_sim')
-    px4_root = os.environ.get('PX4_ROOT', '/repo/ws/src/px4')
-    px4_gz_root = os.path.join(px4_root, 'Tools', 'simulation', 'gz')
-
-    # world file (change if you have a different one)
-    world_file = os.environ.get(
-        'DRONE_SIM_WORLD',
-        os.path.join(pkg_path, 'worlds', 'empty.world')
-    )
-
-    # -------------------------
-    # Gazebo resources & headless safety
+    # Gazebo resources
     # -------------------------
     set_gz_path = SetEnvironmentVariable(
         name='GZ_SIM_RESOURCE_PATH',
         value=":".join([
             os.path.join(pkg_path, 'models'),
-            os.path.join(px4_gz_root, 'models'),  # ensure PX4 models resolve
+            os.path.join(px4_gz_root, 'models'),
             px4_gz_root
         ])
     )
-    # headless container safety; can be overridden if you pass a GPU
-    soft_gl = SetEnvironmentVariable(name='LIBGL_ALWAYS_SOFTWARE', value='1')
-    disable_gui_flag = SetEnvironmentVariable(name='GZ_GUI', value='0')
+    # Always use Ogre2
+    render_engine = SetEnvironmentVariable(name='GZ_RENDER_ENGINE', value='ogre2')
 
     # -------------------------
-    # Start Gazebo (gz) directly (no Ignition)
+    # Headless/GUI env (apply offscreen vars ONLY when headless)
     # -------------------------
+    soft_gl = SetEnvironmentVariable(
+        name='LIBGL_ALWAYS_SOFTWARE', value='1', condition=IfCondition(headless)
+    )
+    disable_gui = SetEnvironmentVariable(
+        name='GZ_GUI', value='0', condition=IfCondition(headless)
+    )
+    qt_offscreen = SetEnvironmentVariable(
+        name='QT_QPA_PLATFORM', value='offscreen', condition=IfCondition(headless)
+    )
+
+    enable_gui = SetEnvironmentVariable(
+        name='GZ_GUI', value='1', condition=UnlessCondition(headless)
+    )
+    qt_xcb = SetEnvironmentVariable(
+        name='QT_QPA_PLATFORM', value='xcb', condition=UnlessCondition(headless)
+    )
+
+    # -------------------------
+    # Start Gazebo (force 'gz sim'; fall back to 'ign' only if gz missing)
+    # -------------------------
+    _sim_cmd = ['gz', 'sim'] if which('gz') else ['ign', 'gazebo']
+
+    VERBOSE = '4'   # '1'=error, '2'=warn, '3'=info, '4'=debug
+
     gazebo_headless = ExecuteProcess(
-        cmd=['gz', 'sim', '-r', '-s', '--headless-rendering', world_file],
+        cmd=_sim_cmd + ['-r', '-s', '--headless-rendering', '-v', VERBOSE, world_file],
         output='screen',
-        condition=IfCondition(headless)
+        condition=IfCondition(headless),
     )
 
     gazebo_gui = ExecuteProcess(
-        cmd=['gz', 'sim', '-r', world_file],
+        cmd=_sim_cmd + ['-r', '-v', VERBOSE, world_file],
         output='screen',
-        condition=UnlessCondition(headless)
-    )
+        condition=UnlessCondition(headless),
+)
+
 
     # -------------------------
     # PX4 SITL (gz/Garden bridge)
@@ -104,57 +130,50 @@ def generate_launch_description():
         output='screen',
         additional_env={
             'PX4_SYS_AUTOSTART': px4_sys_autostart,
-            'PX4_SIM_MODEL': px4_sim_model,          # spawn path
-            'PX4_GZ_MODEL_NAME': px4_gz_model_name,  # bind path (overrides spawn if set)
+            'PX4_SIM_MODEL': px4_sim_model,          # PX4 spawns this model folder
+            'PX4_GZ_MODEL_NAME': px4_gz_model_name,  # Or bind to an existing model
         },
         condition=IfCondition(px4)
     )
 
-    # Give gz a moment to fully start so /world/*/create is ready
+    # Give Gazebo time to start so /world/*/create exists
     delayed_px4 = TimerAction(period=6.0, actions=[px4_proc])
-    
-    # --- Bridges (Gazebo -> ROS 2) ---
+
+    # -------------------------
+    # Bridges (Gazebo -> ROS 2)
+    # -------------------------
     bridges = Node(
         package='ros_gz_bridge',
         executable='parameter_bridge',
-        # map GZ transport types to ROS 2 messages
         arguments=[
-            # IMU
-            '/x500/imu@sensor_msgs/msg/Imu@gz.msgs.IMU',
-            # Barometer (FluidPressure)
-            '/x500/baro@sensor_msgs/msg/FluidPressure@gz.msgs.FluidPressure',
-            # Front lidar as LaserScan
-            '/x500/lidar/front@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
-            # Side lidar as LaserScan
-            '/x500/lidar/side@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
+            '/x500_custom_0/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
+            '/x500_custom_0/baro@sensor_msgs/msg/FluidPressure[gz.msgs.FluidPressure',
+            '/x500_custom_0/lidar/front@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/x500_custom_0/lidar/side@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',
         ],
-        output='screen'
+        output='screen',
     )
 
-    # Camera: use ros_gz_image (recommended) for robust image transport
     img_bridge = Node(
         package='ros_gz_image',
         executable='image_bridge',
-        arguments=['/x500/camera/image'],
-        output='screen'
+        arguments=['/x500_custom_0/camera/image'],  # include leading slash
+        output='screen',
     )
 
+
     delayed_bridges = TimerAction(period=5.0, actions=[bridges, img_bridge])
-    
-    
 
     return LaunchDescription([
-        headless_arg,
-        px4_arg,
-        px4_sim_model_arg,
-        px4_gz_model_name_arg,
-        px4_sys_autostart_arg,
-        set_gz_path,
-        soft_gl,
-        disable_gui_flag,
-        gazebo_headless,
-        gazebo_gui,
-        delayed_px4,
-        delayed_bridges,
+        # Args
+        world_arg, headless_arg, px4_arg, px4_sim_model_arg, px4_gz_model_name_arg, px4_sys_autostart_arg,
+        # Env
+        set_gz_path, render_engine,
+        soft_gl, disable_gui, qt_offscreen,
+        enable_gui, qt_xcb,
+        # Gazebo
+        gazebo_headless, gazebo_gui,
+        # PX4 + bridges
+        delayed_px4, delayed_bridges,
     ])
-

@@ -61,9 +61,6 @@ BUILD_TESTING:BOOL=ON
 CCACHE:BOOL=ON
 
 //Path to a program.
-CCACHE_PROGRAM:FILEPATH=/usr/bin/ccache
-
-//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
@@ -485,7 +482,7 @@ VENDOR:STRING=px4
 _lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
 
 //Path to a file.
-_numpy_h:FILEPATH=/usr/include/python3.10/numpy/numpyconfig.h
+_numpy_h:FILEPATH=_numpy_h-NOTFOUND
 
 //Dependencies for the target
 adsb_LIB_DEPENDS:STATIC=general;geo;
@@ -853,6 +850,8 @@ yaml_DIR:PATH=/opt/ros/humble/cmake
 # INTERNAL cache entries
 ########################
 
+//ccache program
+CCACHE_PROGRAM:INTERNAL=
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR

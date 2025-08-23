@@ -73,7 +73,7 @@ src/lib/conversion/CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o: src/lib/conv
 src/lib/conversion/CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o: /repo/ws/src/px4/src/lib/conversion/RotationTest.cpp
 src/lib/conversion/CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o: src/lib/conversion/CMakeFiles/unit-Rotation.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/conversion/CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o"
-	cd /repo/ws/build/px4/src/lib/conversion && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/conversion/CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o -MF CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o.d -o CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o -c /repo/ws/src/px4/src/lib/conversion/RotationTest.cpp
+	cd /repo/ws/build/px4/src/lib/conversion && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/conversion/CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o -MF CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o.d -o CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o -c /repo/ws/src/px4/src/lib/conversion/RotationTest.cpp
 
 src/lib/conversion/CMakeFiles/unit-Rotation.dir/RotationTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-Rotation.dir/RotationTest.cpp.i"

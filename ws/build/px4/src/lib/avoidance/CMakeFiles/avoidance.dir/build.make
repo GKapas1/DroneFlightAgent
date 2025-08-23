@@ -73,7 +73,7 @@ src/lib/avoidance/CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o: src/lib/avoi
 src/lib/avoidance/CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o: /repo/ws/src/px4/src/lib/avoidance/ObstacleAvoidance.cpp
 src/lib/avoidance/CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o: src/lib/avoidance/CMakeFiles/avoidance.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/avoidance/CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o"
-	cd /repo/ws/build/px4/src/lib/avoidance && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/avoidance/CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o -MF CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o.d -o CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o -c /repo/ws/src/px4/src/lib/avoidance/ObstacleAvoidance.cpp
+	cd /repo/ws/build/px4/src/lib/avoidance && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/avoidance/CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o -MF CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o.d -o CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.o -c /repo/ws/src/px4/src/lib/avoidance/ObstacleAvoidance.cpp
 
 src/lib/avoidance/CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/avoidance.dir/ObstacleAvoidance.cpp.i"

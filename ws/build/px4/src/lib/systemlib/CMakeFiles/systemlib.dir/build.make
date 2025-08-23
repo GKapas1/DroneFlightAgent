@@ -73,7 +73,7 @@ src/lib/systemlib/CMakeFiles/systemlib.dir/mavlink_log.cpp.o: src/lib/systemlib/
 src/lib/systemlib/CMakeFiles/systemlib.dir/mavlink_log.cpp.o: /repo/ws/src/px4/src/lib/systemlib/mavlink_log.cpp
 src/lib/systemlib/CMakeFiles/systemlib.dir/mavlink_log.cpp.o: src/lib/systemlib/CMakeFiles/systemlib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/systemlib/CMakeFiles/systemlib.dir/mavlink_log.cpp.o"
-	cd /repo/ws/build/px4/src/lib/systemlib && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/systemlib/CMakeFiles/systemlib.dir/mavlink_log.cpp.o -MF CMakeFiles/systemlib.dir/mavlink_log.cpp.o.d -o CMakeFiles/systemlib.dir/mavlink_log.cpp.o -c /repo/ws/src/px4/src/lib/systemlib/mavlink_log.cpp
+	cd /repo/ws/build/px4/src/lib/systemlib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/systemlib/CMakeFiles/systemlib.dir/mavlink_log.cpp.o -MF CMakeFiles/systemlib.dir/mavlink_log.cpp.o.d -o CMakeFiles/systemlib.dir/mavlink_log.cpp.o -c /repo/ws/src/px4/src/lib/systemlib/mavlink_log.cpp
 
 src/lib/systemlib/CMakeFiles/systemlib.dir/mavlink_log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemlib.dir/mavlink_log.cpp.i"

@@ -73,7 +73,7 @@ src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o: src
 src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o: /repo/ws/src/px4/src/lib/matrix/test/MatrixUnwrapTest.cpp
 src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o: src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o"
-	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o -MF CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o.d -o CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixUnwrapTest.cpp
+	cd /repo/ws/build/px4/src/lib/matrix/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o -MF CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o.d -o CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.o -c /repo/ws/src/px4/src/lib/matrix/test/MatrixUnwrapTest.cpp
 
 src/lib/matrix/test/CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-MatrixUnwrap.dir/MatrixUnwrapTest.cpp.i"

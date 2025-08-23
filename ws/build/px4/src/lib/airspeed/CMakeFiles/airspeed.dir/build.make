@@ -73,7 +73,7 @@ src/lib/airspeed/CMakeFiles/airspeed.dir/airspeed.cpp.o: src/lib/airspeed/CMakeF
 src/lib/airspeed/CMakeFiles/airspeed.dir/airspeed.cpp.o: /repo/ws/src/px4/src/lib/airspeed/airspeed.cpp
 src/lib/airspeed/CMakeFiles/airspeed.dir/airspeed.cpp.o: src/lib/airspeed/CMakeFiles/airspeed.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/airspeed/CMakeFiles/airspeed.dir/airspeed.cpp.o"
-	cd /repo/ws/build/px4/src/lib/airspeed && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/airspeed/CMakeFiles/airspeed.dir/airspeed.cpp.o -MF CMakeFiles/airspeed.dir/airspeed.cpp.o.d -o CMakeFiles/airspeed.dir/airspeed.cpp.o -c /repo/ws/src/px4/src/lib/airspeed/airspeed.cpp
+	cd /repo/ws/build/px4/src/lib/airspeed && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/airspeed/CMakeFiles/airspeed.dir/airspeed.cpp.o -MF CMakeFiles/airspeed.dir/airspeed.cpp.o.d -o CMakeFiles/airspeed.dir/airspeed.cpp.o -c /repo/ws/src/px4/src/lib/airspeed/airspeed.cpp
 
 src/lib/airspeed/CMakeFiles/airspeed.dir/airspeed.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airspeed.dir/airspeed.cpp.i"

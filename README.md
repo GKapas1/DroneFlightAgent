@@ -30,13 +30,15 @@ The image includes:
 
 ## 3) Run the container
 
-### Headless (default)
+### Headless
 
 ```bash
 sudo docker run --rm -it \
   --network host \
-  --shm-size=2g \
+  --shm-size=4g \
   -e GZ_GUI=0 \
+  -e QT_QPA_PLATFORM=offscreen \
+  -e LIBGL_ALWAYS_SOFTWARE=1 \
   -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
   fire-drone:humble-px4
@@ -51,7 +53,9 @@ sudo docker run --rm -it \
   --shm-size=2g \
   -e DISPLAY=$DISPLAY \
   -e QT_X11_NO_MITSHM=1 \
-  -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+  -e QT_QPA_PLATFORM=xcb \
+  -e LIBGL_ALWAYS_SOFTWARE=1 \
+  -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
   -v $HOME/DroneFlightAgent/ws:/repo/ws \
   --name fire-drone-sim \
   fire-drone:humble-px4
@@ -87,6 +91,8 @@ cd /repo/ws
 rm -rf build install log
 colcon build --symlink-install --merge-install
 source install/setup.bash
+cd /repo/ws/src/px4
+make px4_sitl_default
 ```
 
 ---
@@ -95,16 +101,11 @@ source install/setup.bash
 
 > The launch file supports **headless & GUI** and **spawn vs bind** model selection.
 
-### Headless (default)
-
 ```bash
-ros2 launch drone_sim px4_gz_bringup.launch.py headless:=true px4:=true
-```
-
-### With GUI
-
-```bash
-ros2 launch drone_sim px4_gz_bringup.launch.py headless:=false px4:=true
+ros2 launch drone_sim px4_gz_bringup.launch.py \
+  headless:=false px4:=true \
+  px4_sim_model:=x500_custom \
+  px4_sys_autostart:=4001
 ```
 
 This will:
@@ -219,7 +220,6 @@ docker stop fire-drone-sim
 
 ## 9) Next steps
 
-* Add sensors (LiDAR, radar, barometer, IMU, RGB/thermal cameras) to your model.
 * Publish RL observation topics and wire up your **MAVSDK** controller node.
 * Add curriculum & domain randomization toggles for training.
 

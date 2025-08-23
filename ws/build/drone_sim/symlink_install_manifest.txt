@@ -31,6 +31,7 @@
 /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/4.png
 /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/5.png
 /repo/ws/install/share/drone_sim/worlds/empty.world
+/repo/ws/install/share/drone_sim/worlds/empty_sensors.world
 /repo/ws/install/share/drone_sim/launch/px4_gz_bringup.launch.py
 /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py
 /repo/ws/install/share/ament_index/resource_index/package_run_dependencies/drone_sim

@@ -73,7 +73,7 @@ src/lib/button/CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o: src/lib/bu
 src/lib/button/CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o: /repo/ws/src/px4/src/lib/button/ButtonPublisher.cpp
 src/lib/button/CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o: src/lib/button/CMakeFiles/button_publisher.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/button/CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o"
-	cd /repo/ws/build/px4/src/lib/button && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/button/CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o -MF CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o.d -o CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o -c /repo/ws/src/px4/src/lib/button/ButtonPublisher.cpp
+	cd /repo/ws/build/px4/src/lib/button && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/button/CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o -MF CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o.d -o CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.o -c /repo/ws/src/px4/src/lib/button/ButtonPublisher.cpp
 
 src/lib/button/CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/button_publisher.dir/ButtonPublisher.cpp.i"

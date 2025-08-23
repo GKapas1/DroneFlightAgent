@@ -73,7 +73,7 @@ src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/PX4Accelerome
 src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o: /repo/ws/src/px4/src/lib/drivers/accelerometer/PX4Accelerometer.cpp
 src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o: src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o"
-	cd /repo/ws/build/px4/src/lib/drivers/accelerometer && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o -MF CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o.d -o CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o -c /repo/ws/src/px4/src/lib/drivers/accelerometer/PX4Accelerometer.cpp
+	cd /repo/ws/build/px4/src/lib/drivers/accelerometer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o -MF CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o.d -o CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.o -c /repo/ws/src/px4/src/lib/drivers/accelerometer/PX4Accelerometer.cpp
 
 src/lib/drivers/accelerometer/CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers_accelerometer.dir/PX4Accelerometer.cpp.i"

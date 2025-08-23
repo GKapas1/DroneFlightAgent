@@ -73,7 +73,7 @@ src/lib/geo/CMakeFiles/unit-test_geo.dir/test_geo.cpp.o: src/lib/geo/CMakeFiles/
 src/lib/geo/CMakeFiles/unit-test_geo.dir/test_geo.cpp.o: /repo/ws/src/px4/src/lib/geo/test_geo.cpp
 src/lib/geo/CMakeFiles/unit-test_geo.dir/test_geo.cpp.o: src/lib/geo/CMakeFiles/unit-test_geo.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/geo/CMakeFiles/unit-test_geo.dir/test_geo.cpp.o"
-	cd /repo/ws/build/px4/src/lib/geo && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/geo/CMakeFiles/unit-test_geo.dir/test_geo.cpp.o -MF CMakeFiles/unit-test_geo.dir/test_geo.cpp.o.d -o CMakeFiles/unit-test_geo.dir/test_geo.cpp.o -c /repo/ws/src/px4/src/lib/geo/test_geo.cpp
+	cd /repo/ws/build/px4/src/lib/geo && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/geo/CMakeFiles/unit-test_geo.dir/test_geo.cpp.o -MF CMakeFiles/unit-test_geo.dir/test_geo.cpp.o.d -o CMakeFiles/unit-test_geo.dir/test_geo.cpp.o -c /repo/ws/src/px4/src/lib/geo/test_geo.cpp
 
 src/lib/geo/CMakeFiles/unit-test_geo.dir/test_geo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit-test_geo.dir/test_geo.cpp.i"

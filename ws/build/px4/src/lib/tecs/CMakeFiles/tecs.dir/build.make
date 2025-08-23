@@ -73,7 +73,7 @@ src/lib/tecs/CMakeFiles/tecs.dir/TECS.cpp.o: src/lib/tecs/CMakeFiles/tecs.dir/fl
 src/lib/tecs/CMakeFiles/tecs.dir/TECS.cpp.o: /repo/ws/src/px4/src/lib/tecs/TECS.cpp
 src/lib/tecs/CMakeFiles/tecs.dir/TECS.cpp.o: src/lib/tecs/CMakeFiles/tecs.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/repo/ws/build/px4/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/lib/tecs/CMakeFiles/tecs.dir/TECS.cpp.o"
-	cd /repo/ws/build/px4/src/lib/tecs && /usr/bin/ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/tecs/CMakeFiles/tecs.dir/TECS.cpp.o -MF CMakeFiles/tecs.dir/TECS.cpp.o.d -o CMakeFiles/tecs.dir/TECS.cpp.o -c /repo/ws/src/px4/src/lib/tecs/TECS.cpp
+	cd /repo/ws/build/px4/src/lib/tecs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/lib/tecs/CMakeFiles/tecs.dir/TECS.cpp.o -MF CMakeFiles/tecs.dir/TECS.cpp.o.d -o CMakeFiles/tecs.dir/TECS.cpp.o -c /repo/ws/src/px4/src/lib/tecs/TECS.cpp
 
 src/lib/tecs/CMakeFiles/tecs.dir/TECS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tecs.dir/TECS.cpp.i"
