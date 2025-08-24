@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_generator_c/px4/msg/detail/vehicle_global_position__struct.h

@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_generator_cpp/px4/msg/normalized_unsigned_setpoint.hpp

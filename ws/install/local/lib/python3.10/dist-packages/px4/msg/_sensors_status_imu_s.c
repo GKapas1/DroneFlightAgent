@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_generator_py/px4/msg/_sensors_status_imu_s.c

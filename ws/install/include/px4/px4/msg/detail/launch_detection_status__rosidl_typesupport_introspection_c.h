@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_typesupport_introspection_c/px4/msg/detail/launch_detection_status__rosidl_typesupport_introspection_c.h

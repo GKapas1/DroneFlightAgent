@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_generator_c/px4/msg/detail/manual_control_switches__functions.h

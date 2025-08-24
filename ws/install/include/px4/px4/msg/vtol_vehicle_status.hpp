@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_generator_cpp/px4/msg/vtol_vehicle_status.hpp
