@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/repo/ws/install/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/repo/ws/install/drone_sim/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/repo/ws/install/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/repo/ws/install/drone_sim/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/repo/ws/install/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/repo/ws/install/drone_sim/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/repo/ws/install/${destination}")
+      set(destination "/repo/ws/install/drone_sim/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -322,14 +322,14 @@ ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/repo/ws/build
 # install(FILES "/repo/ws/build/drone_sim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/drone_sim" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/repo/ws/build/drone_sim/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/drone_sim" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/drone_sim/environment")
-ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/drone_sim/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/drone_sim/environment")
+ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/drone_sim/environment")
 
 # install(FILES "/repo/ws/build/drone_sim/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/drone_sim/environment")
 ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/repo/ws/build/drone_sim/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/drone_sim/environment")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/drone_sim/environment")
-ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/drone_sim/environment")
+# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/drone_sim/environment")
+ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/drone_sim/environment")
 
 # install(FILES "/repo/ws/build/drone_sim/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/drone_sim/environment")
 ament_cmake_symlink_install_files("/repo/ws/src/drone_sim" FILES "/repo/ws/build/drone_sim/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/drone_sim/environment")

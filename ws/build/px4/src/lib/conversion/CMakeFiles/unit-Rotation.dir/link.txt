@@ -1,1 +1,0 @@
-/usr/bin/c++ -O2 -g -DNDEBUG CMakeFiles/unit-Rotation.dir/RotationTest.cpp.o -o ../../../unit-Rotation   -L/repo/ws/build/px4/external/Install/lib  -Wl,-rpath,/repo/ws/build/px4/external/Install/lib libconversion.a ../../../lib/libgtest_main.a ../../../lib/libgtest.a 

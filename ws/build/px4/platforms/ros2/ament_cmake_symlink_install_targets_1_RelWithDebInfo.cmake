@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/repo/ws/build/px4/platforms/ros2/rosidl_generator_py/px4/px4_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "px4__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/px4")
