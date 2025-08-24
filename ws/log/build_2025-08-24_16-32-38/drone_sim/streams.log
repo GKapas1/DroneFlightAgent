@@ -1,0 +1,87 @@
+[0.014s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /repo/ws/src/drone_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install
+[0.091s] -- The C compiler identification is GNU 13.3.0
+[0.167s] -- The CXX compiler identification is GNU 13.3.0
+[0.187s] -- Detecting C compiler ABI info
+[0.305s] -- Detecting C compiler ABI info - done
+[0.317s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.317s] -- Detecting C compile features
+[0.318s] -- Detecting C compile features - done
+[0.330s] -- Detecting CXX compiler ABI info
+[0.462s] -- Detecting CXX compiler ABI info - done
+[0.475s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.475s] -- Detecting CXX compile features
+[0.476s] -- Detecting CXX compile features - done
+[0.483s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.632s] -- Found Python3: /opt/venv/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.724s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.807s] -- Found ros_gz_sim: 1.0.16 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+[0.896s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.924s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.956s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.989s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.124s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.131s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.261s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.287s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.317s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.843s] -- Configuring done (1.8s)
+[1.851s] -- Generating done (0.0s)
+[1.854s] -- Build files have been written to: /repo/ws/build/drone_sim
+[1.865s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /repo/ws/src/drone_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/repo/ws/install
+[1.866s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /repo/ws/build/drone_sim -- -j4 -l4
+[1.926s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /repo/ws/build/drone_sim -- -j4 -l4
+[1.939s] Invoking command in '/repo/ws/build/drone_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /repo/ws/build/drone_sim
+[1.950s] -- Install configuration: ""
+[1.951s] -- Execute custom install script
+[1.952s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_2.sdf
+[1.965s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_3.sdf
+[1.977s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model-1_4.sdf
+[1.990s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model.config
+[2.002s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/model.sdf
+[2.015s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/1.png
+[2.027s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/2.png
+[2.040s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/3.png
+[2.053s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/4.png
+[2.065s] -- Symlinking: /repo/ws/install/share/drone_sim/models/ground_plane/thumbnails/5.png
+[2.077s] -- Symlinking: /repo/ws/install/share/drone_sim/models/simple_drone/model.sdf
+[2.090s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_2.sdf
+[2.102s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_3.sdf
+[2.114s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model-1_4.sdf
+[2.126s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model.config
+[2.140s] -- Symlinking: /repo/ws/install/share/drone_sim/models/sun/model.sdf
+[2.152s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/materials/textures/CF.png
+[2.164s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/materials/textures/nxp.png
+[2.175s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/materials/textures/rd.png
+[2.187s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/meshes/1345_prop_ccw.stl
+[2.199s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/meshes/1345_prop_cw.stl
+[2.211s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/meshes/5010Base.dae
+[2.223s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/meshes/5010Bell.dae
+[2.236s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/meshes/CF.png
+[2.249s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/meshes/NXP-HGD-CF.dae
+[2.261s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/model.config
+[2.273s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/model.sdf
+[2.286s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/1.png
+[2.298s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/2.png
+[2.310s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/3.png
+[2.322s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/4.png
+[2.335s] -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/5.png
+[2.348s] -- Symlinking: /repo/ws/install/share/drone_sim/worlds/empty.world
+[2.361s] -- Symlinking: /repo/ws/install/share/drone_sim/worlds/empty_sensors.world
+[2.373s] -- Symlinking: /repo/ws/install/share/drone_sim/launch/px4_gz_bringup.launch.py
+[2.385s] -- Symlinking: /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py
+[2.398s] -- Symlinking: /repo/ws/install/share/ament_index/resource_index/package_run_dependencies/drone_sim
+[2.410s] -- Symlinking: /repo/ws/install/share/ament_index/resource_index/parent_prefix_path/drone_sim
+[2.423s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.sh
+[2.435s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/ament_prefix_path.dsv
+[2.448s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/path.sh
+[2.461s] -- Symlinking: /repo/ws/install/share/drone_sim/environment/path.dsv
+[2.473s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.bash
+[2.485s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.sh
+[2.498s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.zsh
+[2.510s] -- Symlinking: /repo/ws/install/share/drone_sim/local_setup.dsv
+[2.522s] -- Symlinking: /repo/ws/install/share/drone_sim/package.dsv
+[2.535s] -- Symlinking: /repo/ws/install/share/ament_index/resource_index/packages/drone_sim
+[2.548s] -- Symlinking: /repo/ws/install/share/drone_sim/cmake/drone_simConfig.cmake
+[2.561s] -- Symlinking: /repo/ws/install/share/drone_sim/cmake/drone_simConfig-version.cmake
+[2.574s] -- Symlinking: /repo/ws/install/share/drone_sim/package.xml
+[2.588s] Invoked command in '/repo/ws/build/drone_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /repo/ws/build/drone_sim

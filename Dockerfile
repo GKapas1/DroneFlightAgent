@@ -1,7 +1,7 @@
 # -----------------------------------------------------------
-# Fire Drone RL Sim — ROS 2 Humble (ros-base) + Gazebo (Garden/Harmonic)
+# Fire Drone RL Sim — ROS 2 Jazzy (ros-base) + Gazebo (Harmonic)
 # -----------------------------------------------------------
-FROM ros:humble-ros-base-jammy
+FROM ros:jazzy-ros-base-noble
 
 SHELL ["/bin/bash", "-lc"]
 ENV DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC
@@ -10,35 +10,33 @@ ENV DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates curl wget gnupg lsb-release git \
     build-essential cmake ninja-build pkg-config \
-    python3 python3-dev python3-pip \
+    python3 python3-dev python3-pip python3-venv \
     python3-colcon-common-extensions python3-vcstool \
     software-properties-common \
  && rm -rf /var/lib/apt/lists/*
 
 # -----------------------------------------------------------
-# Gazebo Sim (Garden by default; set ARG to 'harmonic' for Harmonic)
+# Gazebo Sim (Harmonic only on Noble)
 # -----------------------------------------------------------
-ARG GZ_DISTRO=garden   # change to "harmonic" to use Gazebo Harmonic
+ARG GZ_DISTRO=harmonic
 RUN wget -qO /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg https://packages.osrfoundation.org/gazebo.gpg && \
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] \
       http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" \
       > /etc/apt/sources.list.d/gazebo-stable.list && \
     apt-get update && apt-get install -y --no-install-recommends \
       gz-${GZ_DISTRO} \
-      # rendering/runtime bits (GUI + headless rendering)
       libogre-next-dev ogre-next-tools libgl1-mesa-dri mesa-utils libvulkan1 \
-      # X11 libs (only needed if you’ll run the GUI from this container)
       libx11-6 libxkbcommon-x11-0 libxcb1 libxrandr2 libxrender1 libxi6 libxext6 libxfixes3 libxxf86vm1 \
     && rm -rf /var/lib/apt/lists/*
 
-# ROS ↔ Gazebo bridge utilities
+# ROS ↔ Gazebo bridge utilities (Jazzy + Harmonic)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ros-humble-ros-gz \
-    ros-humble-ros-gz-bridge \
-    ros-humble-ros-gz-image \
+    ros-jazzy-ros-gz \
+    ros-jazzy-ros-gz-bridge \
+    ros-jazzy-ros-gz-image \
  && rm -rf /var/lib/apt/lists/*
 
-# (Optional) PX4 build/runtime deps — trim/extend as you like
+# (Optional) PX4 build/runtime deps
 RUN apt-get update && apt-get install -y --no-install-recommends \
     zip unzip tar rsync \
     clang clang-tidy \
@@ -47,34 +45,53 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libeigen3-dev libopencv-dev protobuf-compiler \
  && rm -rf /var/lib/apt/lists/*
 
-# Helpful Python libs
-RUN python3 -m pip install --upgrade --no-cache-dir pip && \
-    pip3 install --no-cache-dir \
-      kconfiglib empy jinja2 numpy packaging pyserial toml pyyaml \
-      psutil jsonschema pandas future setuptools wheel pyros-genmsg pyros-genpy
+# -----------------------------------------------------------
+# Python: create venv + install helpers (avoid PEP 668)
+# -----------------------------------------------------------
+RUN python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --upgrade --no-cache-dir pip setuptools wheel && \
+    /opt/venv/bin/pip install --no-cache-dir \
+      kconfiglib "empy<4" jinja2 numpy packaging pyserial toml pyyaml \
+      psutil jsonschema pandas future \
+      lark pyros-genmsg pyros-genpy catkin_pkg rosdistro rospkg
+
+# Some PX4 helper scripts call /usr/bin/python3 directly — add a tiny shim
+RUN PIP_BREAK_SYSTEM_PACKAGES=1 python3 -m pip install --no-cache-dir \
+      pyros-genmsg pyros-genpy lark future jinja2 "empy<4"
+
+# Make the venv the default Python for all sessions and builds
+ENV VIRTUAL_ENV=/opt/venv
+ENV PATH="/opt/venv/bin:${PATH}"
+ENV COLCON_PYTHON_EXECUTABLE=/opt/venv/bin/python3
+ENV PX4_CMAKE_ARGS="-DPython3_EXECUTABLE=/opt/venv/bin/python3 -DPYTHON_EXECUTABLE=/opt/venv/bin/python3"
 
 # -----------------------------------------------------------
-# Environment for Gazebo plugins (Sensors system) + ROS
-# (No inline heredocs; just set both candidate plugin paths.)
+# Prepare workspace & clone PX4 (pinned)
 # -----------------------------------------------------------
-# Cover both Garden (gz-sim-7) and Harmonic (gz-sim-8); one will exist.
-ENV GZ_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins:/usr/lib/x86_64-linux-gnu/gz-sim-7/plugins:${GZ_PLUGIN_PATH}
+RUN mkdir -p /repo/ws/src && git config --system --add safe.directory '*'
+WORKDIR /repo/ws
+
+# Pin PX4 to a known-good tag for Noble/Jazzy/Harmonic
+ARG PX4_TAG=v1.16.0
+RUN git clone --depth 1 --branch ${PX4_TAG} https://github.com/PX4/PX4-Autopilot.git /repo/ws/src/px4 && \
+    cd /repo/ws/src/px4 && git submodule update --init --recursive
+
+# -----------------------------------------------------------
+# Gazebo environment (Harmonic, gz-sim-8)
+# -----------------------------------------------------------
+ENV GZ_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins
 ENV GZ_RENDER_ENGINE=ogre2
-
-# Optional: fail early if neither plugin dir exists (kept simple)
-RUN if [ ! -d /usr/lib/x86_64-linux-gnu/gz-sim-8/plugins ] && [ ! -d /usr/lib/x86_64-linux-gnu/gz-sim-7/plugins ]; then \
-      echo "ERROR: gz-sim plugin dir not found (did gz-${GZ_DISTRO} install?)"; exit 1; \
-    fi
+# Helpful default for finding models/worlds (workspace + PX4 models)
+ENV GZ_SIM_RESOURCE_PATH="/repo/ws/src:/repo/ws/install/share:/repo/ws/src/px4/Tools/simulation/gz/models:${GZ_SIM_RESOURCE_PATH}"
 
 # QoL: source ROS + your workspace + Gazebo env on shell
-RUN echo 'source /opt/ros/humble/setup.bash || true' >> /root/.bashrc && \
+RUN echo 'source /opt/ros/jazzy/setup.bash || true' >> /root/.bashrc && \
     echo '[ -f /repo/ws/install/setup.bash ] && source /repo/ws/install/setup.bash' >> /root/.bashrc && \
-    echo 'export GZ_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins:/usr/lib/x86_64-linux-gnu/gz-sim-7/plugins:$GZ_PLUGIN_PATH' >> /root/.bashrc && \
-    echo 'export GZ_RENDER_ENGINE=ogre2' >> /root/.bashrc
-
-# Workspace
-RUN mkdir -p /repo/ws/src
-WORKDIR /repo/ws
-RUN git config --system --add safe.directory '*'
+    echo 'export GZ_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gz-sim-8/plugins:${GZ_PLUGIN_PATH:-}' >> /root/.bashrc && \
+    echo 'export GZ_RENDER_ENGINE=ogre2' >> /root/.bashrc && \
+    echo 'export GZ_SIM_RESOURCE_PATH="/repo/ws/src:/repo/ws/install/share:/repo/ws/src/px4/Tools/simulation/gz/models:${GZ_SIM_RESOURCE_PATH:-}"' >> /root/.bashrc && \
+    echo 'export COLCON_PYTHON_EXECUTABLE=/opt/venv/bin/python3' >> /root/.bashrc && \
+    echo 'export PX4_CMAKE_ARGS="-DPython3_EXECUTABLE=/opt/venv/bin/python3 -DPYTHON_EXECUTABLE=/opt/venv/bin/python3"' >> /root/.bashrc
 
 CMD ["/bin/bash"]
+

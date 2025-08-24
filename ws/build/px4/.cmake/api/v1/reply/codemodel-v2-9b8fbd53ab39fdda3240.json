@@ -1,0 +1,2771 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						5,
+						61,
+						65,
+						70,
+						71,
+						72,
+						73,
+						74
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-092145c19c5da41298ec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						7,
+						9,
+						10,
+						16,
+						17,
+						49,
+						53,
+						54,
+						55,
+						56,
+						83,
+						91,
+						96,
+						150
+					]
+				},
+				{
+					"build" : "msg",
+					"jsonFile" : "directory-msg-RelWithDebInfo-543c0843add73422d769.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "msg",
+					"targetIndexes" : 
+					[
+						151,
+						152,
+						153
+					]
+				},
+				{
+					"build" : "googletest-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-googletest-build-RelWithDebInfo-b5eb8838d18407245ff3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/repo/ws/build/px4/googletest-src"
+				},
+				{
+					"build" : "googletest-build/googlemock",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-googletest-build.googlemock-RelWithDebInfo-5df78c964949f580d5ac.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "/repo/ws/build/px4/googletest-src/googlemock",
+					"targetIndexes" : 
+					[
+						44,
+						45
+					]
+				},
+				{
+					"build" : "googletest-build/googletest",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-googletest-build.googletest-RelWithDebInfo-44a983d6a113349ca288.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "/repo/ws/build/px4/googletest-src/googletest",
+					"targetIndexes" : 
+					[
+						46,
+						47
+					]
+				},
+				{
+					"build" : "src/lib",
+					"childIndexes" : 
+					[
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						60
+					],
+					"jsonFile" : "directory-src.lib-RelWithDebInfo-13ebd6f46d3a8d26f167.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/lib"
+				},
+				{
+					"build" : "src/lib/adsb",
+					"jsonFile" : "directory-src.lib.adsb-RelWithDebInfo-b35e8deff283d1bc96ca.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/adsb",
+					"targetIndexes" : 
+					[
+						6,
+						37
+					]
+				},
+				{
+					"build" : "src/lib/airspeed",
+					"jsonFile" : "directory-src.lib.airspeed-RelWithDebInfo-7bc621a3b70ad508c583.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/airspeed",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "src/lib/avoidance",
+					"jsonFile" : "directory-src.lib.avoidance-RelWithDebInfo-3649a4af1276c287c4ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/avoidance",
+					"targetIndexes" : 
+					[
+						13,
+						39
+					]
+				},
+				{
+					"build" : "src/lib/battery",
+					"jsonFile" : "directory-src.lib.battery-RelWithDebInfo-45096cad5f38c16758f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/battery",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "src/lib/bezier",
+					"jsonFile" : "directory-src.lib.bezier-RelWithDebInfo-89a9c2dd6f1aa3b850bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/bezier",
+					"targetIndexes" : 
+					[
+						15,
+						98
+					]
+				},
+				{
+					"build" : "src/lib/button",
+					"jsonFile" : "directory-src.lib.button-RelWithDebInfo-e1e164c61f14a256c853.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/button",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "src/lib/cdev",
+					"jsonFile" : "directory-src.lib.cdev-RelWithDebInfo-c8c36f0dd295137014fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/cdev",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "src/lib/circuit_breaker",
+					"jsonFile" : "directory-src.lib.circuit_breaker-RelWithDebInfo-d1717149b67f5e379e4a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/circuit_breaker",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "src/lib/collision_prevention",
+					"jsonFile" : "directory-src.lib.collision_prevention-RelWithDebInfo-8d0cc6df3f857586ccec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/collision_prevention",
+					"targetIndexes" : 
+					[
+						0,
+						38
+					]
+				},
+				{
+					"build" : "src/lib/component_information",
+					"jsonFile" : "directory-src.lib.component_information-RelWithDebInfo-dbb73e76f0c681fb692d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/component_information",
+					"targetIndexes" : 
+					[
+						21
+					]
+				},
+				{
+					"build" : "src/lib/controllib",
+					"jsonFile" : "directory-src.lib.controllib-RelWithDebInfo-0f16e7b9a94d413bc7f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/controllib",
+					"targetIndexes" : 
+					[
+						22
+					]
+				},
+				{
+					"build" : "src/lib/conversion",
+					"jsonFile" : "directory-src.lib.conversion-RelWithDebInfo-f8518a915a858e719cae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/conversion",
+					"targetIndexes" : 
+					[
+						23,
+						133
+					]
+				},
+				{
+					"build" : "src/lib/crc",
+					"jsonFile" : "directory-src.lib.crc-RelWithDebInfo-b16a0aa4125778e0a43f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/crc",
+					"targetIndexes" : 
+					[
+						24
+					]
+				},
+				{
+					"build" : "src/lib/crypto",
+					"jsonFile" : "directory-src.lib.crypto-RelWithDebInfo-d49d0b1c19545ded72a8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/crypto"
+				},
+				{
+					"build" : "src/lib/drivers",
+					"childIndexes" : 
+					[
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28
+					],
+					"jsonFile" : "directory-src.lib.drivers-RelWithDebInfo-2d9073dffb135f116c6c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers"
+				},
+				{
+					"build" : "src/lib/drivers/accelerometer",
+					"jsonFile" : "directory-src.lib.drivers.accelerometer-RelWithDebInfo-f378c9b8b54b225817e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/accelerometer",
+					"targetIndexes" : 
+					[
+						29
+					]
+				},
+				{
+					"build" : "src/lib/drivers/device",
+					"jsonFile" : "directory-src.lib.drivers.device-RelWithDebInfo-b5d4331175c58edf2eb6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/device",
+					"targetIndexes" : 
+					[
+						25
+					]
+				},
+				{
+					"build" : "src/lib/drivers/gyroscope",
+					"jsonFile" : "directory-src.lib.drivers.gyroscope-RelWithDebInfo-626e89100045a23c33cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/gyroscope",
+					"targetIndexes" : 
+					[
+						31
+					]
+				},
+				{
+					"build" : "src/lib/drivers/led",
+					"jsonFile" : "directory-src.lib.drivers.led-RelWithDebInfo-0d8da06162ffe9e6ba92.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/led",
+					"targetIndexes" : 
+					[
+						26
+					]
+				},
+				{
+					"build" : "src/lib/drivers/magnetometer",
+					"jsonFile" : "directory-src.lib.drivers.magnetometer-RelWithDebInfo-aab80de53d5d7d69cc35.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/magnetometer",
+					"targetIndexes" : 
+					[
+						32
+					]
+				},
+				{
+					"build" : "src/lib/drivers/rangefinder",
+					"jsonFile" : "directory-src.lib.drivers.rangefinder-RelWithDebInfo-6f83bf82333aeb311912.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/rangefinder",
+					"targetIndexes" : 
+					[
+						33
+					]
+				},
+				{
+					"build" : "src/lib/drivers/smbus",
+					"jsonFile" : "directory-src.lib.drivers.smbus-RelWithDebInfo-a14cd2b143fade65a630.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/smbus",
+					"targetIndexes" : 
+					[
+						27
+					]
+				},
+				{
+					"build" : "src/lib/drivers/smbus_sbs",
+					"jsonFile" : "directory-src.lib.drivers.smbus_sbs-RelWithDebInfo-3471257a520eb1a2c7bf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 20,
+					"projectIndex" : 0,
+					"source" : "src/lib/drivers/smbus_sbs",
+					"targetIndexes" : 
+					[
+						28
+					]
+				},
+				{
+					"build" : "src/lib/field_sensor_bias_estimator",
+					"jsonFile" : "directory-src.lib.field_sensor_bias_estimator-RelWithDebInfo-b49578fb7690c321372e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/field_sensor_bias_estimator",
+					"targetIndexes" : 
+					[
+						99
+					]
+				},
+				{
+					"build" : "src/lib/geo",
+					"jsonFile" : "directory-src.lib.geo-RelWithDebInfo-291d93bcb150c9ae50aa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/geo",
+					"targetIndexes" : 
+					[
+						42,
+						148
+					]
+				},
+				{
+					"build" : "src/lib/hysteresis",
+					"jsonFile" : "directory-src.lib.hysteresis-RelWithDebInfo-42effaccc3b2fb6ff7a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/hysteresis",
+					"targetIndexes" : 
+					[
+						48,
+						101
+					]
+				},
+				{
+					"build" : "src/lib/l1",
+					"jsonFile" : "directory-src.lib.l1-RelWithDebInfo-19ff467b462aacf2b411.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/l1",
+					"targetIndexes" : 
+					[
+						50
+					]
+				},
+				{
+					"build" : "src/lib/led",
+					"jsonFile" : "directory-src.lib.led-RelWithDebInfo-7d911763e1f67d0bb812.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/led",
+					"targetIndexes" : 
+					[
+						51
+					]
+				},
+				{
+					"build" : "src/lib/matrix",
+					"childIndexes" : 
+					[
+						35
+					],
+					"jsonFile" : "directory-src.lib.matrix-RelWithDebInfo-9296c1bb71329b198b0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/matrix"
+				},
+				{
+					"build" : "src/lib/matrix/test",
+					"jsonFile" : "directory-src.lib.matrix.test-RelWithDebInfo-3d9b298c9ecae9ea1707.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 34,
+					"projectIndex" : 0,
+					"source" : "src/lib/matrix/test",
+					"targetIndexes" : 
+					[
+						103,
+						104,
+						105,
+						106,
+						107,
+						108,
+						109,
+						110,
+						111,
+						112,
+						113,
+						114,
+						115,
+						116,
+						117,
+						118,
+						119,
+						120,
+						121,
+						122,
+						123,
+						124,
+						125,
+						126,
+						127
+					]
+				},
+				{
+					"build" : "src/lib/mathlib",
+					"jsonFile" : "directory-src.lib.mathlib-RelWithDebInfo-89e9cf8fd9fea07e1156.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/mathlib",
+					"targetIndexes" : 
+					[
+						52,
+						97,
+						100,
+						102,
+						128,
+						129,
+						130,
+						136,
+						139,
+						140,
+						145
+					]
+				},
+				{
+					"build" : "src/lib/mixer_module",
+					"jsonFile" : "directory-src.lib.mixer_module-RelWithDebInfo-02e0d90eb57d7c112ccc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/mixer_module",
+					"targetIndexes" : 
+					[
+						41,
+						57,
+						60
+					]
+				},
+				{
+					"build" : "src/lib/motion_planning",
+					"jsonFile" : "directory-src.lib.motion_planning-RelWithDebInfo-df6a1cbf9790e910b25f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/motion_planning",
+					"targetIndexes" : 
+					[
+						58,
+						131,
+						138
+					]
+				},
+				{
+					"build" : "src/lib/npfg",
+					"jsonFile" : "directory-src.lib.npfg-RelWithDebInfo-d1d395fb9760ef773858.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/npfg",
+					"targetIndexes" : 
+					[
+						59
+					]
+				},
+				{
+					"build" : "src/lib/perf",
+					"jsonFile" : "directory-src.lib.perf-RelWithDebInfo-a4c4cca15e57789231e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/perf",
+					"targetIndexes" : 
+					[
+						64
+					]
+				},
+				{
+					"build" : "src/lib/pid",
+					"jsonFile" : "directory-src.lib.pid-RelWithDebInfo-b902cf912adb2aeb9100.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/pid",
+					"targetIndexes" : 
+					[
+						65
+					]
+				},
+				{
+					"build" : "src/lib/pid_design",
+					"jsonFile" : "directory-src.lib.pid_design-RelWithDebInfo-763e26aa916e04477753.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/pid_design",
+					"targetIndexes" : 
+					[
+						143
+					]
+				},
+				{
+					"build" : "src/lib/rate_control",
+					"jsonFile" : "directory-src.lib.rate_control-RelWithDebInfo-6167d135fa013a318d61.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/rate_control",
+					"targetIndexes" : 
+					[
+						1,
+						144
+					]
+				},
+				{
+					"build" : "src/lib/rc",
+					"jsonFile" : "directory-src.lib.rc-RelWithDebInfo-7f8042cb5f2fe98777c4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/rc",
+					"targetIndexes" : 
+					[
+						85
+					]
+				},
+				{
+					"build" : "src/lib/ringbuffer",
+					"jsonFile" : "directory-src.lib.ringbuffer-RelWithDebInfo-f1f1bc62c85c5d97a322.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/ringbuffer",
+					"targetIndexes" : 
+					[
+						86,
+						132
+					]
+				},
+				{
+					"build" : "src/lib/sensor_calibration",
+					"jsonFile" : "directory-src.lib.sensor_calibration-RelWithDebInfo-66935f3342150a9fd838.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/sensor_calibration",
+					"targetIndexes" : 
+					[
+						87
+					]
+				},
+				{
+					"build" : "src/lib/slew_rate",
+					"jsonFile" : "directory-src.lib.slew_rate-RelWithDebInfo-444c314638c3abc497d3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/slew_rate",
+					"targetIndexes" : 
+					[
+						2,
+						134,
+						135
+					]
+				},
+				{
+					"build" : "src/lib/systemlib",
+					"jsonFile" : "directory-src.lib.systemlib-RelWithDebInfo-7bfbb78ec9f35b88a79a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/systemlib",
+					"targetIndexes" : 
+					[
+						88
+					]
+				},
+				{
+					"build" : "src/lib/system_identification",
+					"jsonFile" : "directory-src.lib.system_identification-RelWithDebInfo-8533a9880c33b23e57a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/system_identification",
+					"targetIndexes" : 
+					[
+						3,
+						141,
+						146
+					]
+				},
+				{
+					"build" : "src/lib/tecs",
+					"jsonFile" : "directory-src.lib.tecs-RelWithDebInfo-1de1f7a78db538905d62.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/tecs",
+					"targetIndexes" : 
+					[
+						89
+					]
+				},
+				{
+					"build" : "src/lib/terrain_estimation",
+					"jsonFile" : "directory-src.lib.terrain_estimation-RelWithDebInfo-4c9307288540147c971b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/terrain_estimation",
+					"targetIndexes" : 
+					[
+						90
+					]
+				},
+				{
+					"build" : "src/lib/timesync",
+					"jsonFile" : "directory-src.lib.timesync-RelWithDebInfo-9e636ce5c01ad203557e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/timesync",
+					"targetIndexes" : 
+					[
+						92
+					]
+				},
+				{
+					"build" : "src/lib/tinybson",
+					"jsonFile" : "directory-src.lib.tinybson-RelWithDebInfo-c161afedd909f3f8621e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/tinybson",
+					"targetIndexes" : 
+					[
+						93
+					]
+				},
+				{
+					"build" : "src/lib/tunes",
+					"jsonFile" : "directory-src.lib.tunes-RelWithDebInfo-3624e035177139fc93fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/tunes",
+					"targetIndexes" : 
+					[
+						94
+					]
+				},
+				{
+					"build" : "src/lib/variable_length_ringbuffer",
+					"jsonFile" : "directory-src.lib.variable_length_ringbuffer-RelWithDebInfo-dec98dbe2e1d477b04c6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/variable_length_ringbuffer",
+					"targetIndexes" : 
+					[
+						137,
+						154
+					]
+				},
+				{
+					"build" : "src/lib/version",
+					"jsonFile" : "directory-src.lib.version-RelWithDebInfo-c7c315129c3887270481.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/version",
+					"targetIndexes" : 
+					[
+						155,
+						156
+					]
+				},
+				{
+					"build" : "src/lib/weather_vane",
+					"jsonFile" : "directory-src.lib.weather_vane-RelWithDebInfo-1b5ca1a313b8cbed8ab4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/weather_vane",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/lib/wind_estimator",
+					"childIndexes" : 
+					[
+						59
+					],
+					"jsonFile" : "directory-src.lib.wind_estimator-RelWithDebInfo-8c0e91cb423daf0b7cb4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/wind_estimator",
+					"targetIndexes" : 
+					[
+						157,
+						158
+					]
+				},
+				{
+					"build" : "src/lib/wind_estimator/test",
+					"jsonFile" : "directory-src.lib.wind_estimator.test-RelWithDebInfo-34ca090d4316217137f3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 58,
+					"projectIndex" : 0,
+					"source" : "src/lib/wind_estimator/test",
+					"targetIndexes" : 
+					[
+						147
+					]
+				},
+				{
+					"build" : "src/lib/world_magnetic_model",
+					"jsonFile" : "directory-src.lib.world_magnetic_model-RelWithDebInfo-a386dea86b91dbcc2f03.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "src/lib/world_magnetic_model",
+					"targetIndexes" : 
+					[
+						149,
+						160,
+						161,
+						162
+					]
+				},
+				{
+					"build" : "platforms/ros2/src/px4",
+					"childIndexes" : 
+					[
+						62,
+						63
+					],
+					"jsonFile" : "directory-platforms.ros2.src.px4-RelWithDebInfo-1b264e91055402196c0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "platforms/ros2/src/px4"
+				},
+				{
+					"build" : "platforms/ros2/src/px4/common",
+					"jsonFile" : "directory-platforms.ros2.src.px4.common-RelWithDebInfo-69eee0f415a06e04abce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 61,
+					"projectIndex" : 0,
+					"source" : "platforms/ros2/src/px4/common",
+					"targetIndexes" : 
+					[
+						78
+					]
+				},
+				{
+					"build" : "platforms/ros2/src/px4/generic",
+					"childIndexes" : 
+					[
+						64
+					],
+					"jsonFile" : "directory-platforms.ros2.src.px4.generic-RelWithDebInfo-f91c981dfab6f33357bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 61,
+					"projectIndex" : 0,
+					"source" : "platforms/ros2/src/px4/generic"
+				},
+				{
+					"build" : "platforms/ros2/src/px4/generic/generic",
+					"jsonFile" : "directory-platforms.ros2.src.px4.generic.generic-RelWithDebInfo-8fdcbebdf13d7a0baadd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 63,
+					"projectIndex" : 0,
+					"source" : "platforms/ros2/src/px4/generic/generic"
+				},
+				{
+					"build" : "platforms",
+					"childIndexes" : 
+					[
+						66
+					],
+					"jsonFile" : "directory-platforms-RelWithDebInfo-80cc0a81181fa7dea279.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "platforms"
+				},
+				{
+					"build" : "platforms/common",
+					"childIndexes" : 
+					[
+						67,
+						68,
+						69
+					],
+					"jsonFile" : "directory-platforms.common-RelWithDebInfo-20d0045ab43b87a81556.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 65,
+					"projectIndex" : 0,
+					"source" : "platforms/common",
+					"targetIndexes" : 
+					[
+						79,
+						142
+					]
+				},
+				{
+					"build" : "platforms/common/uORB",
+					"jsonFile" : "directory-platforms.common.uORB-RelWithDebInfo-28d0ab2ca131fe4cb605.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 66,
+					"projectIndex" : 0,
+					"source" : "platforms/common/uORB",
+					"targetIndexes" : 
+					[
+						95
+					]
+				},
+				{
+					"build" : "platforms/common/px4_work_queue",
+					"jsonFile" : "directory-platforms.common.px4_work_queue-RelWithDebInfo-f825219ff862c3da5bc0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 66,
+					"projectIndex" : 0,
+					"source" : "platforms/common/px4_work_queue",
+					"targetIndexes" : 
+					[
+						84
+					]
+				},
+				{
+					"build" : "platforms/common/work_queue",
+					"jsonFile" : "directory-platforms.common.work_queue-RelWithDebInfo-a2893f7de5623be3e59f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 66,
+					"projectIndex" : 0,
+					"source" : "platforms/common/work_queue",
+					"targetIndexes" : 
+					[
+						159
+					]
+				},
+				{
+					"build" : "boards/px4/ros2/src",
+					"jsonFile" : "directory-boards.px4.ros2.src-RelWithDebInfo-48e8845324dc9cb1c9bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "boards/px4/ros2/src",
+					"targetIndexes" : 
+					[
+						30
+					]
+				},
+				{
+					"build" : "src/lib/events",
+					"jsonFile" : "directory-src.lib.events-RelWithDebInfo-f1b7d0a8526adba03311.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/lib/events",
+					"targetIndexes" : 
+					[
+						34,
+						35,
+						36,
+						43
+					]
+				},
+				{
+					"build" : "src/lib/metadata",
+					"jsonFile" : "directory-src.lib.metadata-RelWithDebInfo-315f2a9982892be42a88.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/lib/metadata",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "src/lib/parameters",
+					"jsonFile" : "directory-src.lib.parameters-RelWithDebInfo-23a06bad8bc3a5573643.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/lib/parameters",
+					"targetIndexes" : 
+					[
+						40,
+						61,
+						62,
+						63
+					]
+				},
+				{
+					"build" : "platforms/ros2",
+					"childIndexes" : 
+					[
+						75
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-platforms.ros2-RelWithDebInfo-c0814601c0265fdf5eb4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "platforms/ros2",
+					"targetIndexes" : 
+					[
+						11,
+						12,
+						66,
+						67,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76,
+						77,
+						80,
+						81,
+						82
+					]
+				},
+				{
+					"build" : "platforms/ros2/px4__py",
+					"jsonFile" : "directory-platforms.ros2.px4__py-RelWithDebInfo-ad54417cd6f76d9d08ab.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 74,
+					"projectIndex" : 0,
+					"source" : "/repo/ws/build/px4/platforms/ros2/px4__py",
+					"targetIndexes" : 
+					[
+						68
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75
+					],
+					"name" : "px4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75,
+						76,
+						77,
+						78,
+						79,
+						80,
+						81,
+						82,
+						83,
+						84,
+						85,
+						86,
+						87,
+						88,
+						89,
+						90,
+						91,
+						92,
+						93,
+						94,
+						95,
+						96,
+						97,
+						98,
+						99,
+						100,
+						101,
+						102,
+						103,
+						104,
+						105,
+						106,
+						107,
+						108,
+						109,
+						110,
+						111,
+						112,
+						113,
+						114,
+						115,
+						116,
+						117,
+						118,
+						119,
+						120,
+						121,
+						122,
+						123,
+						124,
+						125,
+						126,
+						127,
+						128,
+						129,
+						130,
+						131,
+						132,
+						133,
+						134,
+						135,
+						136,
+						137,
+						138,
+						139,
+						140,
+						141,
+						142,
+						143,
+						144,
+						145,
+						146,
+						147,
+						148,
+						149,
+						150,
+						151,
+						152,
+						153,
+						154,
+						155,
+						156,
+						157,
+						158,
+						159,
+						160,
+						161,
+						162
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "googletest-distribution",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						3
+					],
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "gmock",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						44,
+						45
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "gtest",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						46,
+						47
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 14,
+					"id" : "CollisionPrevention::@7756802a5552c73ac220",
+					"jsonFile" : "target-CollisionPrevention-RelWithDebInfo-f240bf5121193199310e.json",
+					"name" : "CollisionPrevention",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "RateControl::@714dbb369896d8b6f4dd",
+					"jsonFile" : "target-RateControl-RelWithDebInfo-1642688971c6ae688912.json",
+					"name" : "RateControl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "SlewRate::@9911ea5c1339838a71c4",
+					"jsonFile" : "target-SlewRate-RelWithDebInfo-24a5400956563fdd580c.json",
+					"name" : "SlewRate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "SystemIdentification::@ab08cac45f0581a9d1eb",
+					"jsonFile" : "target-SystemIdentification-RelWithDebInfo-951a35fa4497856d625b.json",
+					"name" : "SystemIdentification",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 57,
+					"id" : "WeatherVane::@db8bb4115fe514821604",
+					"jsonFile" : "target-WeatherVane-RelWithDebInfo-18e18f98ed056e91f365.json",
+					"name" : "WeatherVane",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 72,
+					"id" : "actuators_json::@3dede74ddd64a90a542e",
+					"jsonFile" : "target-actuators_json-RelWithDebInfo-d06f74b1c463f73030ab.json",
+					"name" : "actuators_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "adsb::@dfad60d30f196ab0a9e2",
+					"jsonFile" : "target-adsb-RelWithDebInfo-0f9dedf31f7f47768559.json",
+					"name" : "adsb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "airframes_xml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-airframes_xml-RelWithDebInfo-653d4f589093bf260b91.json",
+					"name" : "airframes_xml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "airspeed::@51b991d5807708af06c8",
+					"jsonFile" : "target-airspeed-RelWithDebInfo-c4e80a029e38cdacfc30.json",
+					"name" : "airspeed",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_metadata::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_metadata-RelWithDebInfo-fa934902b8e2462e06f7.json",
+					"name" : "all_metadata",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_internal_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_internal_uninstall-RelWithDebInfo-80d0fde4945a4269ba48.json",
+					"name" : "ament_cmake_internal_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "ament_cmake_python_build_px4_egg::@52f3d00f917c5026f070",
+					"jsonFile" : "target-ament_cmake_python_build_px4_egg-RelWithDebInfo-b7a6182a586f63493baf.json",
+					"name" : "ament_cmake_python_build_px4_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "ament_cmake_python_symlink_px4::@52f3d00f917c5026f070",
+					"jsonFile" : "target-ament_cmake_python_symlink_px4-RelWithDebInfo-7056b1a8ebc06f711362.json",
+					"name" : "ament_cmake_python_symlink_px4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "avoidance::@7aabeb3ab32fe8d10794",
+					"jsonFile" : "target-avoidance-RelWithDebInfo-512843f14f9bbcdbce52.json",
+					"name" : "avoidance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "battery::@1f69de361fb938b34122",
+					"jsonFile" : "target-battery-RelWithDebInfo-baf5db24b1d53b3361e2.json",
+					"name" : "battery",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "bezier::@6b70ff4a16b8f13b99ac",
+					"jsonFile" : "target-bezier-RelWithDebInfo-c3a251d6a0bfe8d2bd9e.json",
+					"name" : "bezier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boardconfig::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boardconfig-RelWithDebInfo-f0f9c44e0c835b843395.json",
+					"name" : "boardconfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "boardguiconfig::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-boardguiconfig-RelWithDebInfo-e8b985303509ed5a7dc4.json",
+					"name" : "boardguiconfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "button_publisher::@3e7ef24b94321830bd66",
+					"jsonFile" : "target-button_publisher-RelWithDebInfo-e8df083a6d561ac53cae.json",
+					"name" : "button_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "cdev::@486c09b1dd2eb468d1b8",
+					"jsonFile" : "target-cdev-RelWithDebInfo-f32b97de4b51f5000e43.json",
+					"name" : "cdev",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "circuit_breaker::@e4f77452a3966ca624be",
+					"jsonFile" : "target-circuit_breaker-RelWithDebInfo-05cf1e4b335ca9f50ffb.json",
+					"name" : "circuit_breaker",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "component_general_json::@6708e416d337ae9e7774",
+					"jsonFile" : "target-component_general_json-RelWithDebInfo-2838a748c675c63e8485.json",
+					"name" : "component_general_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "controllib::@74a778f119068e90351d",
+					"jsonFile" : "target-controllib-RelWithDebInfo-c0ca08b19140a6514a0c.json",
+					"name" : "controllib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "conversion::@799cc045a91375c93c85",
+					"jsonFile" : "target-conversion-RelWithDebInfo-e4057eae5fde26a2e4d1.json",
+					"name" : "conversion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "crc::@a8e7ceaec799a66f7d52",
+					"jsonFile" : "target-crc-RelWithDebInfo-322cc4dcb8ae7d2cf19c.json",
+					"name" : "crc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 22,
+					"id" : "drivers__device::@f5b89cf4ec13cafdcc7b",
+					"jsonFile" : "target-drivers__device-RelWithDebInfo-af9667c02a10e5022f78.json",
+					"name" : "drivers__device",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 24,
+					"id" : "drivers__led::@d62dec9172479d8a9bf3",
+					"jsonFile" : "target-drivers__led-RelWithDebInfo-ab1dc112a85846eff600.json",
+					"name" : "drivers__led",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 27,
+					"id" : "drivers__smbus::@43561e988966ba1e0015",
+					"jsonFile" : "target-drivers__smbus-RelWithDebInfo-edb188f7014b753152d8.json",
+					"name" : "drivers__smbus",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 28,
+					"id" : "drivers__smbus_sbs::@27b3d3c531d6e5cf4ffe",
+					"jsonFile" : "target-drivers__smbus_sbs-RelWithDebInfo-6e6674a3ba6fab1f908b.json",
+					"name" : "drivers__smbus_sbs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 21,
+					"id" : "drivers_accelerometer::@0bf5022875b8e01a3345",
+					"jsonFile" : "target-drivers_accelerometer-RelWithDebInfo-a0738691dceb07e4eb45.json",
+					"name" : "drivers_accelerometer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 70,
+					"id" : "drivers_board::@f10b087ece3a324a1c64",
+					"jsonFile" : "target-drivers_board-RelWithDebInfo-46af39bbf8834b38e7f9.json",
+					"name" : "drivers_board",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 23,
+					"id" : "drivers_gyroscope::@0e4539b7be9fa97acfc4",
+					"jsonFile" : "target-drivers_gyroscope-RelWithDebInfo-ed6062deaff0f4bde075.json",
+					"name" : "drivers_gyroscope",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 25,
+					"id" : "drivers_magnetometer::@59d140376cec04eac720",
+					"jsonFile" : "target-drivers_magnetometer-RelWithDebInfo-2e73c7acd1a5105ecc81.json",
+					"name" : "drivers_magnetometer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "drivers_rangefinder::@49f21bf23c2c5424f0b7",
+					"jsonFile" : "target-drivers_rangefinder-RelWithDebInfo-332a4af34df6a8b3a124.json",
+					"name" : "drivers_rangefinder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 71,
+					"id" : "events_header::@5cf9bdc8231d57945e1e",
+					"jsonFile" : "target-events_header-RelWithDebInfo-92eca2f601d52737a316.json",
+					"name" : "events_header",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 71,
+					"id" : "events_json::@5cf9bdc8231d57945e1e",
+					"jsonFile" : "target-events_json-RelWithDebInfo-1608a2ac62bad46009cc.json",
+					"name" : "events_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 71,
+					"id" : "events_px4_json::@5cf9bdc8231d57945e1e",
+					"jsonFile" : "target-events_px4_json-RelWithDebInfo-4fd8558e57730e5bdce3.json",
+					"name" : "events_px4_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "functional-AdsbConflict::@dfad60d30f196ab0a9e2",
+					"jsonFile" : "target-functional-AdsbConflict-RelWithDebInfo-61b37ee1ebd16522df91.json",
+					"name" : "functional-AdsbConflict",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "functional-CollisionPrevention::@7756802a5552c73ac220",
+					"jsonFile" : "target-functional-CollisionPrevention-RelWithDebInfo-eec1ce2b040cbf7315b3.json",
+					"name" : "functional-CollisionPrevention",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "functional-ObstacleAvoidance::@7aabeb3ab32fe8d10794",
+					"jsonFile" : "target-functional-ObstacleAvoidance-RelWithDebInfo-98c0f722d13156c4ab26.json",
+					"name" : "functional-ObstacleAvoidance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 73,
+					"id" : "functional-Parameter::@0bc5af1ea023e368419c",
+					"jsonFile" : "target-functional-Parameter-RelWithDebInfo-6969a45cd10c745e5b3e.json",
+					"name" : "functional-Parameter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "functional-mixer_module_tests::@cfbf9a880ba63102fbb1",
+					"jsonFile" : "target-functional-mixer_module_tests-RelWithDebInfo-649bb1f150c213a93214.json",
+					"name" : "functional-mixer_module_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "geo::@98fdcee2b11418b2ae8c",
+					"jsonFile" : "target-geo-RelWithDebInfo-4df0cd5196887e01078e.json",
+					"name" : "geo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 71,
+					"id" : "git_libevents::@5cf9bdc8231d57945e1e",
+					"jsonFile" : "target-git_libevents-RelWithDebInfo-e38490c907057c367033.json",
+					"name" : "git_libevents",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock::@645c719b6bb61ab77cfe",
+					"jsonFile" : "target-gmock-RelWithDebInfo-f34b4951920aaa10da61.json",
+					"name" : "gmock",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "gmock_main::@645c719b6bb61ab77cfe",
+					"jsonFile" : "target-gmock_main-RelWithDebInfo-360530292a6ed321d958.json",
+					"name" : "gmock_main",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest::@32fe1c6cd3a65a2fab56",
+					"jsonFile" : "target-gtest-RelWithDebInfo-c799b8246a82271ac3c9.json",
+					"name" : "gtest",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gtest_main::@32fe1c6cd3a65a2fab56",
+					"jsonFile" : "target-gtest_main-RelWithDebInfo-a0be700595993c1b4a51.json",
+					"name" : "gtest_main",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "hysteresis::@7f07278cf04a53607836",
+					"jsonFile" : "target-hysteresis-RelWithDebInfo-5a2c0e8afb44c20cc270.json",
+					"name" : "hysteresis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "install_python_requirements::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-install_python_requirements-RelWithDebInfo-2a82ffac12da4c3393c2.json",
+					"name" : "install_python_requirements",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 32,
+					"id" : "l1::@7135f2079e09804cf416",
+					"jsonFile" : "target-l1-RelWithDebInfo-325a85bb2d712604bb2a.json",
+					"name" : "l1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 33,
+					"id" : "led::@f3429e3ee4849010664d",
+					"jsonFile" : "target-led-RelWithDebInfo-35584f9749bfef8b52a8.json",
+					"name" : "led",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "mathlib::@acbeda415806513a99b0",
+					"jsonFile" : "target-mathlib-RelWithDebInfo-add313d69ad29eb9db12.json",
+					"name" : "mathlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "metadata_airframes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-metadata_airframes-RelWithDebInfo-2a40e562a19c18b33d85.json",
+					"name" : "metadata_airframes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "metadata_extract_events::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-metadata_extract_events-RelWithDebInfo-7a502a1d5a615621520c.json",
+					"name" : "metadata_extract_events",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "metadata_module_documentation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-metadata_module_documentation-RelWithDebInfo-871ebc896a20345a9cd5.json",
+					"name" : "metadata_module_documentation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "metadata_parameters::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-metadata_parameters-RelWithDebInfo-7f747dec23e2bc3fcaf0.json",
+					"name" : "metadata_parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "mixer_module::@cfbf9a880ba63102fbb1",
+					"jsonFile" : "target-mixer_module-RelWithDebInfo-fd3bc0c21bc29d15c5f6.json",
+					"name" : "mixer_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "motion_planning::@61f5c9020768c0679cbd",
+					"jsonFile" : "target-motion_planning-RelWithDebInfo-848a7b0396950696d5f4.json",
+					"name" : "motion_planning",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 39,
+					"id" : "npfg::@7fc4217b6283ccd81148",
+					"jsonFile" : "target-npfg-RelWithDebInfo-4396068aa7f1f7d19ea7.json",
+					"name" : "npfg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 37,
+					"id" : "output_functions_header::@cfbf9a880ba63102fbb1",
+					"jsonFile" : "target-output_functions_header-RelWithDebInfo-6c1063c0b684c8a9c38d.json",
+					"name" : "output_functions_header",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 73,
+					"id" : "parameters::@0bc5af1ea023e368419c",
+					"jsonFile" : "target-parameters-RelWithDebInfo-702b29c2e557a1ec49f0.json",
+					"name" : "parameters",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 73,
+					"id" : "parameters_header::@0bc5af1ea023e368419c",
+					"jsonFile" : "target-parameters_header-RelWithDebInfo-2b33982d297f0668b2fd.json",
+					"name" : "parameters_header",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 73,
+					"id" : "parameters_xml::@0bc5af1ea023e368419c",
+					"jsonFile" : "target-parameters_xml-RelWithDebInfo-b9786725d29a610a6419.json",
+					"name" : "parameters_xml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 40,
+					"id" : "perf::@25bdab5b7fa021aa5d4c",
+					"jsonFile" : "target-perf-RelWithDebInfo-0c138ebf3866ac168038.json",
+					"name" : "perf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 41,
+					"id" : "pid::@cca4012f1a8440300d3d",
+					"jsonFile" : "target-pid-RelWithDebInfo-19c759af76dfdbb5f016.json",
+					"name" : "pid",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4-RelWithDebInfo-bfd54e7d534d1db9caea.json",
+					"name" : "px4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__cpp::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__cpp-RelWithDebInfo-90872796707d46ff7860.json",
+					"name" : "px4__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 75,
+					"id" : "px4__py::@58b6b8240b98e6965555",
+					"jsonFile" : "target-px4__py-RelWithDebInfo-4dd5843f606d784e637f.json",
+					"name" : "px4__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_generator_c::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_generator_c-RelWithDebInfo-a962da39788d4071f5de.json",
+					"name" : "px4__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_generator_py::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_generator_py-RelWithDebInfo-105603c63f4dffdefa0a.json",
+					"name" : "px4__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_generator_type_description::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_generator_type_description-RelWithDebInfo-8393fd30b47ec505e251.json",
+					"name" : "px4__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_typesupport_c::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_typesupport_c-RelWithDebInfo-9755183601a6e803394c.json",
+					"name" : "px4__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_typesupport_cpp::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_typesupport_cpp-RelWithDebInfo-17dbf28d4e393c9155f9.json",
+					"name" : "px4__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_typesupport_fastrtps_c::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_typesupport_fastrtps_c-RelWithDebInfo-02809758129875d61009.json",
+					"name" : "px4__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_typesupport_fastrtps_cpp::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_typesupport_fastrtps_cpp-RelWithDebInfo-2c75570f90179e331eb6.json",
+					"name" : "px4__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_typesupport_introspection_c::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_typesupport_introspection_c-RelWithDebInfo-a74f4c107ef3cbd6c940.json",
+					"name" : "px4__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4__rosidl_typesupport_introspection_cpp::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4__rosidl_typesupport_introspection_cpp-RelWithDebInfo-20d338c7d794f507b861.json",
+					"name" : "px4__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 62,
+					"id" : "px4_layer::@9eeea2dff420aef92231",
+					"jsonFile" : "target-px4_layer-RelWithDebInfo-43cf63075d5a2c8af7ea.json",
+					"name" : "px4_layer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 66,
+					"id" : "px4_platform::@b9081f7f9f1bc7ce6a34",
+					"jsonFile" : "target-px4_platform-RelWithDebInfo-e4145dbc5724932d855d.json",
+					"name" : "px4_platform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4_s__rosidl_typesupport_c::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4_s__rosidl_typesupport_c-RelWithDebInfo-89b15e7666b9dea22642.json",
+					"name" : "px4_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4_s__rosidl_typesupport_fastrtps_c::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4_s__rosidl_typesupport_fastrtps_c-RelWithDebInfo-ad11139b88d728b2c283.json",
+					"name" : "px4_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 74,
+					"id" : "px4_s__rosidl_typesupport_introspection_c::@52f3d00f917c5026f070",
+					"jsonFile" : "target-px4_s__rosidl_typesupport_introspection_c-RelWithDebInfo-82ebaab139dba59bc793.json",
+					"name" : "px4_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "px4_savedefconfig::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-px4_savedefconfig-RelWithDebInfo-35b24b361409e278f525.json",
+					"name" : "px4_savedefconfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 68,
+					"id" : "px4_work_queue::@0e1de4a661a0b76fa52d",
+					"jsonFile" : "target-px4_work_queue-RelWithDebInfo-c37c9e8161877b53d997.json",
+					"name" : "px4_work_queue",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 44,
+					"id" : "rc::@49b8c95f7ed13faa65f6",
+					"jsonFile" : "target-rc-RelWithDebInfo-c6a574b6606cf4c516c4.json",
+					"name" : "rc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "ringbuffer::@16b34cbb4b5d649f1fde",
+					"jsonFile" : "target-ringbuffer-RelWithDebInfo-0cadf4a31cef7eb5e60b.json",
+					"name" : "ringbuffer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 46,
+					"id" : "sensor_calibration::@868ec604c463d1b1bbd5",
+					"jsonFile" : "target-sensor_calibration-RelWithDebInfo-e56058190514a8983bc2.json",
+					"name" : "sensor_calibration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 48,
+					"id" : "systemlib::@f1c82114109d59f0af77",
+					"jsonFile" : "target-systemlib-RelWithDebInfo-a1363fb15a8970ce2b11.json",
+					"name" : "systemlib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 50,
+					"id" : "tecs::@bc30ba9c71363de0c3f5",
+					"jsonFile" : "target-tecs-RelWithDebInfo-9bbddb06ff89107da6fb.json",
+					"name" : "tecs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 51,
+					"id" : "terrain_estimation::@3b17eb6993a2131ec51a",
+					"jsonFile" : "target-terrain_estimation-RelWithDebInfo-b05c27072c56c0d669d2.json",
+					"name" : "terrain_estimation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_results::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_results-RelWithDebInfo-19b614084c5749b031e9.json",
+					"name" : "test_results",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 52,
+					"id" : "timesync::@4161e98748ce817b0405",
+					"jsonFile" : "target-timesync-RelWithDebInfo-5adc151c71248a25a14d.json",
+					"name" : "timesync",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 53,
+					"id" : "tinybson::@8e13947b44723869e90e",
+					"jsonFile" : "target-tinybson-RelWithDebInfo-13e51b5ada950b023879.json",
+					"name" : "tinybson",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 54,
+					"id" : "tunes::@1600209e4069d3c42e2f",
+					"jsonFile" : "target-tunes-RelWithDebInfo-30313944f9ee25aced00.json",
+					"name" : "tunes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 67,
+					"id" : "uORB::@afa8ade38fd817f34bcc",
+					"jsonFile" : "target-uORB-RelWithDebInfo-55bbdba69a2891c3839b.json",
+					"name" : "uORB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-d513414dfa4a9e339bfc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-AlphaFilter::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-AlphaFilter-RelWithDebInfo-013ef5b9e87d50e190c6.json",
+					"name" : "unit-AlphaFilter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "unit-BezierN::@6b70ff4a16b8f13b99ac",
+					"jsonFile" : "target-unit-BezierN-RelWithDebInfo-086ad0f379493a801c1d.json",
+					"name" : "unit-BezierN",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 29,
+					"id" : "unit-FieldSensorBiasEstimator::@cbe09b4aa9f77a68bb7a",
+					"jsonFile" : "target-unit-FieldSensorBiasEstimator-RelWithDebInfo-5caf5c99b40de4170822.json",
+					"name" : "unit-FieldSensorBiasEstimator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-Functions::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-Functions-RelWithDebInfo-cf7f30cde13bee12af90.json",
+					"name" : "unit-Functions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "unit-Hysteresis::@7f07278cf04a53607836",
+					"jsonFile" : "target-unit-Hysteresis-RelWithDebInfo-77e3b7d29e69aea48eeb.json",
+					"name" : "unit-Hysteresis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-LowPassFilter2pVector3f::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-LowPassFilter2pVector3f-RelWithDebInfo-3446d596ff29efe243a6.json",
+					"name" : "unit-LowPassFilter2pVector3f",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixAssignment::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixAssignment-RelWithDebInfo-9f357c6777256e73fdf4.json",
+					"name" : "unit-MatrixAssignment",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixAttitude::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixAttitude-RelWithDebInfo-2015ad34c1758613b874.json",
+					"name" : "unit-MatrixAttitude",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixCopyTo::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixCopyTo-RelWithDebInfo-1297d805a8c6daf568c4.json",
+					"name" : "unit-MatrixCopyTo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixDcm2::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixDcm2-RelWithDebInfo-3266c4337c478521837a.json",
+					"name" : "unit-MatrixDcm2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixDual::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixDual-RelWithDebInfo-498ddd7b71ce096e42da.json",
+					"name" : "unit-MatrixDual",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixFilter::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixFilter-RelWithDebInfo-e557bfcd1bdc3cf83501.json",
+					"name" : "unit-MatrixFilter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixHatvee::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixHatvee-RelWithDebInfo-ce40e85acc732da8d95c.json",
+					"name" : "unit-MatrixHatvee",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixHelper::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixHelper-RelWithDebInfo-61056284f7ad1e8187b6.json",
+					"name" : "unit-MatrixHelper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixIntegral::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixIntegral-RelWithDebInfo-3f51c2cee4d36488b011.json",
+					"name" : "unit-MatrixIntegral",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixInverse::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixInverse-RelWithDebInfo-0f5a5ac58f1996484fae.json",
+					"name" : "unit-MatrixInverse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixLeastSquares::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixLeastSquares-RelWithDebInfo-6c7dab541da43815f740.json",
+					"name" : "unit-MatrixLeastSquares",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixMultiplication::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixMultiplication-RelWithDebInfo-7ced0ecd3f8d5418ed30.json",
+					"name" : "unit-MatrixMultiplication",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixPseudoInverse::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixPseudoInverse-RelWithDebInfo-38c063a3c3dcb7b2f276.json",
+					"name" : "unit-MatrixPseudoInverse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixScalarMultiplication::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixScalarMultiplication-RelWithDebInfo-e94249f7998c8431a578.json",
+					"name" : "unit-MatrixScalarMultiplication",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixSetIdentity::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixSetIdentity-RelWithDebInfo-c3327cf82eb9ce69f50c.json",
+					"name" : "unit-MatrixSetIdentity",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixSlice::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixSlice-RelWithDebInfo-70c11496187c233584dc.json",
+					"name" : "unit-MatrixSlice",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixSparseVector::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixSparseVector-RelWithDebInfo-5714602c5d16204708da.json",
+					"name" : "unit-MatrixSparseVector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixSquare::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixSquare-RelWithDebInfo-dd6863e68bc7db63b9ce.json",
+					"name" : "unit-MatrixSquare",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixTranspose::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixTranspose-RelWithDebInfo-7ccfd685bb5be6a6aff9.json",
+					"name" : "unit-MatrixTranspose",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixUnwrap::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixUnwrap-RelWithDebInfo-f41c7c36088742da5237.json",
+					"name" : "unit-MatrixUnwrap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixUpperRightTriangle::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixUpperRightTriangle-RelWithDebInfo-3900a1763c7a56b7086d.json",
+					"name" : "unit-MatrixUpperRightTriangle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixVector::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixVector-RelWithDebInfo-6754b0e72b84d3875c63.json",
+					"name" : "unit-MatrixVector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixVector2::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixVector2-RelWithDebInfo-01ed745653e4f95d9c65.json",
+					"name" : "unit-MatrixVector2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixVector3::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixVector3-RelWithDebInfo-08fa03bc0ba06f537f63.json",
+					"name" : "unit-MatrixVector3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 35,
+					"id" : "unit-MatrixVectorAssignment::@c61d8eee506ae9e2dd2d",
+					"jsonFile" : "target-unit-MatrixVectorAssignment-RelWithDebInfo-5a5fdb071e48a29c9a59.json",
+					"name" : "unit-MatrixVectorAssignment",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-MaxDistanceToCircle::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-MaxDistanceToCircle-RelWithDebInfo-f2224cf257a37ca9c66f.json",
+					"name" : "unit-MaxDistanceToCircle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-MedianFilter::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-MedianFilter-RelWithDebInfo-749d9e24cbf1af0fb749.json",
+					"name" : "unit-MedianFilter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-NotchFilter::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-NotchFilter-RelWithDebInfo-e077464c068ec0da4030.json",
+					"name" : "unit-NotchFilter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "unit-PositionSmoothing::@61f5c9020768c0679cbd",
+					"jsonFile" : "target-unit-PositionSmoothing-RelWithDebInfo-e75149c36f143b4d1416.json",
+					"name" : "unit-PositionSmoothing",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 45,
+					"id" : "unit-Ringbuffer::@16b34cbb4b5d649f1fde",
+					"jsonFile" : "target-unit-Ringbuffer-RelWithDebInfo-da5b5da3fef6fe872528.json",
+					"name" : "unit-Ringbuffer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "unit-Rotation::@799cc045a91375c93c85",
+					"jsonFile" : "target-unit-Rotation-RelWithDebInfo-02002211381a83be05e0.json",
+					"name" : "unit-Rotation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "unit-SlewRate::@9911ea5c1339838a71c4",
+					"jsonFile" : "target-unit-SlewRate-RelWithDebInfo-906be27be58692a5ed74.json",
+					"name" : "unit-SlewRate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 47,
+					"id" : "unit-SlewRateYaw::@9911ea5c1339838a71c4",
+					"jsonFile" : "target-unit-SlewRateYaw-RelWithDebInfo-ccd5d42f44b7a11df4c6.json",
+					"name" : "unit-SlewRateYaw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-Utilities::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-Utilities-RelWithDebInfo-3913df313462d0a1948e.json",
+					"name" : "unit-Utilities",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 55,
+					"id" : "unit-VariableLengthRingbuffer::@e8540ad4d5fddf1705e5",
+					"jsonFile" : "target-unit-VariableLengthRingbuffer-RelWithDebInfo-5b6e69b07a78f7f58ce3.json",
+					"name" : "unit-VariableLengthRingbuffer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 38,
+					"id" : "unit-VelocitySmoothing::@61f5c9020768c0679cbd",
+					"jsonFile" : "target-unit-VelocitySmoothing-RelWithDebInfo-9084b913db78b0c9f40e.json",
+					"name" : "unit-VelocitySmoothing",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-WelfordMean::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-WelfordMean-RelWithDebInfo-efb8f4d8997fe2ca232b.json",
+					"name" : "unit-WelfordMean",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-WelfordMeanVector::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-WelfordMeanVector-RelWithDebInfo-614ded3fa034dc07a5fa.json",
+					"name" : "unit-WelfordMeanVector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "unit-arx_rls_test::@ab08cac45f0581a9d1eb",
+					"jsonFile" : "target-unit-arx_rls_test-RelWithDebInfo-94b9ab69bba5ba5ec8ea.json",
+					"name" : "unit-arx_rls_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 66,
+					"id" : "unit-board_identity_test::@b9081f7f9f1bc7ce6a34",
+					"jsonFile" : "target-unit-board_identity_test-RelWithDebInfo-f6204f75a904144ae894.json",
+					"name" : "unit-board_identity_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 42,
+					"id" : "unit-pid_design_test::@ffb5556e6d78dea07aa5",
+					"jsonFile" : "target-unit-pid_design_test-RelWithDebInfo-001ff0ad999eea57599d.json",
+					"name" : "unit-pid_design_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 43,
+					"id" : "unit-rate_control_test::@714dbb369896d8b6f4dd",
+					"jsonFile" : "target-unit-rate_control_test-RelWithDebInfo-3b4f9ab31cc1b2a4ad55.json",
+					"name" : "unit-rate_control_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 36,
+					"id" : "unit-second_order_reference_model_test::@acbeda415806513a99b0",
+					"jsonFile" : "target-unit-second_order_reference_model_test-RelWithDebInfo-e9e1c16184079fd47b51.json",
+					"name" : "unit-second_order_reference_model_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 49,
+					"id" : "unit-system_identification_test::@ab08cac45f0581a9d1eb",
+					"jsonFile" : "target-unit-system_identification_test-RelWithDebInfo-0cbdf8d386fe8614cbfb.json",
+					"name" : "unit-system_identification_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 59,
+					"id" : "unit-test_airspeed_fusion::@0d5f6a1bb5cb1d739ecb",
+					"jsonFile" : "target-unit-test_airspeed_fusion-RelWithDebInfo-1a6f2472cb5b0d46a5af.json",
+					"name" : "unit-test_airspeed_fusion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 30,
+					"id" : "unit-test_geo::@98fdcee2b11418b2ae8c",
+					"jsonFile" : "target-unit-test_geo-RelWithDebInfo-1f2cf0800c131f7adea0.json",
+					"name" : "unit-test_geo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "unit-test_geo_lookup::@68c15c83472908ee1955",
+					"jsonFile" : "target-unit-test_geo_lookup-RelWithDebInfo-cd084000dd137f548b19.json",
+					"name" : "unit-test_geo_lookup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uorb_graph::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uorb_graph-RelWithDebInfo-58aaf27fed6f221bcb83.json",
+					"name" : "uorb_graph",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uorb_headers::@87da20e8da9c58e355ca",
+					"jsonFile" : "target-uorb_headers-RelWithDebInfo-9b23490f5dfb7a273bad.json",
+					"name" : "uorb_headers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uorb_msgs::@87da20e8da9c58e355ca",
+					"jsonFile" : "target-uorb_msgs-RelWithDebInfo-3ab54f68ada198fd155a.json",
+					"name" : "uorb_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uorb_ucdr_headers::@87da20e8da9c58e355ca",
+					"jsonFile" : "target-uorb_ucdr_headers-RelWithDebInfo-565af6cc458341a6f27d.json",
+					"name" : "uorb_ucdr_headers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 55,
+					"id" : "variable_length_ringbuffer::@e8540ad4d5fddf1705e5",
+					"jsonFile" : "target-variable_length_ringbuffer-RelWithDebInfo-513721ec9237413c084c.json",
+					"name" : "variable_length_ringbuffer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 56,
+					"id" : "ver_gen::@e0eff460355dd36c32f3",
+					"jsonFile" : "target-ver_gen-RelWithDebInfo-a13f025cafea403faec5.json",
+					"name" : "ver_gen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 56,
+					"id" : "version::@e0eff460355dd36c32f3",
+					"jsonFile" : "target-version-RelWithDebInfo-875565beca10fe6f57cc.json",
+					"name" : "version",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 58,
+					"id" : "wind_estimator::@b55defc95dba34d47a5b",
+					"jsonFile" : "target-wind_estimator-RelWithDebInfo-1f97fa9b7869d2fdf77f.json",
+					"name" : "wind_estimator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 58,
+					"id" : "wind_estimator_generate_airspeed_fusion::@b55defc95dba34d47a5b",
+					"jsonFile" : "target-wind_estimator_generate_airspeed_fusion-RelWithDebInfo-88238286fed45dbde744.json",
+					"name" : "wind_estimator_generate_airspeed_fusion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 69,
+					"id" : "work_queue::@4a51fd9749b041c0a765",
+					"jsonFile" : "target-work_queue-RelWithDebInfo-8906ab156316c04c2d90.json",
+					"name" : "work_queue",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "world_magnetic_model::@68c15c83472908ee1955",
+					"jsonFile" : "target-world_magnetic_model-RelWithDebInfo-e8efb7121a5dd5aa9935.json",
+					"name" : "world_magnetic_model",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "world_magnetic_model_tests_update::@68c15c83472908ee1955",
+					"jsonFile" : "target-world_magnetic_model_tests_update-RelWithDebInfo-c93518b3d77b39f2da63.json",
+					"name" : "world_magnetic_model_tests_update",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 60,
+					"id" : "world_magnetic_model_update::@68c15c83472908ee1955",
+					"jsonFile" : "target-world_magnetic_model_update-RelWithDebInfo-20dd486b9a5f120752b6.json",
+					"name" : "world_magnetic_model_update",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/repo/ws/build/px4",
+		"source" : "/repo/ws/src/px4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
