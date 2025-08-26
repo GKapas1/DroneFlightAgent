@@ -219,14 +219,14 @@
       <sensor name="imu" type="imu">
         <always_on>true</always_on>
         <update_rate>200</update_rate>
-        <topic>/x500_custom_0/imu</topic>
+        <topic>/world/empty/model/x500_custom_0/link/base_link/sensor/imu_sensor/imu</topic>
         <imu/>
       </sensor>
 
       <!-- Barometer (air pressure) -->
       <sensor name="baro" type="air_pressure">
         <always_on>true</always_on>
-        <topic>/x500_custom_0/baro</topic>
+        <topic>/world/empty/model/x500_custom_0/link/base_link/sensor/air_pressure_sensor/air_pressure</topic>
         <update_rate>50</update_rate>
         <air_pressure/>
       </sensor>
@@ -303,6 +303,45 @@
         <pose>0 0 0 0 0 -1.57079632679</pose>
         <visualize>false</visualize>
       </sensor>
+
+      <sensor name="gps" type="gps">
+        <always_on>true</always_on>
+        <topic>/world/empty/model/x500_custom_0/link/base_link/sensor/navsat_sensor/navsat</topic>
+        <navsat/>
+        <update_rate>10</update_rate>
+        <pose>0 0 0.05 0 0 0</pose>
+        <gps>
+          <position_sensing>
+            <horizontal>
+        <noise type="gaussian">
+          <mean>0.0</mean>
+          <stddev>1.0</stddev> <!-- meters -->
+        </noise>
+            </horizontal>
+            <vertical>
+        <noise type="gaussian">
+          <mean>0.0</mean>
+          <stddev>2.0</stddev> <!-- meters -->
+        </noise>
+            </vertical>
+          </position_sensing>
+          <velocity_sensing>
+            <horizontal>
+        <noise type="gaussian">
+          <mean>0.0</mean>
+          <stddev>0.1</stddev> <!-- m/s -->
+        </noise>
+            </horizontal>
+            <vertical>
+        <noise type="gaussian">
+          <mean>0.0</mean>
+          <stddev>0.2</stddev> <!-- m/s -->
+        </noise>
+            </vertical>
+          </velocity_sensing>
+        </gps>
+      </sensor>
+
 
     </link>
     <link name="rotor_0">

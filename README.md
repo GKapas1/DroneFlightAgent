@@ -119,13 +119,16 @@ gz model --list
 source /opt/ros/jazzy/setup.bash
 ros2 topic list
 ros2 topic echo /clock
+
+#Connect on the px4 console with
+python3 Tools/mavlink_shell.py udp:0.0.0.0:14540
 ```
 
 If PX4 times out, make sure Gazebo is running and that your `GZ_PLUGIN_PATH` is exported correctly.
 
 ---
 
-### 7) Delete containers
+### 7) Docker cleanup
 
 ```bash
 docker ps -a --size

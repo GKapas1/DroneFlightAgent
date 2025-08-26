@@ -146,8 +146,9 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         arguments=[
-            '/x500_custom_0/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
-            '/x500_custom_0/baro@sensor_msgs/msg/FluidPressure[gz.msgs.FluidPressure',
+            '/world/empty/model/x500_custom_0/link/base_link/sensor/imu_sensor/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
+            '/world/empty/model/x500_custom_0/link/base_link/sensor/air_pressure_sensor/air_pressure@sensor_msgs/msg/FluidPressure[gz.msgs.FluidPressure',
+            '/world/empty/model/x500_custom_0/link/base_link/sensor/navsat_sensor/navsat@sensor_msgs/msg/NavSatFix[gz.msgs.NavSat',
             '/x500_custom_0/lidar/front@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
             '/x500_custom_0/lidar/side@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
             '/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock',

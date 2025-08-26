@@ -52,7 +52,7 @@ RUN python3 -m venv /opt/venv && \
     /opt/venv/bin/pip install --upgrade --no-cache-dir pip setuptools wheel && \
     /opt/venv/bin/pip install --no-cache-dir \
       kconfiglib "empy<4" jinja2 numpy packaging pyserial toml pyyaml \
-      psutil jsonschema pandas future \
+      psutil jsonschema pandas future pymavlink mavproxy \
       lark pyros-genmsg pyros-genpy catkin_pkg rosdistro rospkg
 
 # Some PX4 helper scripts call /usr/bin/python3 directly — add a tiny shim
@@ -75,6 +75,24 @@ WORKDIR /repo/ws
 ARG PX4_TAG=v1.16.0
 RUN git clone --depth 1 --branch ${PX4_TAG} https://github.com/PX4/PX4-Autopilot.git /repo/ws/src/px4 && \
     cd /repo/ws/src/px4 && git submodule update --init --recursive
+
+# Add extras and make rcS source it safely (ignore errors)
+RUN set -eux; \
+  cd /repo/ws/src/px4; \
+  mkdir -p ROMFS/px4fmu_common/etc ROMFS/px4fmu_common/init.d-posix; \
+  printf '%s\n' \
+    "param set SYS_AUTOSTART 4001" \
+    "param set SYS_HAS_MAG 0" \
+    "param set EKF2_MAG_CHECK 0" \
+    "param set NAV_DLL_ACT 0" \
+    "param set COM_RC_IN_MODE 1" \
+    "param save" \
+    > ROMFS/px4fmu_common/etc/extras.txt; \
+  printf '\n# --- Source user extras (errors ignored) ---\nset +e\nif [ -r etc/extras.txt ]; then\n    . etc/extras.txt || true\nfi\nset -e\n' \
+    >> ROMFS/px4fmu_common/init.d-posix/rcS
+
+
+
 
 # -----------------------------------------------------------
 # Gazebo environment (Harmonic, gz-sim-8)
