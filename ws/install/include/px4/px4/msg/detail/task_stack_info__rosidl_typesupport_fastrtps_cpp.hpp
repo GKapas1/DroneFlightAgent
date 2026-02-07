@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_typesupport_fastrtps_cpp/px4/msg/detail/task_stack_info__rosidl_typesupport_fastrtps_cpp.hpp

@@ -274,7 +274,7 @@
         <visualize>false</visualize>
       </sensor>
 
-      <!-- Side (“inward”) GPU LiDAR, yaw -90° -->
+      <!-- Side GPU LiDAR, yaw -90° -->
       <sensor name="lidar_side" type="gpu_lidar">
         <always_on>true</always_on>
         <topic>/x500_custom/lidar/side</topic>
@@ -302,42 +302,48 @@
         <visualize>false</visualize>
       </sensor>
 
-      <sensor name="gps" type="gps">
+      <sensor name="navsat_sensor" type="navsat">
         <always_on>true</always_on>
-        <navsat/>
-        <topic>/x500_custom/navsat_sensor/navsat</topic>
         <update_rate>10</update_rate>
         <pose>0 0 0.05 0 0 0</pose>
-        <gps>
+
+        <navsat>
           <position_sensing>
             <horizontal>
-        <noise type="gaussian">
-          <mean>0.0</mean>
-          <stddev>1.0</stddev> <!-- meters -->
-        </noise>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>1.0</stddev> <!-- meters -->
+              </noise>
             </horizontal>
             <vertical>
-        <noise type="gaussian">
-          <mean>0.0</mean>
-          <stddev>2.0</stddev> <!-- meters -->
-        </noise>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>2.0</stddev> <!-- meters -->
+              </noise>
             </vertical>
           </position_sensing>
+
           <velocity_sensing>
             <horizontal>
-        <noise type="gaussian">
-          <mean>0.0</mean>
-          <stddev>0.1</stddev> <!-- m/s -->
-        </noise>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.1</stddev> <!-- m/s -->
+              </noise>
             </horizontal>
             <vertical>
-        <noise type="gaussian">
-          <mean>0.0</mean>
-          <stddev>0.2</stddev> <!-- m/s -->
-        </noise>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.2</stddev> <!-- m/s -->
+              </noise>
             </vertical>
           </velocity_sensing>
-        </gps>
+        </navsat>
+      </sensor>
+
+      <sensor name="magnetometer_sensor" type="magnetometer">
+        <always_on>true</always_on>
+        <update_rate>50</update_rate>
+        <magnetometer/>
       </sensor>
 
 

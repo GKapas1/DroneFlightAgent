@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/rosidl_typesupport_fastrtps_c/px4/msg/detail/mission__rosidl_typesupport_fastrtps_c.h

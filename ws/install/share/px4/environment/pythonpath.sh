@@ -1,1 +1,0 @@
-/repo/ws/build/px4/platforms/ros2/ament_cmake_environment_hooks/pythonpath.sh
