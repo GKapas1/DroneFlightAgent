@@ -160,29 +160,8 @@ Expected behavior:
 
 ---
 
-## 8) Verify PX4 health
 
-```bash
-cd /repo/ws/src/px4
-python3 Tools/mavlink_shell.py udp:0.0.0.0:14540
-```
-
-In `pxh>`:
-
-```text
-listener sensor_accel 3
-listener sensor_gyro 3
-listener sensor_baro 3
-listener vehicle_air_data 3
-ekf2 status
-commander check
-```
-
-All sensors should update continuously and EKF should initialize.
-
----
-
-## 9) Debugging tips
+## 8) Debugging tips
 
 ```bash
 docker exec -it fire-drone-sim bash

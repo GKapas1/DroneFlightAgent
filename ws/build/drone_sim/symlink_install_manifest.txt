@@ -30,6 +30,12 @@
 /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/3.png
 /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/4.png
 /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/5.png
+/repo/ws/install/share/drone_sim/models/x500_custom_camera_front/model.config
+/repo/ws/install/share/drone_sim/models/x500_custom_camera_front/model.sdf
+/repo/ws/install/share/drone_sim/models/x500_custom_lidar_front/model.config
+/repo/ws/install/share/drone_sim/models/x500_custom_lidar_front/model.sdf
+/repo/ws/install/share/drone_sim/models/x500_custom_lidar_side/model.config
+/repo/ws/install/share/drone_sim/models/x500_custom_lidar_side/model.sdf
 /repo/ws/install/share/drone_sim/worlds/empty.world
 /repo/ws/install/share/drone_sim/launch/px4_gz_bringup.launch.py
 /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py

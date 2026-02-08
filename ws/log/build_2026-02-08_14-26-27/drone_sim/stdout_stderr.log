@@ -23,7 +23,7 @@
 -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
 -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
 -- Using RMW implementation 'rmw_fastrtps_cpp' as default
--- Configuring done (2.2s)
+-- Configuring done (2.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: /repo/ws/build/drone_sim
 -- Install configuration: ""
@@ -60,6 +60,12 @@
 -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/3.png
 -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/4.png
 -- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom/thumbnails/5.png
+-- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom_camera_front/model.config
+-- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom_camera_front/model.sdf
+-- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom_lidar_front/model.config
+-- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom_lidar_front/model.sdf
+-- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom_lidar_side/model.config
+-- Symlinking: /repo/ws/install/share/drone_sim/models/x500_custom_lidar_side/model.sdf
 -- Symlinking: /repo/ws/install/share/drone_sim/worlds/empty.world
 -- Symlinking: /repo/ws/install/share/drone_sim/launch/px4_gz_bringup.launch.py
 -- Symlinking: /repo/ws/install/share/drone_sim/launch/spawn_drone.launch.py

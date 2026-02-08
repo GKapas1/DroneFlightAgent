@@ -174,51 +174,141 @@ def generate_launch_description():
         condition=UnlessCondition(headless),
     )
 
-    unpause = ExecuteProcess(
+    pause_world = ExecuteProcess(
+    cmd=[
+        "bash", "-lc",
+        r"""
+        set -euo pipefail
+        WORLD="${WORLD_NAME:-empty}"
+        echo "[pause] Pausing /world/${WORLD}/control"
+        gz service -s "/world/${WORLD}/control" \
+          --reqtype gz.msgs.WorldControl --reptype gz.msgs.Boolean --timeout 3000 \
+          --req 'pause: true' >/dev/null
+        echo "[pause] OK."
+        """,
+    ],
+    output="screen",
+    additional_env={"WORLD_NAME": world_name},
+    )
+
+
+    unpause_world = ExecuteProcess(
         cmd=[
-            "bash",
-            "-lc",
+            "bash", "-lc",
             r"""
-            for i in $(seq 1 200); do
-              gz service -s /world/${WORLD_NAME}/control \
-                --reqtype gz.msgs.WorldControl --reptype gz.msgs.Boolean \
-                --req 'pause: false' >/dev/null 2>&1 && break
-              sleep 0.1
-            done
-            echo "[unpause] Requested pause:false on /world/${WORLD_NAME}/control"
+            set -euo pipefail
+            WORLD="${WORLD_NAME:-empty}"
+            echo "[unpause] Requested pause:false on /world/${WORLD}/control"
+            gz service -s "/world/${WORLD}/control" \
+            --reqtype gz.msgs.WorldControl --reptype gz.msgs.Boolean --timeout 3000 \
+            --req 'pause: false' >/dev/null
+            echo "[unpause] OK."
             """,
         ],
         output="screen",
         additional_env={"WORLD_NAME": world_name},
     )
 
+
     wait_sensors = ExecuteProcess(
         cmd=[
             "bash",
             "-lc",
             r"""
-            set -e
-            IMU="/world/${WORLD_NAME}/model/${MODEL}/link/base_link/sensor/imu_sensor/imu"
-            BARO="/world/${WORLD_NAME}/model/${MODEL}/link/base_link/sensor/air_pressure_sensor/air_pressure"
+            set -euo pipefail
 
-            echo "[wait] Waiting for topics to exist…"
-            until gz topic -i -t "$IMU"  >/dev/null 2>&1; do sleep 0.1; done
-            until gz topic -i -t "$BARO" >/dev/null 2>&1; do sleep 0.1; done
+            WORLD="${WORLD_NAME}"
+            MODEL="${MODEL}"
 
-            echo "[wait] Waiting for IMU x2…"
-            gz topic -e -t "$IMU" -n 1 >/dev/null 2>&1
-            gz topic -e -t "$IMU" -n 1 >/dev/null 2>&1
+            CLOCK="/world/${WORLD}/clock"
+            IMU="/world/${WORLD}/model/${MODEL}/link/base_link/sensor/imu_sensor/imu"
+            BARO="/world/${WORLD}/model/${MODEL}/link/base_link/sensor/air_pressure_sensor/air_pressure"
 
-            echo "[wait] Waiting for BARO x2…"
-            gz topic -e -t "$BARO" -n 1 >/dev/null 2>&1
-            gz topic -e -t "$BARO" -n 1 >/dev/null 2>&1
+            # helper: require a gz topic to exist (gz topic -i succeeds)
+            wait_topic() {
+            local t="$1"
+            local name="$2"
+            local tries=200   # 200 * 0.05s = 10s
+            echo "[wait] Waiting for ${name} topic to exist: ${t}"
+            for i in $(seq 1 "$tries"); do
+                if gz topic -i -t "$t" >/dev/null 2>&1; then
+                return 0
+                fi
+                sleep 0.05
+            done
+            echo "[wait] ERROR: ${name} topic did not appear: ${t}"
+            return 1
+            }
 
-            echo "[wait] Sensor streams verified."
+            # helper: require N messages within a timeout (seconds)
+            require_msgs() {
+            local t="$1"
+            local name="$2"
+            local n="$3"
+            local secs="$4"
+            echo "[wait] Waiting for ${name} stream: ${n} msgs within ${secs}s"
+            if ! timeout "${secs}" gz topic -e -t "$t" -n "$n" >/dev/null 2>&1; then
+                echo "[wait] ERROR: ${name} did not stream ${n} msgs within ${secs}s"
+                echo "[wait] Debug (gz topic -i):"
+                gz topic -i -t "$t" || true
+                return 1
+            fi
+            }
+
+            # helper: check that /clock advances (two stamps differ)
+            clock_advances() {
+            local secs="$1"
+            echo "[wait] Verifying sim time (/clock) advances..."
+            # capture 2 clock messages quickly
+            local out
+            if ! out="$(timeout "${secs}" gz topic -e -t "$CLOCK" -n 2 2>/dev/null)"; then
+                echo "[wait] ERROR: failed to read /clock"
+                gz topic -i -t "$CLOCK" || true
+                return 1
+            fi
+
+            # Extract the first and second (sec,nsec) pairs (best-effort parse)
+            # The clock message in gz.msgs.Clock prints:
+            #   system { sec: ... nsec: ... }  sim { sec: ... nsec: ... }
+            # We only care that at least one of the reported timestamps changes.
+            local stamps
+            stamps="$(echo "$out" | awk '
+                $1=="sec:"{sec=$2}
+                $1=="nsec:"{nsec=$2; print sec "." nsec}
+            ' | head -n 4)"  # enough lines to include both msgs
+
+            local first second
+            first="$(echo "$stamps" | sed -n '1p' || true)"
+            second="$(echo "$stamps" | sed -n '3p' || true)"  # next msg’s sec/nsec pair
+
+            if [ -z "${first}" ] || [ -z "${second}" ] || [ "${first}" = "${second}" ]; then
+                echo "[wait] ERROR: /clock did not appear to advance (world may be paused)"
+                echo "[wait] Raw /clock sample:"
+                echo "$out" | head -n 60
+                return 1
+            fi
+            }
+
+            # 1) Ensure topics exist
+            wait_topic "$CLOCK" "CLOCK"
+            wait_topic "$IMU"   "IMU"
+            wait_topic "$BARO"  "BARO"
+
+            # 2) Ensure sim time advances (if paused, this will fail)
+            clock_advances 3s
+
+            # 3) Ensure real streaming (more than x2)
+            # Tune numbers if needed, but these are reasonable:
+            require_msgs "$IMU"  "IMU"  20 5s
+            require_msgs "$BARO" "BARO" 10 5s
+
+            echo "[wait] Sensor streams verified (clock advancing, IMU/BARO streaming)."
             """,
         ],
         output="screen",
         additional_env={"WORLD_NAME": world_name, "MODEL": px4_gz_model_name},
     )
+
 
     px4_build = os.path.join(px4_root, "build", "px4_sitl_default")
     px4_bin = os.path.join(px4_build, "bin", "px4")
@@ -256,9 +346,25 @@ def generate_launch_description():
         output="screen",
     )
 
-    after_reset = RegisterEventHandler(OnProcessExit(target_action=reset_proc, on_exit=[prime_cfg]))
-    after_prime = RegisterEventHandler(OnProcessExit(target_action=prime_cfg, on_exit=[gz_headless, gz_gui, unpause]))
-    after_unpause = RegisterEventHandler(OnProcessExit(target_action=unpause, on_exit=[wait_sensors]))
-    after_wait = RegisterEventHandler(OnProcessExit(target_action=wait_sensors, on_exit=[px4_proc, bridges, img_bridge]))
+
+
+    after_reset = RegisterEventHandler(
+        OnProcessExit(target_action=reset_proc, on_exit=[prime_cfg])
+    )
+
+    # prime -> start gazebo (headless/gui) + unpause (or omit unpause if world starts unpaused)
+    after_prime = RegisterEventHandler(
+        OnProcessExit(target_action=prime_cfg, on_exit=[gz_headless, gz_gui, unpause_world])
+    )
+
+    # unpause -> wait for sensors
+    after_unpause = RegisterEventHandler(
+        OnProcessExit(target_action=unpause_world, on_exit=[wait_sensors])
+    )
+
+    # wait -> start PX4 + then bridges
+    after_wait = RegisterEventHandler(
+        OnProcessExit(target_action=wait_sensors, on_exit=[px4_proc, bridges, img_bridge])
+    )
 
     return LaunchDescription(args + env + [reset_proc, after_reset, after_prime, after_unpause, after_wait])
