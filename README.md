@@ -239,10 +239,13 @@ listener vehicle_status 1
 ## 10. Debugging
 
 ```bash
+docker exec -it fire-drone-sim bash
+
 gz --version
 gz service -l | grep /world
 gz model --list
 
+source /opt/ros/jazzy/setup.bash
 ros2 topic list
 ros2 topic echo /clock
 ```
