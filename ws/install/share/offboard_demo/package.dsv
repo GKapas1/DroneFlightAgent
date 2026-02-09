@@ -1,0 +1,15 @@
+source;share/offboard_demo/hook/cmake_prefix_path.ps1
+source;share/offboard_demo/hook/cmake_prefix_path.dsv
+source;share/offboard_demo/hook/cmake_prefix_path.sh
+source;share/offboard_demo/hook/ld_library_path_lib.ps1
+source;share/offboard_demo/hook/ld_library_path_lib.dsv
+source;share/offboard_demo/hook/ld_library_path_lib.sh
+source;share/offboard_demo/hook/pythonpath.ps1
+source;share/offboard_demo/hook/pythonpath.dsv
+source;share/offboard_demo/hook/pythonpath.sh
+source;share/offboard_demo/hook/ament_prefix_path.ps1
+source;share/offboard_demo/hook/ament_prefix_path.dsv
+source;share/offboard_demo/hook/ament_prefix_path.sh
+source;../build/offboard_demo/share/offboard_demo/hook/pythonpath_develop.ps1
+source;../build/offboard_demo/share/offboard_demo/hook/pythonpath_develop.dsv
+source;../build/offboard_demo/share/offboard_demo/hook/pythonpath_develop.sh

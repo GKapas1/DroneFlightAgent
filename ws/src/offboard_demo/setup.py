@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'offboard_takeoff = offboard_demo.offboard_takeoff:main',
         ],
     },
 )

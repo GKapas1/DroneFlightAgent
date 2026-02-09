@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/repo/ws/build/px4/platforms/ros2/rosidl_generator_py/px4/px4_s__rosidl_typesupport_c.so" "TARGETS" "px4_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/px4")

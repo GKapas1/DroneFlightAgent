@@ -1,0 +1,8 @@
+/repo/ws/install/lib/libpx4__rosidl_generator_c.so
+/repo/ws/install/lib/libpx4__rosidl_typesupport_fastrtps_c.so
+/repo/ws/install/lib/libpx4__rosidl_typesupport_fastrtps_cpp.so
+/repo/ws/install/lib/libpx4__rosidl_typesupport_introspection_c.so
+/repo/ws/install/lib/libpx4__rosidl_typesupport_c.so
+/repo/ws/install/lib/libpx4__rosidl_typesupport_introspection_cpp.so
+/repo/ws/install/lib/libpx4__rosidl_typesupport_cpp.so
+/repo/ws/install/lib/libpx4__rosidl_generator_py.so

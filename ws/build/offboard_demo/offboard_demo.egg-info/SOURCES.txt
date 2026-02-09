@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+offboard_demo/__init__.py
+offboard_demo/offboard_takeoff.py
+offboard_demo.egg-info/PKG-INFO
+offboard_demo.egg-info/SOURCES.txt
+offboard_demo.egg-info/dependency_links.txt
+offboard_demo.egg-info/entry_points.txt
+offboard_demo.egg-info/requires.txt
+offboard_demo.egg-info/top_level.txt
+offboard_demo.egg-info/zip-safe
+resource/offboard_demo

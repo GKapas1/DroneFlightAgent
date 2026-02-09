@@ -1,0 +1,1 @@
+/repo/ws/build/px4/platforms/ros2/rosidl_generator_c/px4/msg/rover_attitude_status.h

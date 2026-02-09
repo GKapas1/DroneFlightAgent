@@ -76,7 +76,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN python3 -m venv /opt/venv && \
     /opt/venv/bin/pip install --upgrade --no-cache-dir pip setuptools wheel && \
     /opt/venv/bin/pip install --no-cache-dir \
-    pymavlink jsonschema packaging pyyaml kconfiglib catkin_pkg pyros-genmsg pyros-genpy lark future jinja2 "empy<4"
+    pymavlink jsonschema packaging pyyaml kconfiglib \
+    catkin_pkg pyros-genmsg pyros-genpy lark future jinja2 "empy<4"\
+    numpy
 
 ENV PATH="/opt/venv/bin:${PATH}"
 

@@ -1,0 +1,1 @@
+/repo/ws/build/px4/platforms/ros2/rosidl_generator_cpp/px4/msg/detail/mag_worker_data__struct.hpp
