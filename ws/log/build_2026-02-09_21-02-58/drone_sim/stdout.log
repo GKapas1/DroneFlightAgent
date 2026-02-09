@@ -23,7 +23,7 @@
 -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
 -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
 -- Using RMW implementation 'rmw_fastrtps_cpp' as default
--- Configuring done (2.8s)
+-- Configuring done (2.5s)
 -- Generating done (0.0s)
 -- Build files have been written to: /repo/ws/build/drone_sim
 -- Install configuration: ""
