@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "px4/msg/detail/system_power__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/system_power__type_support.h"
 #include "px4/msg/detail/system_power__functions.h"
-#include "px4/msg/detail/system_power__struct.h"
 
 #ifdef __cplusplus
 extern "C"

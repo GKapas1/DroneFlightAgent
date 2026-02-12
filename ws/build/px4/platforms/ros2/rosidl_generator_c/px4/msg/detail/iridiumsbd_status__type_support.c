@@ -6,8 +6,8 @@
 
 #include "px4/msg/detail/iridiumsbd_status__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/iridiumsbd_status__functions.h"
 #include "px4/msg/detail/iridiumsbd_status__struct.h"
+#include "px4/msg/detail/iridiumsbd_status__functions.h"
 
 #ifdef __cplusplus
 extern "C"

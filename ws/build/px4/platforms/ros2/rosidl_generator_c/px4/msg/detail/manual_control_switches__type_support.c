@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "px4/msg/detail/manual_control_switches__type_support.h"
 #include "px4/msg/detail/manual_control_switches__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/manual_control_switches__struct.h"
-#include "px4/msg/detail/manual_control_switches__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

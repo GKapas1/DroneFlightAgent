@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "px4/msg/detail/differential_pressure__struct.h"
 #include "px4/msg/detail/differential_pressure__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/differential_pressure__type_support.h"
-#include "px4/msg/detail/differential_pressure__struct.h"
 
 #ifdef __cplusplus
 extern "C"

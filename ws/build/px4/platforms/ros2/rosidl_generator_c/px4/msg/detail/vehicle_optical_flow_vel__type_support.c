@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/vehicle_optical_flow_vel__type_support.h"
 #include "px4/msg/detail/vehicle_optical_flow_vel__functions.h"
 #include "px4/msg/detail/vehicle_optical_flow_vel__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/vehicle_optical_flow_vel__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

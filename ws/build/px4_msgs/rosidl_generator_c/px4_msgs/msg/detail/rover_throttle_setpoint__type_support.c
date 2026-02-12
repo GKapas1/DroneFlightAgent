@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4_msgs/msg/detail/rover_throttle_setpoint__functions.h"
 #include "px4_msgs/msg/detail/rover_throttle_setpoint__struct.h"
+#include "px4_msgs/msg/detail/rover_throttle_setpoint__functions.h"
 #include "px4_msgs/msg/detail/rover_throttle_setpoint__type_support.h"
 
 #ifdef __cplusplus

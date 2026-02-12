@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4_msgs/msg/detail/fixed_wing_longitudinal_setpoint__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4_msgs/msg/detail/fixed_wing_longitudinal_setpoint__functions.h"
 #include "px4_msgs/msg/detail/fixed_wing_longitudinal_setpoint__type_support.h"
 

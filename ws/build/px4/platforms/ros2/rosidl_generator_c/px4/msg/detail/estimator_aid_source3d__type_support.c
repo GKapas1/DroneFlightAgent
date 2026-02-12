@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/estimator_aid_source3d__functions.h"
-#include "px4/msg/detail/estimator_aid_source3d__type_support.h"
 #include "px4/msg/detail/estimator_aid_source3d__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/estimator_aid_source3d__type_support.h"
+#include "px4/msg/detail/estimator_aid_source3d__functions.h"
 
 #ifdef __cplusplus
 extern "C"

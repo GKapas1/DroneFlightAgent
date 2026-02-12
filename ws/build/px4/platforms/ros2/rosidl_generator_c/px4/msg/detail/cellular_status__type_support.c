@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "px4/msg/detail/cellular_status__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/cellular_status__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/cellular_status__type_support.h"
 
 #ifdef __cplusplus

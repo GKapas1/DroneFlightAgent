@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/estimator_aid_source1d__type_support.h"
 #include "px4/msg/detail/estimator_aid_source1d__functions.h"
+#include "px4/msg/detail/estimator_aid_source1d__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/estimator_aid_source1d__struct.h"
 
 #ifdef __cplusplus

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/gripper__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/gripper__type_support.h"
 #include "px4/msg/detail/gripper__struct.h"
+#include "px4/msg/detail/gripper__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "px4/msg/detail/message_format_request__struct.h"
 #include "px4/msg/detail/message_format_request__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/message_format_request__struct.h"
 #include "px4/msg/detail/message_format_request__functions.h"
 
 #ifdef __cplusplus

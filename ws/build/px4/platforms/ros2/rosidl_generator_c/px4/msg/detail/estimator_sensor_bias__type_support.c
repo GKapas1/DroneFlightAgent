@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "px4/msg/detail/estimator_sensor_bias__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/estimator_sensor_bias__type_support.h"
 #include "px4/msg/detail/estimator_sensor_bias__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

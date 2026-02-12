@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'offboard_takeoff = offboard_demo.offboard_takeoff:main',
+            "offboard_velocity = offboard_demo.offboard_velocity:main",
         ],
     },
 )

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/unregister_ext_component__functions.h"
-#include "px4/msg/detail/unregister_ext_component__type_support.h"
 #include "px4/msg/detail/unregister_ext_component__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/unregister_ext_component__type_support.h"
+#include "px4/msg/detail/unregister_ext_component__functions.h"
 
 #ifdef __cplusplus
 extern "C"

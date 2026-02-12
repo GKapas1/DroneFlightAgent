@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/follow_target__functions.h"
 #include "px4/msg/detail/follow_target__type_support.h"
 #include "px4/msg/detail/follow_target__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/follow_target__functions.h"
 
 #ifdef __cplusplus
 extern "C"

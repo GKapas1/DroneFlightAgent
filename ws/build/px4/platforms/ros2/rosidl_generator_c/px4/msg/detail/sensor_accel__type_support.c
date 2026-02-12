@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/sensor_accel__functions.h"
 #include "px4/msg/detail/sensor_accel__type_support.h"
+#include "px4/msg/detail/sensor_accel__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/sensor_accel__struct.h"
 
 #ifdef __cplusplus

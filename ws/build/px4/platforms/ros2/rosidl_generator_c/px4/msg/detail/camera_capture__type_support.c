@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/camera_capture__struct.h"
 #include "px4/msg/detail/camera_capture__type_support.h"
+#include "px4/msg/detail/camera_capture__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/camera_capture__functions.h"
 
 #ifdef __cplusplus

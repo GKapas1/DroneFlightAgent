@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/fuel_tank_status__struct.h"
 #include "px4/msg/detail/fuel_tank_status__functions.h"
 #include "px4/msg/detail/fuel_tank_status__type_support.h"
+#include "px4/msg/detail/fuel_tank_status__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

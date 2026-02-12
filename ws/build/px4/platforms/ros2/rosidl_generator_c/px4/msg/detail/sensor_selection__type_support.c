@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "px4/msg/detail/sensor_selection__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/sensor_selection__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/sensor_selection__type_support.h"
 
 #ifdef __cplusplus

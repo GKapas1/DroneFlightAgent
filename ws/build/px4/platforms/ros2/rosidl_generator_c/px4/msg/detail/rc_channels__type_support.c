@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/rc_channels__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/rc_channels__functions.h"
 #include "px4/msg/detail/rc_channels__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/rc_channels__type_support.h"
+#include "px4/msg/detail/rc_channels__functions.h"
 
 #ifdef __cplusplus
 extern "C"

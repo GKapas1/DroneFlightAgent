@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/navigator_mission_item__type_support.h"
 #include "px4/msg/detail/navigator_mission_item__functions.h"
+#include "px4/msg/detail/navigator_mission_item__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/navigator_mission_item__struct.h"
 
 #ifdef __cplusplus

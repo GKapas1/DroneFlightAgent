@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4_msgs/msg/detail/register_ext_component_reply__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4_msgs/msg/detail/register_ext_component_reply__functions.h"
 #include "px4_msgs/msg/detail/register_ext_component_reply__struct.h"
 

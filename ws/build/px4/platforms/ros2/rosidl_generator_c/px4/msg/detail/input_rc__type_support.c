@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "px4/msg/detail/input_rc__type_support.h"
 #include "px4/msg/detail/input_rc__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/input_rc__type_support.h"
 #include "px4/msg/detail/input_rc__functions.h"
 
 #ifdef __cplusplus

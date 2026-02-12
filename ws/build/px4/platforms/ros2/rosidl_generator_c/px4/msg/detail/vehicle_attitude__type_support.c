@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/vehicle_attitude__struct.h"
-#include "px4/msg/detail/vehicle_attitude__functions.h"
 #include "px4/msg/detail/vehicle_attitude__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/vehicle_attitude__functions.h"
 
 #ifdef __cplusplus
 extern "C"

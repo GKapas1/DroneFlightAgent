@@ -3,6 +3,7 @@ setup.cfg
 setup.py
 offboard_demo/__init__.py
 offboard_demo/offboard_takeoff.py
+offboard_demo/offboard_velocity.py
 offboard_demo.egg-info/PKG-INFO
 offboard_demo.egg-info/SOURCES.txt
 offboard_demo.egg-info/dependency_links.txt

@@ -110,8 +110,6 @@ function colcon_package_source_powershell_script {
 # the prefix is two levels up from the package specific share directory
 $env:COLCON_CURRENT_PREFIX=(Get-Item $PSCommandPath).Directory.Parent.Parent.FullName
 
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/offboard_demo/hook/cmake_prefix_path.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/offboard_demo/hook/ld_library_path_lib.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/offboard_demo/hook/pythonpath.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/offboard_demo/hook/ament_prefix_path.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\../build/offboard_demo/share/offboard_demo/hook/pythonpath_develop.ps1"

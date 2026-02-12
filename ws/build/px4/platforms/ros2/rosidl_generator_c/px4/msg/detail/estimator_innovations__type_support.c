@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/estimator_innovations__functions.h"
 #include "px4/msg/detail/estimator_innovations__struct.h"
+#include "px4/msg/detail/estimator_innovations__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/estimator_innovations__type_support.h"
 
 #ifdef __cplusplus

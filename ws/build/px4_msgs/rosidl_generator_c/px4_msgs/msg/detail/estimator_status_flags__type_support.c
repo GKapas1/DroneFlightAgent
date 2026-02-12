@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4_msgs/msg/detail/estimator_status_flags__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4_msgs/msg/detail/estimator_status_flags__type_support.h"
 #include "px4_msgs/msg/detail/estimator_status_flags__struct.h"
 
