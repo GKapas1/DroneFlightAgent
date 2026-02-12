@@ -6,8 +6,8 @@
 
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/pure_pursuit_status__type_support.h"
-#include "px4/msg/detail/pure_pursuit_status__struct.h"
 #include "px4/msg/detail/pure_pursuit_status__functions.h"
+#include "px4/msg/detail/pure_pursuit_status__struct.h"
 
 #ifdef __cplusplus
 extern "C"

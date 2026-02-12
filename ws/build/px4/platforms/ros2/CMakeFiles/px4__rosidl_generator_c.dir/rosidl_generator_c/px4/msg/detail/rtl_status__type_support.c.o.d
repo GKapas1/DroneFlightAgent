@@ -43,7 +43,6 @@ platforms/ros2/CMakeFiles/px4__rosidl_generator_c.dir/rosidl_generator_c/px4/msg
  /opt/ros/jazzy/include/rcutils/rcutils/visibility_control_macros.h \
  /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /repo/ws/build/px4/platforms/ros2/rosidl_generator_c/px4/msg/detail/rtl_status__struct.h \
  /repo/ws/build/px4/platforms/ros2/rosidl_generator_c/px4/msg/detail/rtl_status__functions.h \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -76,4 +75,5 @@ platforms/ros2/CMakeFiles/px4__rosidl_generator_c.dir/rosidl_generator_c/px4/msg
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h
+ /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
+ /repo/ws/build/px4/platforms/ros2/rosidl_generator_c/px4/msg/detail/rtl_status__struct.h

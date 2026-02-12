@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4_msgs/msg/detail/parameter_reset_request__struct.h"
 #include "px4_msgs/msg/detail/parameter_reset_request__functions.h"
+#include "px4_msgs/msg/detail/parameter_reset_request__struct.h"
 #include "px4_msgs/msg/detail/parameter_reset_request__type_support.h"
 
 #ifdef __cplusplus

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/vehicle_magnetometer__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/vehicle_magnetometer__functions.h"
 #include "px4/msg/detail/vehicle_magnetometer__struct.h"
+#include "px4/msg/detail/vehicle_magnetometer__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -6,8 +6,8 @@
 
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/mission__functions.h"
-#include "px4/msg/detail/mission__struct.h"
 #include "px4/msg/detail/mission__type_support.h"
+#include "px4/msg/detail/mission__struct.h"
 
 #ifdef __cplusplus
 extern "C"

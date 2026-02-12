@@ -309,6 +309,10 @@ def generate_launch_description():
         additional_env={"WORLD_NAME": world_name, "MODEL": px4_gz_model_name},
     )
 
+    xrce_agent = ExecuteProcess(
+    cmd=["bash", "-lc", "MicroXRCEAgent udp4 -p 8888"],
+    output="screen",
+    )
 
     px4_build = os.path.join(px4_root, "build", "px4_sitl_default")
     px4_bin = os.path.join(px4_build, "bin", "px4")
@@ -364,7 +368,7 @@ def generate_launch_description():
 
     # wait -> start PX4 + then bridges
     after_wait = RegisterEventHandler(
-        OnProcessExit(target_action=wait_sensors, on_exit=[px4_proc, bridges, img_bridge])
+        OnProcessExit(target_action=wait_sensors, on_exit=[xrce_agent, px4_proc, bridges, img_bridge])
     )
 
     return LaunchDescription(args + env + [reset_proc, after_reset, after_prime, after_unpause, after_wait])

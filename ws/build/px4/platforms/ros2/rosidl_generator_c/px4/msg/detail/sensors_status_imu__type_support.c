@@ -4,9 +4,9 @@
 
 #include <string.h>
 
+#include "px4/msg/detail/sensors_status_imu__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/sensors_status_imu__type_support.h"
-#include "px4/msg/detail/sensors_status_imu__functions.h"
 #include "px4/msg/detail/sensors_status_imu__struct.h"
 
 #ifdef __cplusplus

@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/vehicle_acceleration__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/vehicle_acceleration__struct.h"
+#include "px4/msg/detail/vehicle_acceleration__functions.h"
 #include "px4/msg/detail/vehicle_acceleration__type_support.h"
 
 #ifdef __cplusplus

@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/ulog_stream_ack__functions.h"
 #include "px4/msg/detail/ulog_stream_ack__struct.h"
+#include "px4/msg/detail/ulog_stream_ack__functions.h"
 #include "px4/msg/detail/ulog_stream_ack__type_support.h"
 
 #ifdef __cplusplus

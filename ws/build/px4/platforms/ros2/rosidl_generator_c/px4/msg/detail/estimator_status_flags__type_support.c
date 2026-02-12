@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/estimator_status_flags__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/estimator_status_flags__type_support.h"
 #include "px4/msg/detail/estimator_status_flags__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/estimator_status_flags__functions.h"
+#include "px4/msg/detail/estimator_status_flags__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

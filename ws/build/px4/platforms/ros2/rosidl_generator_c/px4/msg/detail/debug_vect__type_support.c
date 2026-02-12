@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/debug_vect__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/debug_vect__functions.h"
 #include "px4/msg/detail/debug_vect__type_support.h"
 

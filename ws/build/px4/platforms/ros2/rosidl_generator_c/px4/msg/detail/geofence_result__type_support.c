@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/geofence_result__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/geofence_result__functions.h"
 #include "px4/msg/detail/geofence_result__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/geofence_result__type_support.h"
+#include "px4/msg/detail/geofence_result__functions.h"
 
 #ifdef __cplusplus
 extern "C"

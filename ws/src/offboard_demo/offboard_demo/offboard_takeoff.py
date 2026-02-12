@@ -28,7 +28,7 @@ class OffboardTakeoff(Node):
         self.timer = self.create_timer(0.1, self.timer_cb)
 
         self.vehicle_status = None
-        self.setpoint_counter = 0.0
+        self.setpoint_counter = 0
 
     def status_cb(self, msg):
         self.vehicle_status = msg
@@ -77,11 +77,11 @@ class OffboardTakeoff(Node):
         self.publish_takeoff_setpoint()
 
         # PX4 requires a few setpoints before entering OFFBOARD
-        if self.setpoint_counter == 10.0:
+        if self.setpoint_counter == 10:
             self.set_offboard_mode()
             self.arm()
 
-        self.setpoint_counter += 1.0
+        self.setpoint_counter += 1
 
 
 def main(args=None):

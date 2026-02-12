@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/irlock_report__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/irlock_report__type_support.h"
 #include "px4/msg/detail/irlock_report__struct.h"
 #include "px4/msg/detail/irlock_report__functions.h"
 

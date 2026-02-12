@@ -6,8 +6,8 @@
 
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/wind__struct.h"
-#include "px4/msg/detail/wind__functions.h"
 #include "px4/msg/detail/wind__type_support.h"
+#include "px4/msg/detail/wind__functions.h"
 
 #ifdef __cplusplus
 extern "C"

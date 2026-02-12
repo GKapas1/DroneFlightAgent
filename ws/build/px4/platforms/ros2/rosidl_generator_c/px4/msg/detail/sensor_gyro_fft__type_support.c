@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/sensor_gyro_fft__type_support.h"
-#include "px4/msg/detail/sensor_gyro_fft__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/sensor_gyro_fft__struct.h"
+#include "px4/msg/detail/sensor_gyro_fft__functions.h"
 
 #ifdef __cplusplus
 extern "C"

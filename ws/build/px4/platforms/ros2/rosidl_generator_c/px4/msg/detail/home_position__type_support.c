@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/home_position__functions.h"
 #include "px4/msg/detail/home_position__struct.h"
+#include "px4/msg/detail/home_position__functions.h"
 #include "px4/msg/detail/home_position__type_support.h"
 
 #ifdef __cplusplus

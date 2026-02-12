@@ -80,6 +80,16 @@ RUN python3 -m venv /opt/venv && \
     catkin_pkg pyros-genmsg pyros-genpy lark future jinja2 "empy<4"\
     numpy
 
+# --- Micro XRCE-DDS Agent (PX4 requires v2.x; pin to v2.4.3) ---
+RUN git clone -b v2.4.3 --depth 1 https://github.com/eProsima/Micro-XRCE-DDS-Agent.git /tmp/Micro-XRCE-DDS-Agent && \
+    cmake -S /tmp/Micro-XRCE-DDS-Agent -B /tmp/Micro-XRCE-DDS-Agent/build -DCMAKE_BUILD_TYPE=Release && \
+    cmake --build /tmp/Micro-XRCE-DDS-Agent/build -j"$(nproc)" && \
+    cmake --install /tmp/Micro-XRCE-DDS-Agent/build && \
+    ldconfig && \
+    rm -rf /tmp/Micro-XRCE-DDS-Agent
+
+
+
 ENV PATH="/opt/venv/bin:${PATH}"
 
 ARG USERNAME=ubuntu

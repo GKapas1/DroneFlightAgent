@@ -4,8 +4,8 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/vehicle_constraints__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/vehicle_constraints__struct.h"
 #include "px4/msg/detail/vehicle_constraints__functions.h"
 #include "px4/msg/detail/vehicle_constraints__type_support.h"
 

@@ -1,0 +1,17 @@
+[0.976s] Invoking command in '/repo/ws/build/offboard_demo': PYTHONPATH=/repo/ws/build/offboard_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/repo/ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /repo/ws/build/offboard_demo/build --no-deps symlink_data
+[1.354s] running develop
+[1.561s] running egg_info
+[1.580s] writing offboard_demo.egg-info/PKG-INFO
+[1.581s] writing dependency_links to offboard_demo.egg-info/dependency_links.txt
+[1.582s] writing entry points to offboard_demo.egg-info/entry_points.txt
+[1.582s] writing requirements to offboard_demo.egg-info/requires.txt
+[1.583s] writing top-level names to offboard_demo.egg-info/top_level.txt
+[1.622s] reading manifest file 'offboard_demo.egg-info/SOURCES.txt'
+[1.623s] writing manifest file 'offboard_demo.egg-info/SOURCES.txt'
+[1.645s] running build_ext
+[1.647s] Creating /repo/ws/install/lib/python3.12/site-packages/offboard-demo.egg-link (link to .)
+[1.647s] Installing offboard_takeoff script to /repo/ws/install/lib/offboard_demo
+[1.648s] 
+[1.649s] Installed /repo/ws/build/offboard_demo
+[1.649s] running symlink_data
+[1.691s] Invoked command in '/repo/ws/build/offboard_demo' returned '0': PYTHONPATH=/repo/ws/build/offboard_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/repo/ws/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /repo/ws/build/offboard_demo/build --no-deps symlink_data

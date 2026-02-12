@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/open_drone_id_self_id__functions.h"
+#include "px4/msg/detail/open_drone_id_self_id__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/open_drone_id_self_id__struct.h"
-#include "px4/msg/detail/open_drone_id_self_id__type_support.h"
+#include "px4/msg/detail/open_drone_id_self_id__functions.h"
 
 #ifdef __cplusplus
 extern "C"

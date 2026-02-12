@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/manual_control_setpoint__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/manual_control_setpoint__type_support.h"
+#include "px4/msg/detail/manual_control_setpoint__functions.h"
 #include "px4/msg/detail/manual_control_setpoint__struct.h"
 
 #ifdef __cplusplus

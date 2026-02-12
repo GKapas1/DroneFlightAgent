@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/sensor_baro__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/sensor_baro__functions.h"
+#include "px4/msg/detail/sensor_baro__type_support.h"
 #include "px4/msg/detail/sensor_baro__struct.h"
 
 #ifdef __cplusplus

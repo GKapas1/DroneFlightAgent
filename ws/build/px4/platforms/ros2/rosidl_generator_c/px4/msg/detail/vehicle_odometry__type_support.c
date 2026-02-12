@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/vehicle_odometry__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/vehicle_odometry__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/vehicle_odometry__struct.h"
+#include "px4/msg/detail/vehicle_odometry__functions.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/airspeed__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/airspeed__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/airspeed__functions.h"
 #include "px4/msg/detail/airspeed__type_support.h"
 
 #ifdef __cplusplus

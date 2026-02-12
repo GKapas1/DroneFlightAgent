@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/debug_array__functions.h"
 #include "px4/msg/detail/debug_array__type_support.h"
+#include "px4/msg/detail/debug_array__functions.h"
 #include "px4/msg/detail/debug_array__struct.h"
 
 #ifdef __cplusplus

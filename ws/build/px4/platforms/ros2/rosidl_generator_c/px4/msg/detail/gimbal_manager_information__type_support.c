@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "px4/msg/detail/gimbal_manager_information__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4/msg/detail/gimbal_manager_information__functions.h"
+#include "px4/msg/detail/gimbal_manager_information__struct.h"
 #include "px4/msg/detail/gimbal_manager_information__type_support.h"
 
 #ifdef __cplusplus

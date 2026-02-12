@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/tiltrotor_extra_controls__type_support.h"
 #include "px4/msg/detail/tiltrotor_extra_controls__functions.h"
+#include "px4/msg/detail/tiltrotor_extra_controls__type_support.h"
 #include "px4/msg/detail/tiltrotor_extra_controls__struct.h"
 
 #ifdef __cplusplus

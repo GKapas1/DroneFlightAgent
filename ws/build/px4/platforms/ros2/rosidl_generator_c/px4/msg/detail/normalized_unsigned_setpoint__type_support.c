@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/normalized_unsigned_setpoint__struct.h"
-#include "px4/msg/detail/normalized_unsigned_setpoint__type_support.h"
 #include "px4/msg/detail/normalized_unsigned_setpoint__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "px4/msg/detail/normalized_unsigned_setpoint__type_support.h"
+#include "px4/msg/detail/normalized_unsigned_setpoint__struct.h"
 
 #ifdef __cplusplus
 extern "C"

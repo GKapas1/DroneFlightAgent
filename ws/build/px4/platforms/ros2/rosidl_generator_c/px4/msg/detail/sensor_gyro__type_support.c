@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "px4/msg/detail/sensor_gyro__struct.h"
 #include "px4/msg/detail/sensor_gyro__type_support.h"
 #include "px4/msg/detail/sensor_gyro__functions.h"
+#include "px4/msg/detail/sensor_gyro__struct.h"
 
 #ifdef __cplusplus
 extern "C"

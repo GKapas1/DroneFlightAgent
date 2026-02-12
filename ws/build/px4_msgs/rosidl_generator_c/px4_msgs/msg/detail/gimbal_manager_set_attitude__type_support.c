@@ -6,8 +6,8 @@
 
 #include "rosidl_typesupport_interface/macros.h"
 #include "px4_msgs/msg/detail/gimbal_manager_set_attitude__struct.h"
-#include "px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.h"
 #include "px4_msgs/msg/detail/gimbal_manager_set_attitude__type_support.h"
+#include "px4_msgs/msg/detail/gimbal_manager_set_attitude__functions.h"
 
 #ifdef __cplusplus
 extern "C"
