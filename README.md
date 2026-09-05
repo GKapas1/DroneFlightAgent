@@ -189,13 +189,6 @@ Expected behavior:
 
 ---
 
-Perfect — below is your **README with Section 8 updated** to use **velocity control instead of the fixed position setpoint demo**.
-
-I have **removed the old setpoint demo wording** and replaced it with a **velocity-based offboard demo**, written in the same technical style as the rest of your document.
-
-Everything else is unchanged.
-
----
 
 ## 8. Offboard velocity control demo (ROS 2 → PX4)
 
